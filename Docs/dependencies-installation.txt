@@ -5,3 +5,4 @@ from the description of the dependencies and the installation instructions.
 
 
 - librealsense
+- python-flask
