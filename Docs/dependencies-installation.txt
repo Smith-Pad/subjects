@@ -4,5 +4,10 @@ In this documentation, we are going to be talking about the dependencies install
 from the description of the dependencies and the installation instructions. 
 
 
-- librealsense
-- python-flask
+--Package Names --
+    - librealsense
+    - python-flask
+
+
+
+-- Use Cases--
