@@ -11,3 +11,5 @@ from the description of the dependencies and the installation instructions.
 
 
 -- Use Cases--
+    - Using the Intel Real Sense, this allows the ability to use real time performance data
+      and actions when it comes to student's performance. 
