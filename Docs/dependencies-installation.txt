@@ -1,0 +1,7 @@
+--dependencies-installation--
+
+In this documentation, we are going to be talking about the dependencies installation, 
+from the description of the dependencies and the installation instructions. 
+
+
+- librealsense
