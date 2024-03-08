@@ -15,4 +15,6 @@ from the description of the dependencies and the installation instructions.
       and actions when it comes to student's performance. Here are the use cases for this. 
       For example, in the lessons, it will have a section, in some lessons, where it will 
       ask the student (user) how are you feeling? Using those cameras it can detect the face
-      and see the student's feeling. 
+      and see the student's feeling. For example, if the students feeling is bored, then the 
+      use cases of it, can be like this. The lesson level goes down, for example the content
+      of the lesson is varied based on the lesson level. 
