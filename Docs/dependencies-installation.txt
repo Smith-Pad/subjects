@@ -12,4 +12,7 @@ from the description of the dependencies and the installation instructions.
 
 -- Use Cases--
     - Using the Intel Real Sense, this allows the ability to use real time performance data
-      and actions when it comes to student's performance. 
+      and actions when it comes to student's performance. Here are the use cases for this. 
+      For example, in the lessons, it will have a section, in some lessons, where it will 
+      ask the student (user) how are you feeling? Using those cameras it can detect the face
+      and see the student's feeling. 
