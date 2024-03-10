@@ -3,4 +3,6 @@
 
 ## Dependencies
 
+- python-flask
+
 ## Installation Instructions
