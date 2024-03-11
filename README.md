@@ -1,4 +1,5 @@
 # subjects
+Smith-Pad Subjects engages students with tactile learning.
 
 
 ## Dependencies
