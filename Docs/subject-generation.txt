@@ -1,7 +1,7 @@
 subject-generation
 ------------------
 
-In this documenetation, we are going to be talking about the subject 
+In this documentation, we are going to be talking about the subject 
 generation. Subject generation allows the abilty to dynamically create
 subject lessons. Some of the use-cases is making use of AI/ML models 
 to dynamically create the lessons or manually create the lessons in a
