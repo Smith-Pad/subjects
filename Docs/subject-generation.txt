@@ -1,0 +1,6 @@
+subject-generation
+------------------
+
+In this documenetation, we are going to be talking about the subject 
+generation. Subject generation allows the abilty to dynamically create
+subject lessons. 
