@@ -1,7 +1,13 @@
 static
 
 
+
+CSS
 - FOIL-Bar.css
-- FOIL-time.js
 - UI-new.css
 - UI.css
+
+
+
+JS
+- FOIL-time.js
