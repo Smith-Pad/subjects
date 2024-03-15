@@ -1,1 +1,6 @@
-templates
+|
+|
+|---- System Files 
+                        - system.global.ui.include.controlcenter.html
+                        - system.global.ui.include.statusbar.html
+                        - system.global.ui.include.ui.html
