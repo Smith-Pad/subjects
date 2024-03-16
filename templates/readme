@@ -2,5 +2,17 @@
 |
 |---- System Files 
                         - system.global.ui.include.controlcenter.html
+                                
+                                - Allows the ability to show more details on the control center, such 
+                                  as power modes, volume rockers, and brightness rockers
+
                         - system.global.ui.include.statusbar.html
+
+                                - Allows the ability to show the left items such as the time, as well 
+                                  as the controls button which brings up the control center feature 
+                                  which shows more details and features such as power modes, 
+                                  volume rockers, as well as brightess rockers. 
+
+
+
                         - system.global.ui.include.ui.html
