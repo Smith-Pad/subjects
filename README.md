@@ -9,3 +9,4 @@ Smith-Pad Subjects engages students with tactile learning.
 ## Installation Instructions
 
 - `sudo pacman -S python-flask`
+- `pip install flask`
