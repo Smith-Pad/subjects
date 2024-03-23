@@ -11,7 +11,8 @@
      overflow-y: auto;
      overflow-x: hidden;
      -webkit-perspective: 1px;
-     perspective: 1px
+     perspective: 1px;
+     background: #323232;
  }
 
  /*********************************
