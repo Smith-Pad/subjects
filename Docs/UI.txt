@@ -1,0 +1,21 @@
+UI
+------------------
+
+In this documentation, we are going to be talking about the UI development. 
+UI is a folder inside the Subjects source code, that allows the ability to
+maintain the UI elements for the Subjects Feature in Smith-Pad, in the 
+main directory. 
+
+
+Here are the list of files in the UI/ directory:
+				  ---
+
+- horizontal-scroll-slider-container.scss
+- subjects-top-bar.scss
+- vertical-scroll-slider-container.scss
+- widget-boxes.scss
+
+
+
+Here are the description for each of the files in the UI directory: 
+
