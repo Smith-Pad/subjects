@@ -13,6 +13,10 @@ Smith-Pad Subjects engages students with tactile learning.
 
 
 
+## Debugging and Compiling SASS/SCSS Files on Unix 
+In this section, we are going to be talking about some ways to setup,
+install, debug, and compile SASS on Unix
+
 ## Debugging and Compiling SASS/SCSS Files on Windows 
 In this section, we are going to be talking about some ways to setup,
 install, debug, and compile SASS on Windows 
