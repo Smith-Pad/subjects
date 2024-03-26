@@ -21,6 +21,8 @@ install, debug, and compile SASS on macOS
 
 2. `brew install sassc`
 
+3. Then you make sure that sassc does work by using this command: `sassc`
+
 
 
 
