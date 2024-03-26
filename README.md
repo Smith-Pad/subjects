@@ -13,5 +13,6 @@ Smith-Pad Subjects engages students with tactile learning.
 
 
 
-## Debugging and Compiling SCSS Files on Windows 
-
+## Debugging and Compiling SASS/SCSS Files on Windows 
+In this section, we are going to be talking about some ways to setup,
+install, debug, and compile SASS on Windows 
