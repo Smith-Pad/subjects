@@ -11,7 +11,7 @@
   border-radius: 25px;
   animation-name: indicatoranimate;
   animation-duration: 2s;
-  zoom: 60%;
+  zoom: 80%;
   margin-top: 300px; }
 .subjects-top-bar {
   border-radius: 25px;
@@ -30,11 +30,12 @@
 .widget-boxes-init {
   padding: 16px 400px;
   transition-duration: 0.2s;
-  height: 300px;
+  height: 700px;
   border-radius: 59px;
   background: #2e2e2e;
   box-shadow: inset 50px -50px 100px #282828, inset -50px 50px 100px #343434;
-  transition-duration: 2s; }
+  transition-duration: 2s;
+  zoom: 80%; }
 
 .widget-boxes-header-title {
   margin-bottom: 100px;
@@ -42,5 +43,6 @@
   font-size: 40px; }
 
 .widget-boxes-header-description {
-  width: 350px;
-  margin-left: -180px; }
+  width: 1050px;
+  margin-left: -180px;
+  font-size: 27px; }
