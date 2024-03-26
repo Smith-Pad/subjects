@@ -17,6 +17,9 @@ Smith-Pad Subjects engages students with tactile learning.
 In this section, we are going to be talking about some ways to setup,
 install, debug, and compile SASS on macOS
 
+`brew install sassc`
+
+
 ## Debugging and Compiling SASS/SCSS Files on Windows 
 In this section, we are going to be talking about some ways to setup,
 install, debug, and compile SASS on Windows 
