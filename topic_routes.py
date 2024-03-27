@@ -20,5 +20,3 @@ for the Pliot II, this will be manually generated.
 
 '''
 
-@routingsystem.route('/utils_route') 
-def utils_route(): return render_template('testing-view.html')    
