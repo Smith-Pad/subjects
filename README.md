@@ -53,4 +53,12 @@ On Node.js implementation, here are the steps to install SASS.
 ## Experimental Instructions
 
 In this section, these instructions are considered experimental, so these instructions,
-may not be accurate in a sense. 
+may not be accurate in a sense.
+
+
+### Topic Route Test. 
+
+In this subsection, we are going to be talking about the experimental feature called 
+Topic Route Test. Topic Route Test allows the ability to test out dynamic features 
+when it comes to Subjects Generation, as normally as a sub-feature of the Smith-Pad
+Subjects Feature.
