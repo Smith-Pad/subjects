@@ -60,5 +60,8 @@ may not be accurate in a sense.
 
 In this subsection, we are going to be talking about the experimental feature called 
 Topic Route Test. Topic Route Test allows the ability to test out dynamic features 
-when it comes to Subjects Generation, as normally as a sub-feature of the Smith-Pad
-Subjects Feature.
+when it comes to Subjects Generation.
+
+For the test, the script that is used for the topic route is based on shell scripting.
+like BASH, which has user prompts what will generate a lesson plan and generate it 
+dynamically. 
