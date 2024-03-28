@@ -45,3 +45,12 @@ On Node.js implementation, here are the steps to install SASS.
 3. In the CMD or Powershell use this command: `npm install -g sass`
 
 4. In the CMD or Powershell, use this command: `sass` to make sure it works properly.
+
+
+
+
+
+## Experimental Instructions
+
+In this section, these instructions are considered experimental, so these instructions,
+may not be accurate in a sense. 
