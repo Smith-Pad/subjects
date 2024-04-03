@@ -80,6 +80,48 @@ def sample_lesson_006():
 
 
 
+
+
+
+
+
+
+
+# @app.route("/sample_lesson_0001")
+# def sample_lesson_0001():
+#         return render_template('_Lesson-Template_/index.html')
+
+
+# @app.route("/sample_lesson_0002")
+# def sample_lesson_0002():
+#         return render_template('_Lesson-Template_/game_menu.html')
+
+
+
+# @app.route("/sample_lesson_0003")
+# def sample_lesson_0003():
+#         return render_template('_Lesson-Template_/introduction.html')
+
+
+
+# @app.route("/sample_lesson_0004")
+# def sample_lesson_0004():
+#         return render_template('_Lesson-Template_/01.html')
+
+
+
+# @app.route("/sample_lesson_0005")
+# def sample_lesson_0005():
+#         return render_template('_Lesson-Template_/02.html')
+
+
+
+# @app.route("/sample_lesson_0006")
+# def sample_lesson_0006():
+#         return render_template('_Lesson-Template_/03.html')
+
+
+
 app.register_blueprint(routingsystem)
 
 
