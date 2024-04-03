@@ -13,6 +13,9 @@ Smith-Pad Subjects engages students with tactile learning.
 
 
 
+- `brew install dialog`
+
+
 ## Debugging and Compiling SASS/SCSS Files on macOS 
 In this section, we are going to be talking about some ways to setup,
 install, debug, and compile SASS on macOS
