@@ -1,0 +1,22 @@
+* Generate Topics.org file
+
+
+** Introduction
+
+In this section, we are going to be talking about the generate topics org file
+
+
+
+** Process 1
+
+Usages:
+
+~--new-template~
+
+#+BEGIN_SRC
+ ln -sf templates/_Lesson-Template/ new-template 
+#+END_SRC
+
+
+** Process 2 
+
