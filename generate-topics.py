@@ -16,9 +16,10 @@ lesson_title_file   = 0
 
 os.system("clear")
 lesson_title = input("Enter the title of the lesson:\n\n")
-
+os.system("echo '" + lesson_title  + "'")
 
 
 
 os.system("clear")
 lesson_title_file = input("Enter the title of lesson file\n\n")
+os.system("echo '" + lesson_title_file + "'")
