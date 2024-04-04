@@ -10,7 +10,13 @@ In this section, we are going to be talking about the generate topics org file
 ** Global Variables
 
 In this section, we are going to be talking about the global variables that are
-going to be used. 
+going to be used.
+
+
+
+
+
+
 
 
 ** Shell Programs used
@@ -18,3 +24,4 @@ In this section, we are going to be talking about the list of programs that are
 used for the script.
 
 - ~sed~
+- ~perl~
