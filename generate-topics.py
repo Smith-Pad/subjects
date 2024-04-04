@@ -14,6 +14,7 @@ lesson_title        = 0
 lesson_title_file   = 0
 
 
+os.system("clear")
 
 lesson_title = input("Enter the title of the lesson:\n\n")
 
