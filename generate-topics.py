@@ -17,6 +17,18 @@ lesson_title_file                       = 0
 lesson_title_find                       = 0
 lesson_title_replace                    = 0
 
+
+
+
+'''
+Inner Variables 
+----------------
+'''
+
+lesson_title_find    = ""
+lesson_title_replace = ""
+
+
 os.system("clear")
 lesson_title = input("Enter the title of the lesson:\n\n")
 os.system("echo '" + lesson_title  + "'")
