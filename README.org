@@ -3,3 +3,5 @@
 ** Introduction
 Smith-Pad Subjects engages students with tactile learning
 
+** Dependencies
+ 
