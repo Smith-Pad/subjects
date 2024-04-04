@@ -13,20 +13,6 @@ In this section, we are going to be talking about the global variables that are
 going to be used. 
 
 
-In Perl
-#+BEGIN_SRC perl
-  my $lesson_title = <STDIN>;
-  my $lesson_title_file = <STDIN>;
-#+END_SRC
-
-
-In Shell
-#+BEGIN_SRC sh
-  lesson_title_find
-  lesson_title_replace
-#+END_SRC
-
-
 ** Shell Programs used
 In this section, we are going to be talking about the list of programs that are
 used for the script.
