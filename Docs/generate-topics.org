@@ -13,8 +13,8 @@ In this section, we are going to be talking about the global variables that are
 going to be used.
 
 
-
-
+*** lesson_title
+*** lesson_title_file
 
 
 
