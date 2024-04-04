@@ -1,4 +1,4 @@
 ## generate-topics.py
 
 
-import os                                                                                           ## import os mo
+import os                                                                                           ## import os module
