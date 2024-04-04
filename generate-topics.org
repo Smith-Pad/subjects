@@ -16,3 +16,11 @@ going to be used.
   my $lesson_title = <STDIN>;
   my $lesson_title_file = <STDIN>;
 #+END_SRC
+
+
+
+** Shell Programs used
+In this section, we are going to be talking about the list of programs that are
+used for the script.
+
+- ~sed~
