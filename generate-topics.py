@@ -12,3 +12,7 @@ Global Variables
 '''
 lesson_title        = 0
 lesson_title_file   = 0
+
+
+
+lesson_title = input("hello world")
