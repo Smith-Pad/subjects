@@ -43,6 +43,8 @@ def main_menu():
 
 """
 Sample Lessons are here
+
+This is used for debugging purposes. 
 """
 
 @app.route("/sample_lesson_001")
