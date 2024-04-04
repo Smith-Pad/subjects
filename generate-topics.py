@@ -14,20 +14,6 @@ Global Variables
 lesson_title                            = 0
 lesson_title_file                       = 0
 
-lesson_title_find                       = 0
-lesson_title_file_find                  = 0
-
-
-
-
-'''
-Inner Variables 
-----------------
-'''
-
-lesson_title_find    = '<h1> hello </h1>'
-lesson_title_
-
 
 os.system("clear")
 lesson_title = input("Enter the title of the lesson:\n\n")
