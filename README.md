@@ -84,3 +84,10 @@ Subjects and developing it on WSL Ubuntu.
 
 In this subsection, we are going to be talking about experimenting Subjects on Ubuntu
 Multipass. Ubuntu Multipass is useful if you are developing Subjects on macOS. 
+
+
+Here is how to get started on that: 
+
+1. `brew install multipass`
+2. `multipass launch`
+3. `multipass shell <name>`
