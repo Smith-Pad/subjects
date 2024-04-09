@@ -27,36 +27,36 @@ This is used for debugging purposes.
 
 @app.route("/sample_lesson_001")
 def sample_lesson_001():
-        return render_template('_________NEW_TEMPLATE_ONE___________/index.html')
+        return render_template('NEW_TEMPLATE_ONE/index.html')
 
 
 @app.route("/sample_lesson_002")
 def sample_lesson_002():
-        return render_template('_________NEW_TEMPLATE_ONE___________/game_menu.html')
+        return render_template('NEW_TEMPLATE_ONE/game_menu.html')
 
 
 
 @app.route("/sample_lesson_003")
 def sample_lesson_003():
-        return render_template('_________NEW_TEMPLATE_ONE___________/introduction.html')
+        return render_template('NEW_TEMPLATE_ONE/introduction.html')
 
 
 
 @app.route("/sample_lesson_004")
 def sample_lesson_004():
-        return render_template('_________NEW_TEMPLATE_ONE___________/01.html')
+        return render_template('NEW_TEMPLATE_ONE/01.html')
 
 
 
 @app.route("/sample_lesson_005")
 def sample_lesson_005():
-        return render_template('_________NEW_TEMPLATE_ONE___________/02.html')
+        return render_template('NEW_TEMPLATE_ONE/02.html')
 
 
 
 @app.route("/sample_lesson_006")
 def sample_lesson_006():
-        return render_template('_________NEW_TEMPLATE_ONE___________/03.html')
+        return render_template('NEW_TEMPLATE_ONE/03.html')
 
 
 
