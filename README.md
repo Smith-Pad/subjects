@@ -67,6 +67,41 @@ This is experimental.
 In this section, we are going to be talking about setting up dependencies for running
 Subjects and developing it on WSL Ubuntu. 
 
+Here is how to get started on that: 
+
+1. `sudo apt update`
+
+2. `sudo apt full-upgrade`
+
+3. `sudo apt install neofetch`
+
+4. `sudo apt install fish`
+
+5. `sudo apt install micro`
+
+6. `sudo apt install python-flask*`
+
+
+
+#### Common issues in Ubuntu WSL
+
+Here are some common issues when using Ubuntu WSL
+
+- When running Flask, the default loopback address that is set to is `127.0.0.1:5000` which DOES NOT go out of the container
+
+#### Solution
+
+Here are the solutions
+
+1. In the `index.py` file, you need to change the IP address loopback from `127.0.0.1:5000` to `0.0.0.0`. This is how you change it. By default, the loopback port number is 5000.
+   
+   ```python
+   if __name__ == '__main__':
+     app.run(host='0.0.0.0')
+   ```
+
+
+
 ### Experimenting Subjects on Ubuntu Multipass
 
 In this subsection, we are going to be talking about experimenting Subjects on Ubuntu
@@ -82,7 +117,7 @@ Here is how to get started on that:
 6. `sudo apt install neofetch`
 7. `sudo apt install python-flask*`
 
-#### Common issues
+#### Common issues in Multipass
 
 Here are some common issues when using Multipass
 
@@ -116,3 +151,5 @@ Here are the solutions
    ```shell
    chromium --kiosk <ip_address>:5000
    ```
+
+
