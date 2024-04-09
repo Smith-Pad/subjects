@@ -92,3 +92,4 @@ Here is how to get started on that:
 4. `sudo apt update`
 5. `sudo apt upgrade`
 6. `sudo apt install neofetch`
+7. `sudo apt install python-flask*`
