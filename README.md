@@ -111,6 +111,8 @@ Here are the solutions
 
 
 
-3. Look the IP address of the container that you used and installed Subjects on to it, and then use `chromium --kiosk <ipaddress>:5000`
-
-
+3. Look the IP address of the container that you used and installed Subjects on to it, and then use this command: 
+   
+   ```shell
+   chromium --kiosk <ip_address>:5000
+   ```
