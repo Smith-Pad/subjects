@@ -23,13 +23,13 @@
     
 # fi
 
-if $(/etc/os-release | grep -q Arch Linux); then
+if $(cat /etc/os-release | grep -q Arch Linux); then
     echo "it works"
     sudo pacman -Syyu --noconfirm
 fi
 
 
-if $(/etc/os-release | grep -q Ubuntu); then
+if $(cat /etc/os-release | grep -q Ubuntu); then
     echo "it works"
     sudo apt update -y && sudo apt full-upgrade -y
 fi
