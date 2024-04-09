@@ -3,41 +3,19 @@ import os                                                                       
 import json                                                                     ## Import the json library
 
 from topic_routes import routingsystem 
+from topic_routes_testing import routingsystemtesting
 
 
 app = Flask(__name__)
 
-###############################################################################
-#
-#
-#
-#
-#
-#
-#
-#
-#
-###############################################################################
-#           Splash Screen View 
-###############################################################################
 @app.route("/")
 def index():
         return render_template('_________SPLASHSCREEN_______________/index.html')
-###############################################################################
-#           Main Menu Screen  
-###############################################################################
+
+
 @app.route("/main_menu")
 def main_menu():
         return render_template('main_menu.html')
-
-
-
-
-
-
-
-
-
 
 
 
@@ -86,47 +64,6 @@ def sample_lesson_006():
 
 
 
-@app.route("/sample_lesson_0001")
-def sample_lesson_0001():
-        return render_template('_________NEW_TEMPLATE_______________/_________NEW_TEMPLATE_TWO___________/index.html')
-
-
-@app.route("/sample_lesson_0002")
-def sample_lesson_0002():
-        return render_template('_________NEW_TEMPLATE_______________/_________NEW_TEMPLATE_TWO___________/game_menu.html')
-
-
-
-@app.route("/sample_lesson_0003")
-def sample_lesson_0003():
-        return render_template('_________NEW_TEMPLATE_______________/_________NEW_TEMPLATE_TWO___________/introduction.html')
-
-
-
-@app.route("/sample_lesson_0004")
-def sample_lesson_0004():
-        return render_template('_________NEW_TEMPLATE_______________/_________NEW_TEMPLATE_TWO___________/01.html')
-
-
-
-@app.route("/sample_lesson_0005")
-def sample_lesson_0005():
-        return render_template('_________NEW_TEMPLATE_______________/_________NEW_TEMPLATE_TWO___________/02.html')
-
-
-
-@app.route("/sample_lesson_0006")
-def sample_lesson_0006():
-        return render_template('_________NEW_TEMPLATE_______________/_________NEW_TEMPLATE_TWO___________/03.html')
-
-
-
-
-
-
-
-
-
 # @app.route("/sample_lesson_0001")
 # def sample_lesson_0001():
 #         return render_template('_Lesson-Template_/index.html')
@@ -163,6 +100,7 @@ def sample_lesson_0006():
 
 
 app.register_blueprint(routingsystem)
+app.register_blueprint(routingsystemtesting)
 
 
 if __name__ == '__main__':
