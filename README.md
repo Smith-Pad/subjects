@@ -81,3 +81,6 @@ Subjects and developing it on WSL Ubuntu.
 
 
 ### Experimenting Subjects on Ubuntu Multipass
+
+In this subsection, we are going to be talking about experimenting Subjects on Ubuntu
+Multipass. Ubuntu Multipass is useful if you are developing Subjects on macOS. 
