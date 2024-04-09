@@ -91,3 +91,6 @@ Here is how to get started on that:
 1. `brew install multipass`
 2. `multipass launch`
 3. `multipass shell <name>`
+4. `sudo apt update`
+5. `sudo apt upgrade`
+6. `sudo apt install neofetch`
