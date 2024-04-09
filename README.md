@@ -93,3 +93,10 @@ Here is how to get started on that:
 5. `sudo apt upgrade`
 6. `sudo apt install neofetch`
 7. `sudo apt install python-flask*`
+
+
+#### Common issues
+
+Here are some common issues when using Multipass
+
+- When running Flask, the default loopback address that is set to is `127.0.0.1:5000`, which DOES NOT go out of the container
