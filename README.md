@@ -100,3 +100,15 @@ Here are the solutions
    if __name__ == '__main__':
        app.run(host='0.0.0.0')
    ```
+
+
+
+2. Then in the macOS side, in the terminal you need to use this command: 
+   
+   ```shell
+   multipass list 
+   ```
+
+
+
+
