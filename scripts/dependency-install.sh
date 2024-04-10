@@ -24,21 +24,21 @@
 # fi
 
 if $(cat /etc/os-release | grep -q Arch Linux); then
-    echo "it works"
-    sudo pacman -Syyu --noconfirm
-    sudo pacman -S neofetch --noconfirm
-    sudo pacman -S fish --noconfirm
-    sudo pacman -S micro --noconfirm
-    sudo pacman -S python-flask --noconfirm
+        echo "it works"
+        sudo pacman -Syyu --noconfirm
+        sudo pacman -S neofetch --noconfirm
+        sudo pacman -S fish --noconfirm
+        sudo pacman -S micro --noconfirm
+        sudo pacman -S python-flask --noconfirm
 fi
 
 
 if $(cat /etc/os-release | grep -q Ubuntu); then
-    echo "it works"
-    sudo apt update -y && sudo apt full-upgrade -y
-    sudo apt install neofetch -y
-    sudo apt install fish -y
-    sudo apt install micro -y
-    sudo apt install python-flask* -y
-    sudo apt install build-essential* -y
+        echo "it works"
+        sudo apt update -y && sudo apt full-upgrade -y
+        sudo apt install neofetch -y
+        sudo apt install fish -y
+        sudo apt install micro -y
+        sudo apt install python-flask* -y
+        sudo apt install build-essential* -y
 fi
