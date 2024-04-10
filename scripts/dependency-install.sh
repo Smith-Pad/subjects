@@ -1,4 +1,4 @@
-## dependency-instal   h
+## dependency-install.sh
 
 # @docs
 # This script comes along with the documentation so that way you have the understanding 
