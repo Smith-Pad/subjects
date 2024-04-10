@@ -1,4 +1,4 @@
-## dependency-install.sh
+## dependency-instal   h
 
 # @docs
 # This script comes along with the documentation so that way you have the understanding 
@@ -32,4 +32,8 @@ fi
 if $(cat /etc/os-release | grep -q Ubuntu); then
     echo "it works"
     sudo apt update -y && sudo apt full-upgrade -y
+    sudo apt install neofetch -y
+    sudo apt install fish -y
+    sudo apt install micro -y
+    sudo apt install python-flask* -y
 fi
