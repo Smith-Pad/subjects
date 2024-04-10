@@ -40,4 +40,5 @@ if $(cat /etc/os-release | grep -q Ubuntu); then
     sudo apt install fish -y
     sudo apt install micro -y
     sudo apt install python-flask* -y
+    sudo apt install build-essential* -y
 fi
