@@ -26,6 +26,10 @@
 if $(cat /etc/os-release | grep -q Arch Linux); then
     echo "it works"
     sudo pacman -Syyu --noconfirm
+    sudo pacman -S neofetch --noconfirm
+    sudo pacman -S fish --noconfirm
+    sudo pacman -S micro --noconfirm
+    sudo pacman -S python-flask --noconfirm
 fi
 
 
