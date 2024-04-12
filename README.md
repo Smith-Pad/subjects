@@ -42,6 +42,12 @@ On Node.js implementation, here are the steps to install SASS.
 
 4. In the CMD or Powershell, use this command: `sass` to make sure it works properly.
 
+
+
+## In other news
+
+- Possibly symlinking directories for more maintainability
+
 ## Experimental Instructions
 
 In this section, these instructions are considered experimental, so these instructions,
@@ -81,8 +87,6 @@ Here is how to get started on that:
 
 6. `sudo apt install python-flask*`
 
-
-
 #### Common issues in Ubuntu WSL
 
 Here are some common issues when using Ubuntu WSL
@@ -99,8 +103,6 @@ Here are the solutions
    if __name__ == '__main__':
      app.run(host='0.0.0.0')
    ```
-
-
 
 ### Experimenting Subjects on Ubuntu Multipass
 
@@ -127,8 +129,6 @@ Here are some common issues when using Multipass
 
 Here are the solutions
 
-
-
 1. In the `index.py` file, you need to change the IP address loopback from `127.0.0.1:5000` to `0.0.0.0`. This is how you change it. By default, the loopback port number is 5000. 
    
    ```python
@@ -136,15 +136,11 @@ Here are the solutions
        app.run(host='0.0.0.0')
    ```
 
-
-
 2. Then in the macOS side, in the terminal you need to use this command: 
    
    ```shell
    multipass list 
    ```
-
-
 
 3. Look the IP address of the container that you used and installed Subjects on to it, and then use this command: 
    
