@@ -20,7 +20,3 @@ This is where the routes will dynamically be generated here. For now,
 for the Pliot II, this will be manually generated. 
 
 '''
-
-@routingsystem.route("/hello")
-def hello():
-        return render_template("hello.html")
