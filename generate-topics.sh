@@ -13,3 +13,7 @@ echo "$new_line"
 sed -n "${new_line}p" topic_routes.py
 
 
+echo """
+it works
+
+""" >> topic_routes.py
