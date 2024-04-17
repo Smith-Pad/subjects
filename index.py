@@ -3,7 +3,6 @@ import os                                                                       
 import json                                                                     ## Import the json library
 
 from topic_routes import routingsystem
-from topic_routes import routingtests
 
 
 app = Flask(__name__)
