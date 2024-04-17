@@ -18,5 +18,11 @@ def main_menu():
 
 
 
+@app.route('/ui_topic_test')
+def ui_topic_test():
+        return render_template('template/02.html')
+
+
+
 if __name__ == '__main__':
         app.run(debug=True)
