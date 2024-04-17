@@ -2,7 +2,8 @@ from flask import Flask, redirect,url_for,render_template                       
 import os                                                                       ## Import the standard OS library
 import json                                                                     ## Import the json library
 
-from topic_routes import routingsystem 
+from topic_routes import routingsystem
+from topic_testing import routingtests
 
 
 app = Flask(__name__)
