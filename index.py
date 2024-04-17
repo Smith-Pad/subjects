@@ -3,6 +3,7 @@ import os                                                                       
 import json                                                                     ## Import the json library
 
 from topic_routes import routingsystem
+from topic_routes import routingtests
 
 
 app = Flask(__name__)
@@ -16,9 +17,6 @@ def index():
 def main_menu():
         return render_template('main_menu.html')
 
-
-
-app.register_blueprint(routingsystem)
 
 
 if __name__ == '__main__':
