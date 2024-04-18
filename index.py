@@ -24,5 +24,11 @@ def ui_topic_test_splashscreen():
 
 
 
+@app.route('/ui_topic_test_gamemenu')
+def ui_topic_test_gamemenu():
+        return render_template('template/game_menu.html')
+
+
+
 if __name__ == '__main__':
         app.run(debug=True)
