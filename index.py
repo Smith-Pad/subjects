@@ -21,5 +21,11 @@ def main_menu():
 def game_ui_test():
         return render_template('template-new-refreshed/index.html')
 
+
+
+@app.route('/game_ui_test_begin')
+def game_ui_test_begin():
+        return render_template('template-new-refreshed/begin.html')
+
 if __name__ == '__main__':
         app.run(debug=True)
