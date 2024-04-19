@@ -1,14 +1,23 @@
 .widget-boxes-init {
-        padding: 16px 400px;
-        transition-duration: 0.2s;
-        height: 700px;
-        border-radius: 59px;
-        background: #2e2e2e;
-        box-shadow: inset 50px -50px 100px #282828, inset -50px 50px 100px #343434;
-        transition-duration: 2s;
-        zoom: 80%;
+    padding: 16px 400px;
+    transition-duration: 0.2s;
+    height: 700px;
+    border-radius: 59px;
+    background: #2e2e2e;
+    box-shadow: inset 50px -50px 100px #282828, inset -50px 50px 100px #343434;
+    transition-duration: 0.2s;
+    zoom: 80%;
 }
 
 
-.widget-boxes-header-title{margin-bottom: 100px; margin-left: -180px; font-size: 40px;}
-.widget-boxes-header-description{width: 1050px; margin-left: -180px; font-size: 27px;} 
+.widget-boxes-header-title {
+    margin-bottom: 100px;
+    margin-left: -180px;
+    font-size: 40px;
+}
+
+.widget-boxes-header-description {
+    width: 1050px;
+    margin-left: -180px;
+    font-size: 27px;
+}
