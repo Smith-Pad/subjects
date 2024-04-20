@@ -6,3 +6,4 @@ subjects-middle-bar.scss
 subjects-top-bar.scss
 vertical-scroll-slider-container.scss
 widget-boxes.scss
+global.scss
