@@ -27,5 +27,27 @@ def game_ui_test():
 def game_ui_test_begin():
         return render_template('template-new-refreshed/begin.html')
 
+
+
+@app.route('/game_ui_test_01')
+def game_ui_test_01():
+        return render_template('template-new-refreshed/01.html')
+
+
+
+@app.route('/game_ui_test_02')
+def game_ui_test_02():
+        return render_template('template-new-refreshed/02.html')
+
+
+
+
+@app.route('/game_ui_test_03')
+def game_ui_test_03():
+        return render_template('template-new-refreshed/03.html')
+
+
+
+
 if __name__ == '__main__':
         app.run(debug=True)
