@@ -8,4 +8,10 @@ to dynamically create the lessons or manually create the lessons in a
 more dynamic way. 
 
 
+For now, this uses the bash script to manually prompt the user. We know 
+what you are thinking. This is kinda "old fashioned", but this is used 
+to demostrate what is like to create subject generations.
+
+
+
 
