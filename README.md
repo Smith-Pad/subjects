@@ -42,13 +42,9 @@ On Node.js implementation, here are the steps to install SASS.
 
 4. In the CMD or Powershell, use this command: `sass` to make sure it works properly.
 
-
-
 ## In other news
 
-- Possibly symlinking directories for more maintainability
-
-- 
+- Creating Scripts to make it more efficient to maintain the Subjects feature of the Smith-Pad platform 
 
 ## Experimental Instructions
 
@@ -149,5 +145,3 @@ Here are the solutions
    ```shell
    chromium --kiosk <ip_address>:5000
    ```
-
-
