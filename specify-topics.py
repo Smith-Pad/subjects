@@ -37,4 +37,3 @@ EG:
 '''
 fold_variable = input("Please specify the subject generation [[[[- = space]]]]")
 os.system(f"ln -sf templates/{fold_variable} .")
-os.system(f"echo '{fold_variable}' >> .gitignore")
