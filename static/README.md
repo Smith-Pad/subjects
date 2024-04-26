@@ -7,3 +7,9 @@ In this documentation this describes the syntax notes for each of the files insi
 ## Subjects UI Elements
 
 In this section, we are going to be talking about the Subjects UI Elements and the use-cases for it. 
+
+
+
+## NEW Updates:
+
+The directory structure may be reorganized for reorganization purposes lol
