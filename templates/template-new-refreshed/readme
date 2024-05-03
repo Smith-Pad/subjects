@@ -7,7 +7,16 @@
                       begin.html
 
 
-                      
+
                       prompt
+                                        - Configurations for the prompt view
+
+
+
                       gradient-config
+                                        - Configuration for the gradients for each view
+
+
                       controls
+
+                                        - Controls configuration for each view. 
