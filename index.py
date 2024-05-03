@@ -54,5 +54,11 @@ def game_ui_test_04():
 
 
 
+@app.route('/game_ui_test_05')
+def game_ui_test_05():
+        return render_template('template-new-refreshed/05.html')
+
+
+
 if __name__ == '__main__':
         app.run(debug=True)
