@@ -61,7 +61,7 @@ def game_ui_test_05():
 
 
 @app.route('/game_ui_test_06')
-def game_ui_test_05():
+def game_ui_test_06():
         return render_template('template-new-refreshed/06.html')
 
 
