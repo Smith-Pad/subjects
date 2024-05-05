@@ -12,10 +12,16 @@ Smith-Pad Subjects engages students with tactile learning.
 
 ## Installation Instructions
 
+### In Arch Linux:
+
 - `sudo pacman -S python-flask`
-- `pip install flask`
 - `sudo pacman -S dialog`
+
+
+### In macOS: 
+
 - `brew install dialog`
+
 
 ## Debugging and Compiling SASS/SCSS Files on macOS
 
