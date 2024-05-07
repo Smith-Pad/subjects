@@ -31,7 +31,8 @@ def game_ui_test_begin():
 
 @app.route('/game_ui_test_01')
 def game_ui_test_01():
-        return render_template('template-new-refreshed/01.html')
+        variable = "hello world"
+        return render_template('template-new-refreshed/01.html', variable=variable)
 
 
 
