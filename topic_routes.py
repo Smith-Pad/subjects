@@ -42,3 +42,38 @@ def index():
 def index():
 	return render_template("hello.html")
 
+
+@app.route("/sdf")
+def index():
+	return render_template("hello.html")
+
+
+@app.route("/sdf")
+def index():
+	return render_template("hello.html")
+
+
+@app.route("/sdf")
+def index():
+	return render_template("hello.html")
+
+
+@app.route("/sdf")
+def index():
+	return render_template("hello.html")
+
+
+@app.route("/sdf")
+def index():
+	return render_template("hello.html")
+
+
+@app.route("/sdf")
+def index():
+	return render_template("hello.html")
+
+
+@app.route("/Alphabet Song")
+def index():
+	return render_template("hello.html")
+
