@@ -20,19 +20,16 @@ $$$$$$$$\ $$\   $$\     $$\
 lesson_title = input("Input a Lesson Title Here\n\n\n---\n\n----\t\t")
 
 
-
 with open('topic_routes.py', 'a') as file:
     file.write('\n')  
-    file.write(helloworlds)
-    file.write('@app.route(')')
+    file.write('@app.route("/' + lesson_title + '")\n')
     file.write('def index():\n')
-    file.write('\t\treturn render_template("hello world")')
-    file.write('\n\n\n')
-
-
-variable1 = "hello worlds"
-
-
-with open('topic_routes.py', 'a') as file: 
+    file.write('\treturn render_template("hello.html")\n')
     file.write('\n')
-    file.write('hello' + variable1)
+
+# variable1 = "hello worlds"
+
+
+#with open('topic_routes.py', 'a') as file: 
+#    file.write('\n')
+#    file.write('hello' + variable1)
