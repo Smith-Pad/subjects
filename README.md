@@ -9,6 +9,8 @@ Smith-Pad Subjects engages students with tactile learning.
 ## Dependencies
 
 - python-flask
+- ollama
+
 
 ## Installation Instructions
 
