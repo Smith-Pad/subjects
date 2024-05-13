@@ -17,7 +17,21 @@ $$$$$$$$\ $$\   $$\     $$\
                                                                                                                           
 ''')
 
+
+
+'''
+-----
+@docs
+-----
+'''
+
 lesson_title = input("Input a Lesson Title Here\n\n\n---\n\n----\t\t")
+
+'''
+------
+@docs
+------
+'''
 
 
 with open('topic_routes.py', 'a') as file:
