@@ -11,3 +11,34 @@ from flask import Blueprint, render_template
 
 ## Initialize the routing system blueprint for the subjects route
 routingsystem = Blueprint('routingsystem', __name__, template_folder='lesson-topics')
+
+
+
+@app.route("/")
+def index():
+		return render_template("hello world")
+
+
+
+@app.route("/sdf") 
+def index():
+		return render_template("hello world")
+
+
+
+@app.route("/sdf") 
+def index():
+		return render_template("hello world")
+
+
+
+@app.route("/sef") 
+def index():
+		return render_template("hello world")
+
+
+
+@app.route("/sdf")
+def index():
+	return render_template("hello.html")
+
