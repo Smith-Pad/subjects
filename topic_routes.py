@@ -11,12 +11,3 @@ from flask import Blueprint, render_template
 
 ## Initialize the routing system blueprint for the subjects route
 routingsystem = Blueprint('routingsystem', __name__, template_folder='lesson-topics')
-
-
-
-
-'''
-This is where the routes will dynamically be generated here. For now, 
-for the Pliot II, this will be manually generated. 
-
-'''
