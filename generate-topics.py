@@ -7,7 +7,7 @@ import os
 VARIABLE CONFIGURATIONS
 ---------------------------
 '''
-
+MODEL_TYPE = "gemma"                                                                                                 ## This is where you are able to set the model 
 
 
 print('''
@@ -58,14 +58,10 @@ In this section, this allows the ability to dynamically ask LLM's
 
 '''
 
-response = ollama.chat(model='gemma', messages=[
+response = ollama.chat(model=MODEL_TYPE, messages=[
   {
     'role': 'user',
     'content': 'Can you give me an introductionary sentence about ' + lesson_title + '',
   },
 ])
 print(response['message']['content'])
-
-
-os.system('touch hello-output.txt')
-os.system('echo "' + content '"')
