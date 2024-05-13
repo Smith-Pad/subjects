@@ -42,7 +42,11 @@ with open('topic_routes.py', 'a') as file:
     file.write('\n')
 
 
-
+'''
+------
+@docs
+------
+'''
 
 response = ollama.chat(model='gemma', messages=[
   {
