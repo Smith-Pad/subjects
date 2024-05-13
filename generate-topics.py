@@ -28,3 +28,16 @@ with open('topic_routes.py', 'a') as file:
     file.write('\n')
 
 
+
+
+response = ollama.chat(model='gemma', messages=[
+  {
+    'role': 'user',
+    'content': 'Can you give me an introductionary sentence about ' + lesson_title + '',
+  },
+])
+print(response['message']['content'])
+
+
+os.system('touch hello-output.txt')
+os.system('echo "' + content '"')
