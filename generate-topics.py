@@ -21,7 +21,17 @@ lesson_title = input("Input a Lesson Title Here\n\n\n---\n\n----\t\t")
 
 
 
-variable1 = "variable"
+with open('topic_routes.py', 'a') as file:
+    file.write('\n')  
+    file.write(helloworlds)
+    file.write('@app.route(')')
+    file.write('def index():\n')
+    file.write('\t\treturn render_template("hello world")')
+    file.write('\n\n\n')
+
+
+variable1 = "hello worlds"
+
 
 with open('topic_routes.py', 'a') as file: 
     file.write('\n')
