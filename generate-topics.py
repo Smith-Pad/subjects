@@ -2,6 +2,14 @@
 import ollama
 import os
 
+'''
+---------------------------
+VARIABLE CONFIGURATIONS
+---------------------------
+'''
+
+
+
 print('''
 
                                                                                                                           
@@ -46,6 +54,8 @@ with open('topic_routes.py', 'a') as file:
 ------
 @docs
 ------
+In this section, this allows the ability to dynamically ask LLM's 
+
 '''
 
 response = ollama.chat(model='gemma', messages=[
