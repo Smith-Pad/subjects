@@ -27,9 +27,4 @@ with open('topic_routes.py', 'a') as file:
     file.write('\treturn render_template("hello.html")\n')
     file.write('\n')
 
-# variable1 = "hello worlds"
 
-
-#with open('topic_routes.py', 'a') as file: 
-#    file.write('\n')
-#    file.write('hello' + variable1)
