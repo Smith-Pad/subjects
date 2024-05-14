@@ -5,18 +5,18 @@ import shutil
 
 
 
-lesson_title = input("Input a Lesson Title Here: ")
+# lesson_title = input("Input a Lesson Title Here: ")
 
-template_dir = "templates/template-new-refreshed"
-
-
-new_dir = "templates/" + lesson_title
+# template_dir = "templates/template-new-refreshed"
 
 
-shutil.copytree(template_dir, new_dir)
+# new_dir = "templates/" + lesson_title
 
 
-os.rename(new_dir, "templates/" + lesson_title)
+# shutil.copytree(template_dir, new_dir)
+
+
+# os.rename(new_dir, "templates/" + lesson_title)
 
 
 
@@ -30,6 +30,12 @@ os.rename(new_dir, "templates/" + lesson_title)
 
 # os.system("sed -i '' \"s/<p align='center'>hello<\/p>/<p align='center'>" + lesson_title_file + "<\/p>/g\" testing.html")
 
+os.system("sed -i '' \"s/hello/world/g\" testout.txt")
+
+
+################################################################
+##              This is for the topic route
+################################################################
 
 # with open('topic_routes.py', 'a') as file:
 #     file.write('\n')  
