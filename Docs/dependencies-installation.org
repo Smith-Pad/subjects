@@ -1,1 +1,16 @@
 * Dependencies-Installation
+
+** Introduction
+Welcome to this section of the documentation. In this documentation,
+we are going to be talking about the dependencies, as to what are
+the dependencies, and how to install the dependencies.
+
+
+** On MacOS - Dependencies Requirements
+In this section, we are going to be talking about the list of
+dependencies requirements on macOS
+
+- Python
+- Ollama
+- PHP
+- Brew Package Manager
