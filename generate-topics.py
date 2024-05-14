@@ -30,6 +30,14 @@ import shutil
 
 # os.system("sed -i '' \"s/<p align='center'>hello<\/p>/<p align='center'>" + lesson_title_file + "<\/p>/g\" testing.html")
 
+
+
+################################################################
+##              This used to find and replace the files
+################################################################
+
+
+
 os.system("sed -i '' \"s/hello/world/g\" testout.txt")
 
 
