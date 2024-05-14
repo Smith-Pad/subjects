@@ -20,6 +20,17 @@ os.rename(new_dir, "templates/" + lesson_title)
 
 
 
+
+# lesson_title_file = input("Enter the title of lesson file\n\n")
+# os.system("sed -i '' 's/<h1>hello<\/h1>/" + "<h1>" + lesson_title_file + "<\/h1>/g' testing.html")
+
+
+
+
+
+# os.system("sed -i '' \"s/<p align='center'>hello<\/p>/<p align='center'>" + lesson_title_file + "<\/p>/g\" testing.html")
+
+
 # with open('topic_routes.py', 'a') as file:
 #     file.write('\n')  
 #     file.write('@app.route("/' + lesson_title + '")\n')
