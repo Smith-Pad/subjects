@@ -6,9 +6,16 @@ import shutil
 
 
 lesson_title = input("Input a Lesson Title Here: ")
+
 template_dir = "templates/template-new-refreshed"
+
+
 new_dir = "templates/" + lesson_title
+
+
 shutil.copytree(template_dir, new_dir)
+
+
 os.rename(new_dir, "templates/" + lesson_title)
 
 
