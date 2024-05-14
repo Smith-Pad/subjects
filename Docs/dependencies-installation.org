@@ -14,3 +14,11 @@ dependencies requirements on macOS
 - Ollama
 - PHP
 - Brew Package Manager
+
+
+** On Windows - Dependencies Requirements
+In this section, we are going to be talking about the list of
+dependencies requirements on Windows
+
+- Python
+- Ollama
