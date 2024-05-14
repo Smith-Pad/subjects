@@ -33,7 +33,7 @@ $$$$$$$$\ $$\   $$\     $$\
 -----
 '''
 
-lesson_title = input("Input a Lesson Title Here\n\n\n---\n\n----\t\t")
+lesson_title = input("Input a Lesson Title Here:")
 
 '''
 ------
