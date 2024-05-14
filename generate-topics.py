@@ -7,7 +7,7 @@ import os
 VARIABLE CONFIGURATIONS
 ---------------------------
 '''
-MODEL_TYPE = "gemma"                                                                                                 ## This is where you are able to set the model 
+MODEL_TYPE = "gemma"                     ## This is where you are able to set the model 
 
 
 print('''
