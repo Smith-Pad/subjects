@@ -64,4 +64,15 @@ response = ollama.chat(model=MODEL_TYPE, messages=[
     'content': 'Can you give me an introductionary sentence about ' + lesson_title + '',
   },
 ])
-print(response['message']['content'])
+
+
+'''
+------
+@docs
+------
+'''
+
+
+
+print(response['message']['content']) 
+
