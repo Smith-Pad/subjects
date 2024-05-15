@@ -38,7 +38,8 @@ import shutil
 
 
 
-os.system("sed -i '' \"s/hello/world/g\" testout.txt")
+# os.system("sed -i '' \"s/generate starts here./generate starts now/g\" templates/main_menu.html")
+
 
 
 ################################################################
@@ -52,6 +53,9 @@ os.system("sed -i '' \"s/hello/world/g\" testout.txt")
 #     file.write('\treturn render_template("hello.html")\n')
 #     file.write('\n')
 
+
+## This generates a widget button for the main_menu.html for the topic
+os.system("perl -pi -e 's{generate starts here}{<div class=\"widget-boxes-init\"><div class=\"widget-boxes-header-title\"><h1> Hello world </h1><div class=\"widget-boxes-header-description\"><h2> Blah blah blah </h2></div></div></div> }g' templates/main_menu.html")
 
 
 # response = ollama.chat(model=MODEL_TYPE, messages=[
