@@ -36,13 +36,9 @@ import shutil
 
 
 
-# os.system("sed -i '' \"s/generate starts here./generate starts now/g\" templates/main_menu.html")
 
 
 
-################################################################
-##              This is for the topic route
-################################################################
 
 
 
@@ -51,6 +47,9 @@ os.system("perl -pi -e 's{generate starts here}{<div class=\"widget-boxes-init\"
 
 
 
+################################################################
+##              This is for the topic route
+################################################################
 
 
 
@@ -83,3 +82,4 @@ os.system("perl -pi -e 's{generate starts here}{<div class=\"widget-boxes-init\"
 
 # lesson_title_file = input("Enter the title of lesson file\n\n")
 # os.system("sed -i '' 's/<h1>hello<\/h1>/" + "<h1>" + lesson_title_file + "<\/h1>/g' testing.html")
+# os.system("sed -i '' \"s/generate starts here./generate starts now/g\" templates/main_menu.html")
