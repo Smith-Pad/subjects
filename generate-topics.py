@@ -33,7 +33,7 @@ import shutil
 
 
 ################################################################
-##              This used to find and replace the files
+##        This is used to update the main_menu.html content
 ################################################################
 
 
