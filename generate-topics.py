@@ -21,8 +21,6 @@ import shutil
 
 
 
-# lesson_title_file = input("Enter the title of lesson file\n\n")
-# os.system("sed -i '' 's/<h1>hello<\/h1>/" + "<h1>" + lesson_title_file + "<\/h1>/g' testing.html")
 
 
 
@@ -74,3 +72,14 @@ os.system("perl -pi -e 's{generate starts here}{<div class=\"widget-boxes-init\"
 
 
 # print(response['message']['content']) 
+
+
+
+################################################################
+##              NOT NEEDED
+################################################################
+
+
+
+# lesson_title_file = input("Enter the title of lesson file\n\n")
+# os.system("sed -i '' 's/<h1>hello<\/h1>/" + "<h1>" + lesson_title_file + "<\/h1>/g' testing.html")
