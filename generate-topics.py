@@ -46,6 +46,16 @@ import shutil
 ##              This is for the topic route
 ################################################################
 
+
+
+## This generates a widget button for the main_menu.html for the topic
+os.system("perl -pi -e 's{generate starts here}{<div class=\"widget-boxes-init\"><div class=\"widget-boxes-header-title\"><h1> Hello world </h1><div class=\"widget-boxes-header-description\"><h2> Blah blah blah </h2></div></div></div> }g' templates/main_menu.html")
+
+
+
+
+
+
 # with open('topic_routes.py', 'a') as file:
 #     file.write('\n')  
 #     file.write('@app.route("/' + lesson_title + '")\n')
@@ -53,9 +63,6 @@ import shutil
 #     file.write('\treturn render_template("hello.html")\n')
 #     file.write('\n')
 
-
-## This generates a widget button for the main_menu.html for the topic
-os.system("perl -pi -e 's{generate starts here}{<div class=\"widget-boxes-init\"><div class=\"widget-boxes-header-title\"><h1> Hello world </h1><div class=\"widget-boxes-header-description\"><h2> Blah blah blah </h2></div></div></div> }g' templates/main_menu.html")
 
 
 # response = ollama.chat(model=MODEL_TYPE, messages=[
