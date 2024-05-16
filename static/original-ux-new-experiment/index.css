@@ -26,28 +26,6 @@ html {
 }
 
 
-/* .bar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    animation-name: slidethree;
-    animation-duration: 3s;
-    transition-duration: 0.2s;
-}
-
-
-
-.bar a:active {
-    background: rgb(4, 145, 58);
-    color: white;
-    font-size: 80px;
-    border-radius: 10px;
-} */
-
-
 
 
 .indicator.is-off {
