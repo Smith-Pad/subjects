@@ -42,10 +42,10 @@ os.system("perl -pi -e 's{generate starts here}{<div class=\"widget-boxes-init\"
 
 
 
-# template_dir = "templates/template-new-refreshed"
-# new_dir = "templates/" + lesson_title
-# shutil.copytree(template_dir, new_dir)
-# os.rename(new_dir, "templates/" + lesson_title)
+template_dir = "templates/template-new-refreshed"
+new_dir = "templates/" + lesson_title
+shutil.copytree(template_dir, new_dir)
+os.rename(new_dir, "templates/" + lesson_title)
 
 
 
