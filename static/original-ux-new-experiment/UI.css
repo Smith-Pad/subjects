@@ -5,6 +5,9 @@
   ___) || | | | | || || |_ | | | |    |  __/| (_| || (_| |
  |____/ |_| |_| |_||_| \__||_| |_|    |_|    \__,_| \__,_| UI 
   A FOIL UI Based Framework for the Smith Pad                            */
+
+
+
  body {
      font-family: Arial;
      margin: 40;
@@ -12,60 +15,5 @@
      overflow-x: hidden;
      -webkit-perspective: 1px;
      perspective: 200000px;
-     background-color: #fff;
- }
-
-
- /********************************************
-                
-        Classes for Layouts 
-
-/*******************************************/
-
- .layout {
-     background-color: rgb(95, 95, 95);
-     color: white;
-     padding: 10em 1em;
-     position: relative;
-     z-index: 2;
-
-     animation-name: layouts;
-     animation-duration: 2s;
-
-
- }
-
-
-
- .button {
-     background-color: black;
-     padding: 16px 43px;
-     border: none;
-     color: white;
-     font-size: 18px;
-     text-decoration: none;
-     animation-name: foil-buttons-effect;
-     animation-duration: 2s;
-     margin: 20px;
- }
-
- /* Table */
- table,
- td {
-     width: 82em;
-     height: 32em;
-
- }
-
- th {
-     font-size: 30px;
- }
-
- thead {
-     border-radius: 40px;
- }
-
- tfoot {
-     background-color: #333;
-     color: #fff;
+     background-color: #2c2c2c;
  }
