@@ -16,35 +16,6 @@
  }
 
 
-
- /* Keyframes */
- @keyframes layouts {
-     from {
-         padding: 30em 1em;
-     }
-
-     to {
-         padding: auto;
-     }
- }
-
- @keyframes foil-buttons-effect {
-     from {
-
-         font-size: 500%;
-
-     }
- }
-
- @keyframes foil-buttons-no-animate-effect {
-     from {
-         padding: 100px 100px;
-
-
-     }
- }
-
-
  /********************************************
                 
         Classes for Layouts 
