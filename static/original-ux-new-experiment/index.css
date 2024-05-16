@@ -3,18 +3,6 @@
 @import './background.css';
 
 
-body,
-html {
-    animation-name: top;
-    animation-duration: 2s;
-    color: white;
-}
-
-
-
-
-
-
 
 .bar {
     overflow: hidden;
