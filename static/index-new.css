@@ -48,14 +48,12 @@
 .subjects-top-bar {
   border-radius: 25px;
   background: linear-gradient(145deg, #363636, #2d2d2d);
-  box-shadow: 50px 50px 100px #141414, -50px -50px 100px #505050;
   animation-name: indicatoranimate;
   animation-duration: 2s;
   zoom: 60%; }
 .vertical-scroll-slider-container {
   border-radius: 50px;
   background: #2e2e2e;
-  box-shadow: 20px 20px 60px #121212, -20px -20px 60px #4a4a4a;
   padding: 16px 32px;
   max-height: 700px;
   overflow-y: auto; }
@@ -76,5 +74,5 @@
 
 .widget-boxes-header-description {
   width: 1050px;
-  margin-left: -180px;
+  margin-left: 80px;
   font-size: 27px; }
