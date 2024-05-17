@@ -5,16 +5,10 @@
 
 
 .bar {
-    overflow: hidden;
-    background-color: transparent;
-    position: fixed;
-    margin-top: 900px;
-    top: 0;
-    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-
-
-
 
 .indicator.is-off {
     border-radius: 25px;
