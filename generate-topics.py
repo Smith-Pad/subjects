@@ -14,16 +14,23 @@ lesson_title = input("Input a Lesson Title Here: ")
 ##        This is used to update the main_menu.html content
 ################################################################
 
-
-
-
-
-
 ################################################################
 ##   GLOBAL TRAINING VARIABLES
 ################################################################
 
+
+'''
+------
+@docs
+------
+
+This is where you are able to change the type of model here. 
+'''
+
 MODEL_TYPE = "gemma"
+
+
+
 MAIN_MENU_WIDGET_BUTTON_DESCRIPTION_QUESTION = "Can you give me an summary sentence on the "
 LEVEL_1 = "Explain like I'm a five year old learning how to" + MAIN_MENU_WIDGET_BUTTON_DESCRIPTION_QUESTION
 
@@ -38,11 +45,18 @@ response = ollama.chat(model=MODEL_TYPE, messages=[
 output_html = response['message']['content']
 
 ## This generates a widget button for the main_menu.html for the topic
-# lesson_title
-# str(output_html)
-os.system("perl -pi -e 's{generate starts here}{hello world}g' templates/main_menu.html")
+os.system("perl -pi -e 's{generate starts here}{<div class=\"widget-boxes-init\"><div class=\"widget-boxes-header-title\"><h1>" + lesson_title + "</h1><div class=\"widget-boxes-header-description\">" + str(output_html)  + "<h2> Blah blah blah </h2> <button class=''osui-button''>lesson title</button></div></div></div> \n\n generate starts here}g' templates/main_menu.html")
 
 
+
+
+
+'''
+@docs 
+-------
+This allows the ability to copy the template-new-refreshed to the 
+specified subject generation. 
+'''
 
 template_dir = "templates/template-new-refreshed"
 new_dir = "templates/" + lesson_title
@@ -117,6 +131,7 @@ os.rename(new_dir, "templates/" + lesson_title)
 
 
 
+# os.system("perl -pi -e 's{generate starts here}{hello world}g' templates/main_menu.html")
 
 
 
