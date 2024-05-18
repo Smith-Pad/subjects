@@ -38,7 +38,8 @@ response = ollama.chat(model=MODEL_TYPE, messages=[
 output_html = response['message']['content']
 
 ## This generates a widget button for the main_menu.html for the topic
-os.system("perl -pi -e 's{generate starts here}{<div class=\"widget-boxes-init\"><div class=\"widget-boxes-header-title\"><h1>" + lesson_title + "</h1><div class=\"widget-boxes-header-description\">" + str(output_html)  + "<h2> Blah blah blah </h2></div></div></div> \n\n generate starts here}g' templates/main_menu.html")
+# os.system("perl -pi -e 's{generate starts here}{<div class=\"widget-boxes-init\"><div class=\"widget-boxes-header-title\"><h1>" + lesson_title + "</h1><div class=\"widget-boxes-header-description\">" + str(output_html)  + "<h2> Blah blah blah </h2></div></div></div> \n\n generate starts here}g' templates/main_menu.html")
+os.system("perl -pi -e 's{generate starts here}{hello world}g' templates/main_menu.html")
 
 
 
