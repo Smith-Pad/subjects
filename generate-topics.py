@@ -18,15 +18,10 @@ This is where you are able to change the type of model here.
 MODEL_TYPE = "gemma"
 
 
-
-MAIN_MENU_WIDGET_BUTTON_DESCRIPTION_QUESTION = "Can you give me an summary sentence on the "
-LEVEL_1 = "Explain like I'm a five year old learning how to" + MAIN_MENU_WIDGET_BUTTON_DESCRIPTION_QUESTION
-
-
 response = ollama.chat(model=MODEL_TYPE, messages=[
   {
     'role': 'user',
-    'content': MAIN_MENU_WIDGET_BUTTON_DESCRIPTION_QUESTION + lesson_title + LEVEL_1,
+    'content': "Can you give me a summary sentence on the" + lesson_title +  "Explain like I'm a five year old learning how to"
   },
 ])
 
