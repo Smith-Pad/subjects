@@ -10,9 +10,12 @@ model_type = "gemma"
 
 # Chat with Ollama using specified model type
 widget_menu_response = ollama.chat(model=model_type, messages=[{'role': 'user','content': "Can you give me a summary sentence on the " + lesson_title + "? Explain like I'm a five year old learning how to." },])
+topic_screen_response = ollama.chat(model=model_type, messages=[{'role': 'user','content': "Can you give me an introductional sentence" },])
+
 
 # Extract HTML content from widget menu response
 widget_menu_response_output = widget_menu_response['message']['content']
+topic_screen_response_output = widget_menu_response['message']['content']
 
 # Update HTML file with lesson title and content
 os.system("perl -pi -e 's{generate starts here}{<div class=\"widget-boxes-init\"><div class=\"widget-boxes-header-title\"><h1>" + lesson_title + "</h1><div class=\"widget-boxes-header-description\">" + str(widget_menu_response_output)  + "<h2> Blah blah blah </h2> <button class=''osui-button''>lesson title</button></div></div></div> \n\n generate starts here}g' templates/main_menu.html")
