@@ -9,4 +9,8 @@
 #+END_SRC
 
 
+** Copy the template
 
+#+BEGIN_SRC python
+  os.system("cp -R template-new-refreshed templates/helloworld")
+#+END_SRC
