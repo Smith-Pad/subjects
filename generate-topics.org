@@ -1,0 +1,12 @@
+* Generate Topics
+
+** Importing the libraries
+
+#+BEGIN_SRC python
+  import ollama
+  import os
+  import shutil
+#+END_SRC
+
+
+
