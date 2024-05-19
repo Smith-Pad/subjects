@@ -32,6 +32,17 @@ output_html = widget_menu_response['message']['content']
 os.system("perl -pi -e 's{generate starts here}{<div class=\"widget-boxes-init\"><div class=\"widget-boxes-header-title\"><h1>" + lesson_title + "</h1><div class=\"widget-boxes-header-description\">" + str(output_html)  + "<h2> Blah blah blah </h2> <button class=''osui-button''>lesson title</button></div></div></div> \n\n generate starts here}g' templates/main_menu.html")
 
 
+'''
+------
+@docs
+------
+This may be used for easier maintainability 
+s = FIND
+g = REPLACE
+
+
+
+'''
 
 # os.system("perl -pi -e 's{generate starts here}{"
 #           "<div class=\"widget-boxes-init\">"
