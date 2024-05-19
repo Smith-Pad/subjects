@@ -6,7 +6,6 @@ import shutil
 
 
 lesson_title = input("Input a Lesson Title Here: ")
-# os.system("sed -i '' \"s/<p align='center'>hello<\/p>/<p align='center'>" + lesson_title_file + "<\/p>/g\" testing.html")
 
 '''
 ------
