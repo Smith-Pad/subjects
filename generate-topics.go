@@ -8,5 +8,4 @@ import "os"                                             // Import the os thing
 
 func main() {
     fmt.Println("Generate-Topics-Please")
-
 }
