@@ -1,27 +1,31 @@
-* Generate Topics.org file
+* Generate Topics
+
+** Importing the libraries
+
+#+BEGIN_SRC python
+  import ollama
+  import os
+  import shutil
+#+END_SRC
 
 
-** Introduction
+** Copy the template
 
-In this section, we are going to be talking about the generate topics org file
-
-
-
-** Global Variables
-
-In this section, we are going to be talking about the global variables that are
-going to be used.
-
-
-*** lesson_title
-*** lesson_title_file
-
+#+BEGIN_SRC python
+  os.system("cp -R template-new-refreshed templates/abouttorename")
+#+END_SRC
 
 
 
-** Shell Programs used
-In this section, we are going to be talking about the list of programs that are
-used for the script.
+**  Prompt the user to enter the title
 
-- ~sed~
-- ~perl~
+#+BEGIN_SRC python
+lesson_title = input("Enter the topic name")
+#+END_SRC
+
+
+** Replace Spaces to underscores for recognition
+
+#+BEGIN_SRC python
+lesson_title = lesson_title.replace(" ", "_")
+#+END_SRC
