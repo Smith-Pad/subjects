@@ -1,1 +1,10 @@
 * Generate topics go edition thing
+
+
+** Importing Libraries
+
+#+BEGIN_SRC go
+import (
+    "os/exec"
+)
+#+END_SRC
