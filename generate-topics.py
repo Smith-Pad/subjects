@@ -13,4 +13,6 @@ lesson_title = lesson_title.replace(" ", "_")
 
 os.system(f"mv templates/abouttorename templates/{lesson_title}")
 
+
+## This is for the first page
 os.system(f"perl -pi -e 's/content generation starts here/hello words/g' templates/{lesson_title}/01.html")
