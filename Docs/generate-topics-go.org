@@ -8,3 +8,26 @@ import (
     "os/exec"
 )
 #+END_SRC
+
+
+
+** Testing the python libraries in Go
+#+BEGIN_SRC go
+func testPyImports() {
+	_ = exec.Command("bash", "-c", "python3 -c 'import ollama'")
+	_ = exec.Command("bash", "-c", "python3 -c 'import os'")
+	_ = exec.Command("bash", "-c", "python3 -c 'import json'")
+	_ = exec.Command("bash", "-c", "python3 -c 'import shutil'")
+}
+#+END_SRC
+
+
+** This is basically calling main
+
+#+BEGIN_SRC go
+func main() {
+    testPyImports();
+}
+#+END_SRC
+
+
