@@ -69,6 +69,7 @@ print(''')
 os.system("sleep 5")
 os.system("clear")
 
+os.system("cp -R templates/template-new-refreshed templates/abouttorename")
 
 lesson_title = input('''
 # ███████╗███╗░░██╗████████╗███████╗██████╗░  ████████╗██╗████████╗██╗░░░░░███████╗
@@ -86,11 +87,8 @@ lesson_title = input('''
 # ╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚══════╝
 ''')
 
-
-# os.system("cp -R templates/template-new-refreshed templates/abouttorename")
-# lesson_title = input("Enter the topic name: ")
-# lesson_title = lesson_title.replace(" ", "_")
-# os.system(f"mv templates/abouttorename templates/{lesson_title}")
+lesson_title = lesson_title.replace(" ", "_")
+os.system(f"mv templates/abouttorename templates/{lesson_title}")
 
 
 
