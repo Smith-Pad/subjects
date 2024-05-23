@@ -90,6 +90,11 @@ This is experimental.
 In this section, we are going to be talking about setting up dependencies for running
 Subjects and developing it on WSL Ubuntu. 
 
+> [!NOTE]
+> This talks about setting up dependencies for running Subjects and developing it on 
+> WSL Ubuntu.
+
+
 Here is how to get started on that: 
 
 1. `sudo apt update`
