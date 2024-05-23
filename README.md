@@ -68,18 +68,10 @@ On Node.js implementation, here are the steps to install SASS.
 
 ## Experimental Instructions
 
-In this section, these instructions are considered experimental, so these instructions,
-may not be accurate in a sense.
+> [!IMPORTANT]
+> These instructions may not be accurate yet. And this section, is subjected
+> to change. 
 
-### Topic Route Test.
-
-In this subsection, we are going to be talking about the experimental feature called 
-Topic Route Test. Topic Route Test allows the ability to test out dynamic features 
-when it comes to Subjects Generation.
-
-For the test, the script that is used for the topic route is based on shell scripting.
-like BASH, which has user prompts what will generate a lesson plan and generate it 
-dynamically. 
 
 ### Experimenting Subjects on WSL
 
