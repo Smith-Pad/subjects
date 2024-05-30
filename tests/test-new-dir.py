@@ -2,7 +2,17 @@
 ## This generator allows the ability to generate subject content 
 ## generation on Smith-Pad 
 
-## 2024 RA FOIL 
+
+'''
+Functions
+----------
+
+makeDir()
+createSysFile()
+createContent()
+
+'''
+
 
 
 import os
