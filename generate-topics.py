@@ -114,4 +114,16 @@ def makeDir():
 
 
 
+def createSysFile():
+        os.system("touch templates/new-topic/index.html")
+        os.system("touch templates/new-topic/introduction.html")
+        os.system("touch templates/new-topic/01.html")
+        os.system("touch templates/new-topic/02.html")
+        os.system("touch templates/new-topic/03.html")
+        os.system("touch templates/new-topic/04.html")
+
+
+
+
 makeDir()
+createSysFile()
