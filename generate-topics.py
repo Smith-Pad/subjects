@@ -108,3 +108,10 @@ from ollama import generate
 
 
 
+def makeDir():
+        os.system("mkdir templates/new-topic")
+
+
+
+
+makeDir()
