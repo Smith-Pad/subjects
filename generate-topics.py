@@ -238,9 +238,9 @@ with open('templates/new-topic/01.html', 'w') as file:
         file.write('''
 
         <div class="bar">
-        <a href="{{route_1_home}}" class="osui-button">Home &#9750;</a>
-        <a href="{{route_1_back}}" class="osui-button">Back &#9750;</a>
-        <a href="{{route_1_next}}" class="osui-button">Next &rArr; </a>
+        <a href="{{}}" class="osui-button">Home &#9750;</a>
+        <a href="{{}}" class="osui-button">Back &#9750;</a>
+        <a href="{{}}" class="osui-button">Next &rArr; </a>
         <a href="#" class="osui-button" onClick="Calculator=window.open( '../../../../APPS/calculator.html','Calculator', 'width=600,height=1000'); return false;">Launch Calculator</a>
         </div>
         
@@ -255,7 +255,7 @@ with open('templates/new-topic/01.html', 'w') as file:
         print(introduction_2_ask + "\n\n\n")
 
 
-        file.write('''<div class="bar">''' + introduction_1 + '''<ul></ul>''' + introduction_2_ask + '''<ul></ul> </div>''')
+        # file.write('''<div class="bar">''' + introduction_1 + '''<ul></ul>''' + introduction_2_ask + '''<ul></ul> </div>''')
 
 
 
@@ -274,12 +274,16 @@ This is for the 2nd page
 
 
 with open('templates/new-topic/02.html', 'w') as file:
-        file.write("<div class=\"bar\">")
-        file.write("<a href=\"{{route_2_home}}\" class=\"osui-button\">Home &#9750;</a>")
-        file.write("<a href=\"{{route_2_back}}\" class=\"osui-button\">Back &#9750;</a>")
-        file.write("<a href=\"{{route_2_next}}\" class=\"osui-button\">Next &rArr; </a>")
-        file.write("<a href=\"#\" class=\"osui-button\" onClick=\"Calculator=window.open( '../../../../APPS/calculator.html','Calculator', 'width=600,height=1000'); return false;\">Launch Calculator</a>")
-        file.write("</div>")
+        file.write('''
+
+        <div class="bar">
+        <a href="{{}}" class="osui-button">Home &#9750;</a>
+        <a href="{{}}" class="osui-button">Back &#9750;</a>
+        <a href="{{}}" class="osui-button">Next &rArr; </a>
+        <a href="#" class="osui-button" onClick="Calculator=window.open( '../../../../APPS/calculator.html','Calculator', 'width=600,height=1000'); return false;">Launch Calculator</a>
+        </div>
+        
+        ''')
 
 
         introduction_1 = generate('gemma', 'Hey, ' + 'could you provide a concise summary tailored for kids? About the' + lesson_title + 'Keep it under five sentences, and please ensure its appropriate for their age group. ' + 'Thanks!')['response']
@@ -290,7 +294,7 @@ with open('templates/new-topic/02.html', 'w') as file:
         print(introduction_2_ask + "\n\n\n")
 
 
-        file.write('''<div class="bar">''' + introduction_1 + '''<ul></ul>''' + introduction_2_ask + '''<ul></ul> </div>''')
+        # file.write('''<div class="bar">''' + introduction_1 + '''<ul></ul>''' + introduction_2_ask + '''<ul></ul> </div>''')
 
 
 
