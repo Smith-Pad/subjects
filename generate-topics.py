@@ -147,83 +147,82 @@ This is for the splashscreen
 
 
 with open('templates/new-topic/index.html', 'w') as file:
-        file.write('<!DOCTYPE html>')
-        file.write('<html lang="en">')
+        file.write('''<!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="10; url=/#" />
+        <link rel="stylesheet" href="" type="text/css">
+        <style>
+                body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-color:''' + GLOBAL_BACKGROUND_COLOR + ''';
+                font-family:''' + GLOBAL_FONT_FAMILY + ''';
+                color: #fff;
+                }
 
-        file.write('<head>')
-        file.write('<meta charset="UTF-8">')
-        file.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">')
-        file.write('<meta http-equiv="refresh" content="10; url=/#" />')
-        file.write('<link rel="stylesheet" href="" type="text/css">')
-        file.write('<style>')
-        file.write('body {')
-        file.write('margin: 0;')
-        file.write('padding: 0;')
-        file.write('display: flex;')
-        file.write('justify-content: center;')
-        file.write('align-items: center;')
-        file.write('min-height: 100vh;')
-        file.write('background-color:' + GLOBAL_BACKGROUND_COLOR + ';')
-        file.write('font-family:' + GLOBAL_FONT_FAMILY + ';')
-        file.write('color: #fff;')
-        file.write('}')
+                .splash-screen {
+                text-align: center;
+                animation-name: splashscreen;
+                animation-duration: 4s;
+                }
 
-        file.write('.splash-screen {')
-        file.write('text-align: center;')
-        file.write('animation-name: splashscreen;')
-        file.write('animation-duration: 4s;')
-        file.write('}')
+                .logo {
+                font-size: 4rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+                animation-name: logoanimate;
+                animation-duration: 5s;
+                }
 
-        file.write('.logo {')
-        file.write('font-size: 4rem;')
-        file.write('font-weight: bold;')
-        file.write('margin-bottom: 1rem;')
-        file.write('animation-name: logoanimate;')
-        file.write('animation-duration: 5s;')
-        file.write('}')
+                .tagline {
+                font-size: 1.5rem;
+                opacity: 0.7;
+                }
 
-        file.write('.tagline {')
-        file.write('font-size: 1.5rem;')
-        file.write('opacity: 0.7;')
-        file.write('}')
+                @keyframes splashscreen {
+                from {
+                        padding: 100px;
+                        transform: scale(50);
+                        background-color: rgb(255, 255, 255);
+                }
 
-        file.write('@keyframes splashscreen {')
-        file.write('from {')
-        file.write('padding: 100px;')
-        file.write('transform: scale(50);')
-        file.write('background-color: rgb(255, 255, 255);')
-        file.write('}')
+                to {
+                        background-color: #1a1a1a;
+                }
+                }
 
-        file.write('to {')
-        file.write('background-color: #1a1a1a;')
-        file.write('}')
-        file.write('}')
+                @keyframes logoanimate {
+                from {
+                        transform: scale(40);
+                        opacity: 1;
+                        color: #fff;
+                }
 
-        file.write('@keyframes logoanimate {')
-        file.write('from {')
-        file.write('transform: scale(40);')
-        file.write('opacity: 1;')
-        file.write('color: #fff;')
-        file.write('}')
+                to {
+                        transform: scale(1);
+                        opacity: 1;
+                        color: #fff;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                }
+                }
+        </style>
+        <title>Splash Screen</title>
+        </head>
+        <body>
+        <div class="splash-screen">
+                <div class="logo">Smith-Pad</div>
+                <div class="tagline"></div>
+        </div>
+        </body>
+        </html>''')
 
-        file.write('to {')
-        file.write('transform: scale(1);')
-        file.write('opacity: 1;')
-        file.write('color: #fff;')
-        file.write('box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);')
-        file.write('}')
-        file.write('}')
-        file.write('</style>')
-        file.write('<title>Splash Screen</title>')
-        file.write('</head>')
-
-        file.write('<body>')
-        file.write('<div class="splash-screen">')
-        file.write('<div class="logo">Smith-Pad</div>')
-        file.write('<div class="tagline"></div>')
-        file.write('</div>')
-        file.write('</body>')
-        file.write('</html>')
 
 
 
@@ -236,12 +235,16 @@ This is for the first page
 
 
 with open('templates/new-topic/01.html', 'w') as file:
-        file.write("<div class=\"bar\">")
-        file.write("<a href=\"{{route_1_home}}\" class=\"osui-button\">Home &#9750;</a>")
-        file.write("<a href=\"{{route_1_back}}\" class=\"osui-button\">Back &#9750;</a>")
-        file.write("<a href=\"{{route_1_next}}\" class=\"osui-button\">Next &rArr; </a>")
-        file.write("<a href=\"#\" class=\"osui-button\" onClick=\"Calculator=window.open( '../../../../APPS/calculator.html','Calculator', 'width=600,height=1000'); return false;\">Launch Calculator</a>")
-        file.write("</div>")
+        file.write('''
+
+        <div class="bar">
+        <a href="{{route_1_home}}" class="osui-button">Home &#9750;</a>
+        <a href="{{route_1_back}}" class="osui-button">Back &#9750;</a>
+        <a href="{{route_1_next}}" class="osui-button">Next &rArr; </a>
+        <a href="#" class="osui-button" onClick="Calculator=window.open( '../../../../APPS/calculator.html','Calculator', 'width=600,height=1000'); return false;">Launch Calculator</a>
+        </div>
+        
+        ''')
 
 
         introduction_1 = generate('gemma', 'Hey, ' + 'could you provide a concise summary tailored for kids? About the' + lesson_title + 'Keep it under five sentences, and please ensure its appropriate for their age group. ' + 'Thanks!')['response']
@@ -252,12 +255,8 @@ with open('templates/new-topic/01.html', 'w') as file:
         print(introduction_2_ask + "\n\n\n")
 
 
-        file.write("<div class=\"bar\">")
-        file.write(introduction_1)
-        file.write('<ul></ul>')
-        file.write(introduction_2_ask)
-        file.write('<ul></ul>')
-        file.write("</div>")
+        file.write('''<div class="bar">''' + introduction_1 + '''<ul></ul>''' + introduction_2_ask + '''<ul></ul> </div>''')
+
 
 
 
@@ -291,12 +290,7 @@ with open('templates/new-topic/02.html', 'w') as file:
         print(introduction_2_ask + "\n\n\n")
 
 
-        file.write("<div class=\"bar\">")
-        file.write(introduction_1)
-        file.write('<ul></ul>')
-        file.write(introduction_2_ask)
-        file.write('<ul></ul>')
-        file.write("</div>")
+        file.write('''<div class="bar">''' + introduction_1 + '''<ul></ul>''' + introduction_2_ask + '''<ul></ul> </div>''')
 
 
 
