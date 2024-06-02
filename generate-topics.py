@@ -235,6 +235,17 @@ This is for the first page
 
 
 with open('templates/new-topic/01.html', 'w') as file:
+
+     
+
+        file.write('''
+        {% include './System_Files/system.global.ui.include.ui.html' %}
+        {% include 'template-new-refreshed/gradient-config/begin.html' %}  
+        ''')
+
+
+
+
         file.write('''
 
         <div class="bar">
@@ -274,6 +285,28 @@ This is for the 2nd page
 
 
 with open('templates/new-topic/02.html', 'w') as file:
+
+        file.write('''
+        {% include './System_Files/system.global.ui.include.ui.html' %}
+        {% include 'template-new-refreshed/gradient-config/begin.html' %}  
+        ''')
+
+
+
+
+        file.write('''
+
+        # <div class="bar">
+        # <a href="{{}}" class="osui-button">Home &#9750;</a>
+        # <a href="{{}}" class="osui-button">Back &#9750;</a>
+        # <a href="{{}}" class="osui-button">Next &rArr; </a>
+        # <a href="#" class="osui-button" onClick="Calculator=window.open( '../../../../APPS/calculator.html','Calculator', 'width=600,height=1000'); return false;">Launch Calculator</a>
+        # </div>        
+        
+        ''')
+
+
+
         file.write('''
 
         <div class="bar">
