@@ -27,6 +27,11 @@ def game_ui_test_begin():
 
 
 
+
+## generate starts here
+
+
+
 @app.route('/game_ui_test_01')
 def game_ui_test_01():
         route_1_home = "/game_ui_test"
