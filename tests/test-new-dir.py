@@ -4,6 +4,10 @@
 
 
 '''
+-------
+@docs
+-------
+
 Functions
 ----------
 
@@ -18,7 +22,7 @@ createContent()
 import os
 import sys
 import json
-
+from ollama import generate
 
 '''
 @docs right here, this allows the ability to create the directory
@@ -140,6 +144,21 @@ def createContent():
                         file.write("</div>")
 
 
+                        introduction_1 = generate('gemma', 'Hey, could you provide a concise summary of the alphabet song tailored for kids? Keep it under five sentences, and please ensure its appropriate for their age group. Thanks!')['response']
+                        print(introduction_1 + "\n\n\n")
+
+
+                        introduction_2_ask = generate('gemma', 'Can you ask that are you ready to learn for kids under 3 sentences?')['response']
+                        print(introduction_2_ask + "\n\n\n")
+
+
+                        file.write("<div class=\"bar\">")
+                        file.write(introduction_1)
+                        file.write('<ul></ul>')
+                        file.write(introduction_2_ask)
+                        file.write('<ul></ul>')
+                        file.write("</div>")
+
 
         introductionScreen()
 
@@ -154,6 +173,21 @@ def createContent():
                         file.write("<a href=\"{{route_2_back}}\" class=\"osui-button\">Back &#9750;</a>")
                         file.write("<a href=\"{{route_2_next}}\" class=\"osui-button\">Next &rArr; </a>")
                         file.write("<a href=\"#\" class=\"osui-button\" onClick=\"Calculator=window.open( '../../../../APPS/calculator.html','Calculator', 'width=600,height=1000'); return false;\">Launch Calculator</a>")
+                        file.write("</div>")
+
+                        firstPage_1 = generate('gemma', 'Hey, could you provide a concise summary of the alphabet song tailored for kids? Keep it under five sentences, and please ensure its appropriate for their age group. Thanks!')['response']
+                        print(firstPage_1 + "\n\n\n")
+
+
+                        firstPage_2_ask = generate('gemma', 'Can you ask that are you ready to learn for kids under 3 sentences?')['response']
+                        print(firstPage_2_ask + "\n\n\n")
+
+
+                        file.write("<div class=\"bar\">")
+                        file.write(firstPage_1)
+                        file.write('<ul></ul>')
+                        file.write(firstPage_2_ask)
+                        file.write('<ul></ul>')
                         file.write("</div>")
 
 
