@@ -111,13 +111,19 @@ print(lesson_title)
 
 
 '''
+@docs
 Once the user enters the title of the lesson_title, then it will use perl to find the "generate starts here"
-comment and replace into a button
+comment and replace into a button.
 '''
 # os.system(f"perl -pi -e 's/<!-- generate starts here -->/<button class=\"FOIL-button-regular color-is-blue\">" + lesson_title + "<\/button>\\n\\n\\n <!-- generate starts here -->/g' templates/main_menu.html")
 
+'''
+@docs
+Once the user enters the title of the lesson_title, then it will use perl to find the "generate starts here"
+comment and generates the routing.
+'''
 
-
+# os.system(f"perl -pi -e 's/## generate starts here//g' templates/main_menu.html")
 
 
 
