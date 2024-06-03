@@ -13,18 +13,40 @@ from ollama import generate
 '''
 @docs
 ------
+In this section this is where we are able to make global variables 
+here which has boolean statements to disable and enable functions
+in the code for maintainability and efficiency
+
+
+'''
+
+global_variable_checking        = True
+lesson_title                    = True
+
+
+
+
+
+'''
+@docs
+------
+
+In this section this allows the ability to make if statements to make sure  
+
 '''
 
 
 
 
+if global_variable_checking:
+        if lesson_title:
+                print("The Lesson Title Checking is Enabled ")
+        else: 
+                print("The Lesson Title Checking is Disabled")
 
 
-
-
-
-
-
+else:
+        print("Global Variable Checking is disabled")
 
 
 
