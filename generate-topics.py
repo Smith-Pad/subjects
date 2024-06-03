@@ -10,6 +10,29 @@ from ollama import generate
 
 
 
+'''
+@docs
+------
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 lesson_title = input("Please input a lesson title")
 
 
