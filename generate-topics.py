@@ -50,9 +50,7 @@ os.system("touch templates/new-topic/04.html")
 
 
 
-GLOBAL_BACKGROUND_COLOR = "red"
-GLOBAL_FONT_FAMILY = "Arial, sans-serif"
-GLOBAL_FONT_COLOR  = "#fff"
+
 
 
 
@@ -66,6 +64,10 @@ This is for the splashscreen
 
 
 with open('templates/new-topic/index.html', 'w') as file:
+        GLOBAL_BACKGROUND_COLOR = "red"
+        GLOBAL_FONT_FAMILY = "Arial, sans-serif"
+        GLOBAL_FONT_COLOR  = "#fff"
+
         file.write('''<!DOCTYPE html>
         <html lang="en">
         <head>
