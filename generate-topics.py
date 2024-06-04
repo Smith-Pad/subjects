@@ -22,7 +22,8 @@ in the code for maintainability and efficiency
 
 global_variable_checking        = True
 lesson_title                    = True
-
+create_new_topic_dir            = True
+create_new_gen_views            = True                                  
 
 
 
@@ -79,15 +80,12 @@ os.system(f"perl -pi -e 's/## generate starts here/ he is here\n\n\n\n ## genera
 
 
 
-os.system("mkdir templates/new-topic")
 
+## Allows the ability to create a dir new generation
+create_new_gen_dir = os.system("mkdir templates/new-topic")
 
-os.system("touch templates/new-topic/index.html")
-os.system("touch templates/new-topic/introduction.html")
-os.system("touch templates/new-topic/01.html")
-os.system("touch templates/new-topic/02.html")
-os.system("touch templates/new-topic/03.html")
-os.system("touch templates/new-topic/04.html")
+## Allows the ability to create a file new generation
+create_new_gen_views = os.system("touch templates/new-topic/index.html") + os.system("touch templates/new-topic/introduction.html") + os.system("touch templates/new-topic/01.html") + os.system("touch templates/new-topic/02.html") + os.system("touch templates/new-topic/03.html") + os.system("touch templates/new-topic/04.html")
 
 
 
