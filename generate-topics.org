@@ -24,6 +24,8 @@ Variable Booleans allow the ability to turn on or off specific variables
 for debugging purposes. Which is sooooo efficient. Here are the overviews
 of what it does.
 
+
+*** Global Variable Checking
 #+BEGIN_SRC python
 global_variable_checking
 #+END_SRC
@@ -32,7 +34,7 @@ This functionality allows the ability to check of the variables are true
 or false
 
 
-*** Usage:
+**** Usage:
 #+BEGIN_SRC python
 global_variable_checking  = true
 #+END_SRC
@@ -54,8 +56,7 @@ which means this functionality will check all the variables to see
 if there are turned on or off. Very good for debugging purposes.
 
 
-
-
+*** Lesson Title
 #+BEGIN_SRC python
 lesson_title
 #+END_SRC
@@ -64,7 +65,7 @@ This functionality allows the ability to take the input of the lesson
 title
 
 
-*** Usage:
+**** Usage:
 #+BEGIN_SRC python
 global_variable_checking  = true
 #+END_SRC
