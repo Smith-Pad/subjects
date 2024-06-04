@@ -1,0 +1,81 @@
+* Generate Topics
+
+
+** Introduction
+Welcome to the code documentation. This code documentation overviews
+of the subject generation with the python script.
+
+
+
+** Importing Modules
+
+#+BEGIN_SRC python
+import os
+import shutil
+import json
+from ollama import generate
+#+END_SRC
+
+
+
+** Variable Boolean
+
+Variable Booleans allow the ability to turn on or off specific variables
+for debugging purposes. Which is sooooo efficient. Here are the overviews
+of what it does.
+
+#+BEGIN_SRC python
+global_variable_checking
+#+END_SRC
+
+This functionality allows the ability to check of the variables are true
+or false
+
+
+*** Usage:
+#+BEGIN_SRC python
+global_variable_checking  = true
+#+END_SRC
+
+*Description*
+This allows the ability to enable variable checking if the variables
+are turned on or turned off. In this case this is switched to true,
+which means this functionality will check all the variables to see
+if there are turned on or off. Very good for debugging purposes.
+
+#+BEGIN_SRC python
+global_variable_checking  = false
+#+END_SRC
+
+*Description*
+This allows the ability to enable variable checking if the variables
+are turned on or turned off. In this case this is switched to false,
+which means this functionality will check all the variables to see
+if there are turned on or off. Very good for debugging purposes.
+
+
+
+
+#+BEGIN_SRC python
+lesson_title
+#+END_SRC
+
+This functionality allows the ability to take the input of the lesson
+title
+
+
+*** Usage:
+#+BEGIN_SRC python
+global_variable_checking  = true
+#+END_SRC
+
+*Description*
+Turns on the ability to take the input of lesson_title
+
+
+#+BEGIN_SRC python
+global_variable_checking  = false
+#+END_SRC
+
+*Description*
+Turns off the ability to take the input of lesson_title
