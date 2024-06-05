@@ -80,3 +80,12 @@ global_variable_checking  = false
 
 *Description*
 Turns off the ability to take the input of lesson_title
+
+
+*** Create New Gen Dir
+#+BEGIN_SRC python
+create_new_gen_dir
+#+END_SRC
+
+This functionality allows the ability to create a generation
+directory called ~new_topic~
