@@ -22,7 +22,7 @@ in the code for maintainability and efficiency
 
 global_variable_checking        = True
 lesson_title                    = True
-create_new_topic_dir            = True
+create_new_gen_dir              = True
 create_new_gen_views            = True                                  
 
 
@@ -64,7 +64,7 @@ print(lesson_title)
 
 
 '''
-@docs
+@docs   
 Once the user enters the title of the lesson_title, then it will use perl to find the "generate starts here"
 comment and replace into a button.
 '''
