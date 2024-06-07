@@ -28,7 +28,7 @@ def game_ui_test_begin():
 
 
 
-## generate starts here
+
 
 
 
@@ -77,7 +77,7 @@ def game_ui_test_05():
         return render_template('template-new-refreshed/05.html', route_5_home=route_5_home, route_5_back=route_5_back, route_5_next=route_4_next)
 
 
-
+## generate starts here
 
 
 if __name__ == '__main__':
