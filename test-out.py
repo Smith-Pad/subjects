@@ -15,7 +15,8 @@ llm_generation = True
 
 lesson_title = input("Input title: ")
 lesson_title = lesson_title.replace(" ", "_")
-llm_generation = print("llm generation")
+llm_generation = generate('gemma', 'Hey, ' + 'could you provide a concise summary tailored for kids? About the' + lesson_title + 'Keep it under five sentences, and please ensure its appropriate for their age group. ' + 'Thanks!')['response']
+print(llm_generation + "\n\n\n")
 route_search_text = "## generate starts here"
 
 
@@ -25,11 +26,11 @@ route_replace_text = f"""
 def {lesson_title}():
     return '''
     <link rel="stylesheet" href="/static/GENERATE.css">
-    <h1> hello world </h1>
-    <h2> hello world </h2>
-    <h3> hello world </h3>
-    <h4> hello world </h4>
-    <h5> hello world </h5>
+    <h1> {lesson_title} </h1>
+    <h2> {lesson_title} </h2>
+    <h3> {lesson_title} </h3>
+    <h4> {lesson_title} </h4>
+    <h5> {lesson_title} </h5>
     '''
 
 
@@ -38,11 +39,11 @@ def {lesson_title}():
 def {lesson_title}_begin():
     return '''
     <link rel="stylesheet" href="/static/GENERATE.css">
-    <h1> hello world </h1>
-    <h2> hello world </h2>
-    <h3> hello world </h3>
-    <h4> hello world </h4>
-    <h5> hello world </h5>
+    <h1> {lesson_title} </h1>
+    <h2> {lesson_title} </h2>
+    <h3> {lesson_title} </h3>
+    <h4> {lesson_title} </h4>
+    <h5> {lesson_title} </h5>
     '''
 
 
@@ -52,10 +53,10 @@ def {lesson_title}_begin():
 def {lesson_title}_01():
     return '''
     <link rel="stylesheet" href="/static/GENERATE.css">
-    <h1> hello world </h1>
-    <h2> hello world </h2>
-    <h3> hello world </h3>
-    <h4> hello world </h4>
+    <h1> {lesson_title} </h1>
+    <h2> {lesson_title} </h2>
+    <h3> {lesson_title} </h3>
+    <h4> {lesson_title} </h4>
     <h5> hello world </h5>
     '''
 
@@ -65,11 +66,11 @@ def {lesson_title}_01():
 def {lesson_title}_02():
     return '''
     <link rel="stylesheet" href="/static/GENERATE.css">
-    <h1> hello world </h1>
-    <h2> hello world </h2>
-    <h3> hello world </h3>
-    <h4> hello world </h4>
-    <h5> hello world </h5>
+    <h1> {lesson_title} </h1>
+    <h2> {lesson_title} </h2>
+    <h3> {lesson_title} </h3>
+    <h4> {lesson_title} </h4>
+    <h5> {lesson_title} </h5>
     '''
 
 ## View 3
