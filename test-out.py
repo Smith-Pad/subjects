@@ -1,86 +1,96 @@
-## test out
 import os 
 import shutil
 import json
 from ollama import generate
 
+lesson_title_enabled = True
+route_search_text_enabled = True
+route_replace_text_enabled = True
+route_replacer_enabled = True
 
-class RouteConfig:
-    def __init__(self):
-        self.lesson_title = True
-        self.route_search_text = True
-        self.route_replace_text = True
-        self.route_replacer = True
 
-    def enable_status(self):
-        print("it is enabled") if self.lesson_title else print("It is not enabled")
-        print("it is enabled") if self.route_search_text else print("It is not enabled")
-        print("it is enabled") if self.route_replace_text else print("It is not enabled")
-        print("it is enabled") if self.route_replacer else print("It is not enabled")
 
-    def configure_routes(self):
-        self.lesson_title = input("Input title: ")
-        self.lesson_title = self.lesson_title.replace(" ", "_")
 
-        self.route_search_text = "## generate starts here"
+def configure_routes():
+    lesson_title = input("Input title: ")
+    lesson_title = lesson_title.replace(" ", "_")
+    route_search_text = "## generate starts here"
 
-        self.route_replace_text = (
-                f"""
-
+    route_replace_text = f"""
 ## Splash Screen Generated
 
-@app.route('/{self.lesson_title}')
-def {self.lesson_title}():
-        return "1"
+@app.route('/{lesson_title}')
+def {lesson_title}():
+    return '''
+    <link rel="stylesheet" href="/static/GENERATE.css">
+    <h1> hello world </h1>
+    <h2> hello world </h2>
+    <h3> hello world </h3>
+    <h4> hello world </h4>
+    <h5> hello world </h5>
+    '''
 
 
 
-@app.route('/{self.lesson_title}_begin')
-def {self.lesson_title}_begin():
-        return "begin"
+@app.route('/{lesson_title}_begin')
+def {lesson_title}_begin():
+    return '''
+    <link rel="stylesheet" href="/static/GENERATE.css">
+    <h1> hello world </h1>
+    <h2> hello world </h2>
+    <h3> hello world </h3>
+    <h4> hello world </h4>
+    <h5> hello world </h5>
+    '''
 
 
 
 
-@app.route('/{self.lesson_title}_01')
-def {self.lesson_title}_01():
-        return "01"
+@app.route('/{lesson_title}_01')
+def {lesson_title}_01():
+    return '''
+    <link rel="stylesheet" href="/static/GENERATE.css">
+    <h1> hello world </h1>
+    <h2> hello world </h2>
+    <h3> hello world </h3>
+    <h4> hello world </h4>
+    <h5> hello world </h5>
+    '''
 
-@app.route('/{self.lesson_title}_02')
-def {self.lesson_title}_02():
-        return "021"
+@app.route('/{lesson_title}_02')
+def {lesson_title}_02():
+    return '''
+    <link rel="stylesheet" href="/static/GENERATE.css">
+    <h1> hello world </h1>
+    <h2> hello world </h2>
+    <h3> hello world </h3>
+    <h4> hello world </h4>
+    <h5> hello world </h5>
+    '''
 
 
-@app.route('/{self.lesson_title}_03')
-def {self.lesson_title}_03():
-        return "2341"
+@app.route('/{lesson_title}_03')
+def {lesson_title}_03():
+    return "2341"
 
 
 
-@app.route('/{self.lesson_title}_04')
-def {self.lesson_title}_04():
-        return "231"
+@app.route('/{lesson_title}_04')
+def {lesson_title}_04():
+    return "231"
 
 
 
-@app.route('/{self.lesson_title}_05')
-def {self.lesson_title}_05():
-        return "1"
+@app.route('/{lesson_title}_05')
+def {lesson_title}_05():
+    return "1"
                 
-                """                
-                f"\n\n\n\n## generate starts here"
-        )
+""" + "\n\n\n\n## generate starts here"
+    
+    with open('index.py', 'r+') as file:
+        content = file.read().replace(route_search_text, route_replace_text)
+        file.seek(0)  
+        file.write(content)
 
 
-
-
-        with open('index.py', 'r+') as file:
-            content = file.read().replace(self.route_search_text, self.route_replace_text)
-            file.seek(0)  
-            file.write(content)
-
-
-
-route_config = RouteConfig()
-route_config.enable_status()
-route_config.configure_routes()
+configure_routes()
