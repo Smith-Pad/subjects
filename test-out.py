@@ -18,7 +18,6 @@ route_search_text = "## generate starts here"
 
 route_replace_text = f"""
 ## Splash Screen Generated
-
 @app.route('/{lesson_title}')
 def {lesson_title}():
     return '''
