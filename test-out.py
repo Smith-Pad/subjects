@@ -15,7 +15,9 @@ llm_generation = True
 
 lesson_title = input("Input title: ")
 lesson_title = lesson_title.replace(" ", "_")
+llm_generation = print("llm generation")
 route_search_text = "## generate starts here"
+
 
 route_replace_text = f"""
 ## Splash Screen Generated
