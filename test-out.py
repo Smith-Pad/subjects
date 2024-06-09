@@ -22,72 +22,72 @@ route_search_text = "## generate starts here"
 
 route_replace_text = f"""
 ## Splash Screen Generated
-@app.route('/{llm_generation}')
-def {llm_generation}():
+@app.route('/{lesson_title}')
+def {lesson_title}():
     return '''
     <link rel="stylesheet" href="/static/GENERATE.css">
-    <h1> {llm_generation} </h1>
-    <h2> {llm_generation} </h2>
-    <h3> {llm_generation} </h3>
-    <h4> {llm_generation} </h4>
-    <h5> {llm_generation} </h5>
+    <h1> {lesson_title} </h1>
+    <h2> {lesson_title} </h2>
+    <h3> {lesson_title} </h3>
+    <h4> {lesson_title} </h4>
+    <h5> {lesson_title} </h5>
     '''
 
 
 ## Begin
-@app.route('/{llm_generation}_begin')
-def {llm_generation}_begin():
+@app.route('/{lesson_title}_begin')
+def {lesson_title}_begin():
     return '''
     <link rel="stylesheet" href="/static/GENERATE.css">
-    <h1> {llm_generation} </h1>
-    <h2> {llm_generation} </h2>
-    <h3> {llm_generation} </h3>
-    <h4> {llm_generation} </h4>
-    <h5> {llm_generation} </h5>
+    <h1> {lesson_title} </h1>
+    <h2> {lesson_title} </h2>
+    <h3> {lesson_title} </h3>
+    <h4> {lesson_title} </h4>
+    <h5> {lesson_title} </h5>
     '''
 
 
 
 ## View 1
-@app.route('/{llm_generation}_01')
-def {llm_generation}_01():
+@app.route('/{lesson_title}_01')
+def {lesson_title}_01():
     return '''
     <link rel="stylesheet" href="/static/GENERATE.css">
-    <h1> {llm_generation} </h1>
-    <h2> {llm_generation} </h2>
-    <h3> {llm_generation} </h3>
-    <h4> {llm_generation} </h4>
+    <h1> {lesson_title} </h1>
+    <h2> {lesson_title} </h2>
+    <h3> {lesson_title} </h3>
+    <h4> {lesson_title} </h4>
     <h5> hello world </h5>
     '''
 
 
 ## View 2
-@app.route('/{llm_generation}_02')
-def {llm_generation}_02():
+@app.route('/{lesson_title}_02')
+def {lesson_title}_02():
     return '''
     <link rel="stylesheet" href="/static/GENERATE.css">
-    <h1> {llm_generation} </h1>
-    <h2> {llm_generation} </h2>
-    <h3> {llm_generation} </h3>
-    <h4> {llm_generation} </h4>
-    <h5> {llm_generation} </h5>
+    <h1> {lesson_title} </h1>
+    <h2> {lesson_title} </h2>
+    <h3> {lesson_title} </h3>
+    <h4> {lesson_title} </h4>
+    <h5> {lesson_title} </h5>
     '''
 
 ## View 3
-@app.route('/{llm_generation}_03')
-def {llm_generation}_03():
+@app.route('/{lesson_title}_03')
+def {lesson_title}_03():
     return "2341"
 
 
 ## View 4
-@app.route('/{llm_generation}_04')
-def {llm_generation}_04():
+@app.route('/{lesson_title}_04')
+def {lesson_title}_04():
     return "231"
 
 
 ## View 5
-@app.route('/{llm_generation}_05')
-def {llm_generation}_05():
+@app.route('/{lesson_title}_05')
+def {lesson_title}_05():
     return "1"
             
 """ + "\n\n\n\n## generate starts here"
