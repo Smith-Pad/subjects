@@ -21,71 +21,71 @@ route_replace_text = f"""
 
 @app.route('/{lesson_title}')
 def {lesson_title}():
-return '''
-<link rel="stylesheet" href="/static/GENERATE.css">
-<h1> hello world </h1>
-<h2> hello world </h2>
-<h3> hello world </h3>
-<h4> hello world </h4>
-<h5> hello world </h5>
-'''
+    return '''
+    <link rel="stylesheet" href="/static/GENERATE.css">
+    <h1> hello world </h1>
+    <h2> hello world </h2>
+    <h3> hello world </h3>
+    <h4> hello world </h4>
+    <h5> hello world </h5>
+    '''
 
 
 ## Begin
 @app.route('/{lesson_title}_begin')
 def {lesson_title}_begin():
-return '''
-<link rel="stylesheet" href="/static/GENERATE.css">
-<h1> hello world </h1>
-<h2> hello world </h2>
-<h3> hello world </h3>
-<h4> hello world </h4>
-<h5> hello world </h5>
-'''
+    return '''
+    <link rel="stylesheet" href="/static/GENERATE.css">
+    <h1> hello world </h1>
+    <h2> hello world </h2>
+    <h3> hello world </h3>
+    <h4> hello world </h4>
+    <h5> hello world </h5>
+    '''
 
 
 
 ## View 1
 @app.route('/{lesson_title}_01')
 def {lesson_title}_01():
-return '''
-<link rel="stylesheet" href="/static/GENERATE.css">
-<h1> hello world </h1>
-<h2> hello world </h2>
-<h3> hello world </h3>
-<h4> hello world </h4>
-<h5> hello world </h5>
-'''
+    return '''
+    <link rel="stylesheet" href="/static/GENERATE.css">
+    <h1> hello world </h1>
+    <h2> hello world </h2>
+    <h3> hello world </h3>
+    <h4> hello world </h4>
+    <h5> hello world </h5>
+    '''
 
 
 ## View 2
 @app.route('/{lesson_title}_02')
 def {lesson_title}_02():
-return '''
-<link rel="stylesheet" href="/static/GENERATE.css">
-<h1> hello world </h1>
-<h2> hello world </h2>
-<h3> hello world </h3>
-<h4> hello world </h4>
-<h5> hello world </h5>
-'''
+    return '''
+    <link rel="stylesheet" href="/static/GENERATE.css">
+    <h1> hello world </h1>
+    <h2> hello world </h2>
+    <h3> hello world </h3>
+    <h4> hello world </h4>
+    <h5> hello world </h5>
+    '''
 
 ## View 3
 @app.route('/{lesson_title}_03')
 def {lesson_title}_03():
-return "2341"
+    return "2341"
 
 
 ## View 4
 @app.route('/{lesson_title}_04')
 def {lesson_title}_04():
-return "231"
+    return "231"
 
 
 ## View 5
 @app.route('/{lesson_title}_05')
 def {lesson_title}_05():
-return "1"
+    return "1"
             
 """ + "\n\n\n\n## generate starts here"
 
