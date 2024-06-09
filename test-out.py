@@ -7,6 +7,7 @@ lesson_title_enabled = True
 route_search_text_enabled = True
 route_replace_text_enabled = True
 route_replacer_enabled = True
+llm_generation = True
 
 
 
