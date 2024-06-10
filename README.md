@@ -27,6 +27,9 @@ git clone https://aur.archlinux.org/yay-bin
 #### Step 2
 The second thing to do is to change the directory to `yay-bin`
 
+``` shell
+cd yay-bin
+```
 
 
 
