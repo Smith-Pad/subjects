@@ -31,6 +31,12 @@ The second thing to do is to change the directory to `yay-bin`
 cd yay-bin
 ```
 
+#### Step 3
+The third thing to do is to run this command called `makepkg -si`
+
+``` shell
+makepkg -si
+```
 
 
 
