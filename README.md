@@ -44,43 +44,7 @@ makepkg -si
 > is a recommended process. 
 
 
-#### Step 4
-The fourth thing to do is to run this command to install the ollama 
-package from the AUR
-
-``` shell
-yay -S python-ollama 
-```
-
-> [!NOTE]
-> Here is an example of the installation process. To bypass this installation
-> process, all you have to do is to add the `--noconfirm` flag to bypass. 
-``` shell
-❯ yay -S python-ollama
-AUR Explicit (1): python-ollama-0.2.0-1
-Sync Make Dependency (1): python-poetry-1.8.3-1
-Sync Dependency (2): ollama-0.1.42-1.1, python-httpx-0.27.0-1
-:: (1/1) Downloaded PKGBUILD: python-ollama
-  1 python-ollama                    (Build Files Exist)
-==> Packages to cleanBuild?
-==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
-==>
-  1 python-ollama                    (Build Files Exist)
-==> Diffs to show?
-==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
-==>
-==> Making package: python-ollama 0.2.0-1 (Mon 10 Jun 2024 12:56:41 AM EDT)
-==> Retrieving sources...
-  -> Downloading python-ollama-0.2.0.tar.gz...
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-100 29837    0 29837    0     0  44092      0 --:--:-- --:--:-- --:--:-- 44092
-==> WARNING: Skipping verification of source file PGP signatures.
-==> Validating source files with b2sums...
-    python-ollama-0.2.0.tar.gz ... Passed
-:: Remove make dependencies after install? [y/N]
-```
+#### Step 4 
 
 
 ### In macOS: 
