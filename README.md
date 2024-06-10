@@ -16,8 +16,7 @@ Smith-Pad Subjects engages students with tactile learning.
 
 ### In Arch Linux:
 
-- `sudo pacman -S python-flask`
-- `sudo pacman -S dialog`
+
 
 
 ### In macOS: 
