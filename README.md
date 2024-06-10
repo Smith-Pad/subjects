@@ -53,7 +53,8 @@ yay -S python-ollama
 ```
 
 > [!NOTE]
-> Here is an example
+> Here is an example of the installation process. To bypass this installation
+> process, all you have to do is to add the `--noconfirm` flag to bypass. 
 ``` shell
 ❯ yay -S python-ollama
 AUR Explicit (1): python-ollama-0.2.0-1
