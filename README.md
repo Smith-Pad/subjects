@@ -24,7 +24,7 @@ The first thing to do is to make sure you have `yay` installed.
 git clone https://aur.archlinux.org/yay-bin
 ```
 
-#### Step 2
+#### Step 2 
 The second thing to do is to change the directory to `yay-bin`
 
 ``` shell
@@ -38,6 +38,19 @@ The third thing to do is to run this command called `makepkg -si`
 makepkg -si
 ```
 
+> [!NOTE]
+> Now, you fully installed the `yay` helper, which allows the ability 
+> to install or compile/install packages directly from the AUR. Which 
+> is a recommended process. 
+
+
+#### Step 4
+The fourth thing to do is to run this command to install the ollama 
+package from the AUR
+
+``` shell
+yay -S python-ollama 
+```
 
 
 
@@ -84,7 +97,7 @@ On Node.js implementation, here are the steps to install SASS.
 4. In the CMD or Powershell, use this command: `sass` to make sure it works properly.
 
 ## In other news
-
+  
 - Creating Scripts to make it more efficient to maintain the Subjects feature of the Smith-Pad platform 
 
 ## Experimental Instructions
