@@ -15,6 +15,21 @@ Smith-Pad Subjects engages students with tactile learning.
 ## Installation Instructions
 
 ### In Arch Linux:
+In this section, this is not a hard process to do. But you got this.
+
+#### Step 1
+The first thing to do is to make sure you have `yay` installed. 
+
+``` shell
+git clone https://aur.archlinux.org/yay-bin
+```
+
+#### Step 2
+The second thiung to do is to change the directory to `yay-bin`
+
+``` shell`
+
+```
 
 
 
