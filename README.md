@@ -44,7 +44,12 @@ makepkg -si
 > is a recommended process. 
 
 
-#### Step 4 
+#### Step 4  
+Now, this is another process. Which is to install `ollama`
+
+```shell
+git clone https://aur.archlinux.org/ollama-bin
+```
 
 
 ### In macOS: 
