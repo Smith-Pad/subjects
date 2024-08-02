@@ -1,11 +1,6 @@
 {% include './System_Files/system.global.ui.include.ui.html' %}
 
 
-<div class="FOIL-layout-regular color-is-black" style="position: sticky;">
-    <FOIL-font-size-101><b>Subjects</b></FOIL-font-size-101>
-</div>
-
-
 
 <div class="space"></div>
 <div class="space"></div>
@@ -25,4 +20,24 @@
 <div class="space"></div>
 
 
-<!-- generate starts here -->
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+</head>
+
+<body>
+    <h1 class="md-typescale-display-large" style="font-size: 100px;">Subjects</h1>
+    <h1 class="md-typescale-display-small">Content Here</h1>
+</body>
