@@ -15,11 +15,4 @@ from ollama import generate                                     ## import ollama
 
 
 firstOne = generate('gemma', 'Summarize the alphabet song for kids in under 5 sentences')['response']
-print(firstOne + "\n\n\n")                                      
-
-
-
-# subprocess.run(
-#         f"perl -pi -e \"s/<!-- generate starts here -->/<div>{firstOne}<\\/div>\\n\\n\\n\\n <!-- generate starts here -->/g\" test-content.html",
-#         shell=True
-# )
+print(firstOne + "\n\n\n")
