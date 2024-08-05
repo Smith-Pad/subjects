@@ -1,0 +1,62 @@
+{% include './System_Files/system.global.ui.include.ui.html' %}
+
+
+<!-- <div class="space"></div> -->
+
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+</head>
+
+<body>
+
+    <header class="mdc-top-app-bar" style="background-color: rgb(92, 92, 81);">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <span class="mdc-top-app-bar__title">Settings</span>
+                <md-filled-button onclick="location.href='http://127.0.0.1:5000/main_menu'">Back</md-filled-button>
+            
+            </section>
+        </div>
+    </header>
+
+
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+
+
+    <h1 class="md-typescale-display-large" style="font-size: 100px;">Settings</h1>
+    <h1 class="md-typescale-display-small">Change features based on your own preferences</h1>
+
+
+    <h1 class="md-typescale-display-small" style="font-size: 20px;">LLM Type</h1>
+    
+    <h1 class="md-typescale-display-small" style="font-size: 20px;">Lesson Level</h1>
+
+</body>
