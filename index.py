@@ -15,6 +15,11 @@ def main_menu():
         return render_template('main_menu.html')
 
 
+@app.route("/settings_menu")
+def settings_menu():
+        return render_template('settings.html')
+
+
 @app.route('/game_ui_test')
 def game_ui_test():
         return render_template('template-new-refreshed/index.html')
