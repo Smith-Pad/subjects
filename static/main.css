@@ -1,0 +1,111 @@
+.layout1 {
+    /* change background color or a image url for the layout. 
+    
+    Note: for the next paragraph, you may need to make a another call to the layout class */
+    background-color: lightskyblue;
+    color: black;
+    padding: 10em 1em;
+    position: relative;
+    z-index: 2;
+    font-weight: 800;
+}
+
+.layout2 {
+    /* change background color or a image url for the layout. 
+    
+    Note: for the next paragraph, you may need to make a another call to the layout class */
+    background-color: burlywood;
+    padding: 10em 1em;
+    position: relative;
+    z-index: 2;
+    font-weight: 800;
+}
+
+.layout3 {
+    /* change background color or a image url for the layout. 
+    
+    Note: for the next paragraph, you may need to make a another call to the layout class */
+    background-color: coral;
+    color: black;
+    padding: 10em 1em;
+    position: relative;
+    z-index: 2;
+    text-shadow: ;
+    font-weight: 800;
+}
+
+.layout4 {
+    /* change background color or a image url for the layout. 
+    
+    Note: for the next paragraph, you may need to make a another call to the layout class */
+    background-color: lightseagreen;
+    color: black;
+    padding: 10em 1em;
+    position: relative;
+    z-index: 2;
+    text-shadow: ;
+    font-weight: 800px;
+
+}
+
+.layout5 {
+    /* change background color or a image url for the layout. 
+    
+    Note: for the next paragraph, you may need to make a another call to the layout class */
+    background-color: rgb(149, 144, 238);
+    color: black;
+    padding: 10em 1em;
+    position: relative;
+    z-index: 2;
+    text-shadow: ;
+
+
+}
+
+.layout6 {
+
+    /* change background color or a image url for the layout. 
+    
+    Note: for the next paragraph, you may need to make a another call to the layout class */
+    background-color: darkkhaki;
+    color: black;
+    padding: 10em 1em;
+    position: relative;
+    z-index: 2;
+    text-shadow: ;
+    font-weight: 800;
+}
+
+.layout7 {
+    /* change background color or a image url for the layout. 
+    
+    Note: for the next paragraph, you may need to make a another call to the layout class */
+    background-color: dodgerblue;
+    color: white;
+    padding: 10em 1em;
+    position: relative;
+    z-index: 2;
+    text-shadow: ;
+    font-weight: 800;
+}
+
+/* Small Layouts */
+.small_layout0 {
+    background-color: red;
+    color: white;
+    padding: 3em 1em;
+    position: relative;
+    z-index: 2;
+    text-shadow: ;
+
+}
+
+.indicator {
+    background-color: darkslategray;
+    color: white;
+    padding: 3em 1em;
+    position: relative;
+    z-index: 2;
+    text-shadow: ;
+
+}
