@@ -2,8 +2,15 @@ from flask import Flask, redirect,url_for,render_template                       
 import os                                                                       ## Import the standard OS library
 import json                                                                     ## Import the json library
 
-
 app = Flask(__name__)
+
+from routes import main_routes
+
+app.register_blueprint(main_routes)
+
+
+
+
 
 @app.route("/")
 def index():
@@ -24,9 +31,5 @@ def settings_menu():
 def game_ui_test():
         return render_template('template-new-refreshed/index.html')
 
-
-## generate starts here
-
-
-if __name__ == '__main__':
-        app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
