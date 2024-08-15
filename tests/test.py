@@ -24,13 +24,24 @@ create_file = platform.system()                                  ## Used for cre
 
 
 
-# if create_file == 'Windows':
-    # os.system('powershell New-Item -Path "..\\templates\\_subjects_generation_txt_backend_\\hello.txt" -ItemType File')
-    # os.system('powershell New-Item -Path "..\\templates\\_subjects_generation_txt_backend_\\anotherhello.txt" -ItemType File')
+if create_file == 'Windows':
+
+    ## Create the first file
+    os.system('powershell New-Item -Path "..\\templates\\_subjects_generation_txt_backend_\\introduction.txt" -ItemType File')
+
+    ## Create the second file
+    os.system('powershell New-Item -Path "..\\templates\\_subjects_generation_txt_backend_\\chapter1.txt" -ItemType File')
+
+    ## Create the third file
+    os.system('powershell New-Item -Path "..\\templates\\_subjects_generation_txt_backend_\\chapter2.txt" -ItemType File')
 
 
-os.remove("../templates/_subjects_generation_txt_backend_/hello.txt")
-os.remove("../templates/_subjects_generation_txt_backend_/anotherhello.txt")
+
+
+## Removes the file to prevent conflicts
+os.remove("../templates/_subjects_generation_txt_backend_/introduction.txt")
+os.remove("../templates/_subjects_generation_txt_backend_/chapter1.txt")
+os.remove("../templates/_subjects_generation_txt_backend_/chapter2.txt")
 
 
 
@@ -38,20 +49,26 @@ firstOne = generate('0ssamaak0/xtuner-llava:llama3-8b-v1.1-int4', 'Make an intro
 print(firstOne + "\n\n\n")
 
 secondOne = generate('0ssamaak0/xtuner-llava:llama3-8b-v1.1-int4', 'Make steps on how to solve basic algebra for a high schooler. You need to be like a teacher and instructor for the students.')['response']
-print(firstOne + "\n\n\n")
+print(secondOne + "\n\n\n")
 
 
 
-with open('../templates/_subjects_generation_txt_backend_/hello.txt', 'a') as file:
+thirdOne = generate('0ssamaak0/xtuner-llava:llama3-8b-v1.1-int4', 'Make steps on how to solve basic algebra for a high schooler. You need to be like a teacher and instructor for the students.')['response']
+print(thirdOne + "\n\n\n")
+
+
+
+with open('../templates/_subjects_generation_txt_backend_/introduction.txt', 'a') as file:
     file.write(f'{firstOne}\n\n\n')
     
     
-with open('../templates/_subjects_generation_txt_backend_/anotherhello.txt', 'a') as file:
+with open('../templates/_subjects_generation_txt_backend_/chapter1.txt', 'a') as file:
     file.write(f'{secondOne}\n\n\n')    
 
 
 
-
+with open('../templates/_subjects_generation_txt_backend_/chapter2.txt', 'a') as file:
+    file.write(f'{secondOne}\n\n\n')    
 
 
 
