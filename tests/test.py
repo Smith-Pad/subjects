@@ -24,9 +24,9 @@ create_file = platform.system()                                  ## Used for cre
 
 
 
-if create_file == 'Windows':
-    os.system('powershell New-Item -Path "..\\templates\\_subjects_generation_txt_backend_\\hello.txt" -ItemType File')
-    os.system('powershell New-Item -Path "..\\templates\\_subjects_generation_txt_backend_\\anotherhello.txt" -ItemType File')
+# if create_file == 'Windows':
+    # os.system('powershell New-Item -Path "..\\templates\\_subjects_generation_txt_backend_\\hello.txt" -ItemType File')
+    # os.system('powershell New-Item -Path "..\\templates\\_subjects_generation_txt_backend_\\anotherhello.txt" -ItemType File')
 
 
 os.remove("../templates/_subjects_generation_txt_backend_/hello.txt")
