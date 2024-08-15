@@ -1,111 +1,102 @@
+/* Layout Styles */
+
+/* Layout 1: Sky Blue Background */
 .layout1 {
-    /* change background color or a image url for the layout. 
-    
-    Note: for the next paragraph, you may need to make a another call to the layout class */
-    background-color: lightskyblue;
-    color: black;
-    padding: 10em 1em;
+    background-color: lightskyblue; /* Soft blue background */
+    color: black; /* Text color */
+    padding: 5em 2em; /* Adjusted padding for better spacing */
     position: relative;
     z-index: 2;
-    font-weight: 800;
+    font-weight: 700; /* Slightly lighter font weight */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
 }
 
+/* Layout 2: Burlywood Background */
 .layout2 {
-    /* change background color or a image url for the layout. 
-    
-    Note: for the next paragraph, you may need to make a another call to the layout class */
-    background-color: burlywood;
-    padding: 10em 1em;
+    background-color: burlywood; /* Warm brown background */
+    color: black; /* Text color */
+    padding: 5em 2em; /* Adjusted padding for better spacing */
     position: relative;
     z-index: 2;
-    font-weight: 800;
+    font-weight: 700; /* Slightly lighter font weight */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
 }
 
+/* Layout 3: Coral Background */
 .layout3 {
-    /* change background color or a image url for the layout. 
-    
-    Note: for the next paragraph, you may need to make a another call to the layout class */
-    background-color: coral;
-    color: black;
-    padding: 10em 1em;
+    background-color: coral; /* Vibrant coral background */
+    color: black; /* Text color */
+    padding: 10em 2em; /* Adjusted padding for better spacing */
     position: relative;
     z-index: 2;
-    text-shadow: ;
-    font-weight: 800;
+    font-weight: 700; /* Slightly lighter font weight */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
 }
 
+/* Layout 4: Light Seagreen Background */
 .layout4 {
-    /* change background color or a image url for the layout. 
-    
-    Note: for the next paragraph, you may need to make a another call to the layout class */
-    background-color: lightseagreen;
-    color: black;
-    padding: 10em 1em;
+    background-color: lightseagreen; /* Fresh seagreen background */
+    color: white; /* Changed text color for better contrast */
+    padding: 10em 2em; /* Adjusted padding for better spacing */
     position: relative;
     z-index: 2;
-    text-shadow: ;
-    font-weight: 800px;
-
+    font-weight: 700; /* Slightly lighter font weight */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
 }
 
+/* Layout 5: Light Lavender Background */
 .layout5 {
-    /* change background color or a image url for the layout. 
-    
-    Note: for the next paragraph, you may need to make a another call to the layout class */
-    background-color: rgb(149, 144, 238);
-    color: black;
-    padding: 10em 1em;
+    background-color: rgb(149, 144, 238); /* Soft lavender background */
+    color: black; /* Text color */
+    padding: 10em 2em; /* Adjusted padding for better spacing */
     position: relative;
     z-index: 2;
-    text-shadow: ;
-
-
+    font-weight: 700; /* Slightly lighter font weight */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
 }
 
+/* Layout 6: Dark Khaki Background */
 .layout6 {
-
-    /* change background color or a image url for the layout. 
-    
-    Note: for the next paragraph, you may need to make a another call to the layout class */
-    background-color: darkkhaki;
-    color: black;
-    padding: 10em 1em;
+    background-color: darkkhaki; /* Warm khaki background */
+    color: black; /* Text color */
+    padding: 10em 2em; /* Adjusted padding for better spacing */
     position: relative;
     z-index: 2;
-    text-shadow: ;
-    font-weight: 800;
+    font-weight: 700; /* Slightly lighter font weight */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
 }
 
+/* Layout 7: Dodger Blue Background */
 .layout7 {
-    /* change background color or a image url for the layout. 
-    
-    Note: for the next paragraph, you may need to make a another call to the layout class */
-    background-color: dodgerblue;
-    color: white;
-    padding: 10em 1em;
+    background-color: dodgerblue; /* Bright blue background */
+    color: white; /* Text color */
+    padding: 10em 2em; /* Adjusted padding for better spacing */
     position: relative;
     z-index: 2;
-    text-shadow: ;
-    font-weight: 800;
+    font-weight: 700; /* Slightly lighter font weight */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
 }
 
 /* Small Layouts */
+
+/* Small Layout 0: Red Background */
 .small_layout0 {
-    background-color: red;
-    color: white;
-    padding: 3em 1em;
+    background-color: red; /* Bold red background */
+    color: white; /* Text color */
+    padding: 2em 1em; /* Adjusted padding for a smaller layout */
     position: relative;
     z-index: 2;
-    text-shadow: ;
-
+    font-weight: 700; /* Slightly lighter font weight */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
 }
 
+/* Indicator Layout: Dark Slate Gray Background */
 .indicator {
-    background-color: darkslategray;
-    color: white;
-    padding: 3em 1em;
+    background-color: darkslategray; /* Deep gray background */
+    color: white; /* Text color */
+    padding: 2em 1em; /* Adjusted padding for a smaller layout */
     position: relative;
     z-index: 2;
-    text-shadow: ;
-
+    font-weight: 700; /* Slightly lighter font weight */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
 }
