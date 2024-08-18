@@ -13,7 +13,18 @@
 
 
 ## Is it cross platform? Compatibility?
- 
+
+### Android
+
+
+### iOS
+
+
+### macOS
+
+
+### Windows
+
 
 
 <img src="./readme-photo-1.png">
