@@ -1,6 +1,11 @@
 # subjects
 
-## What is it? 
+## What is it?
+ 
+> Subjects is a platform in Smith-Pad, allowing students with special needs 
+> to learn a subject using many forms of learning, such as tactile learning,
+> visual learning, and auditory learning.
+
 
 ## How does it work?
 
