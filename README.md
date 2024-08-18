@@ -8,6 +8,12 @@
 
 
 ## How does it work?
+> Using AI technologies, teachers and paraprofessionals will able to simply
+> prompt AI to create a lesson plan. 
+
+
+## Is it cross platform? Compatibility?
+ 
 
 
 <img src="./readme-photo-1.png">
