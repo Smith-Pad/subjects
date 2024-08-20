@@ -75,16 +75,3 @@ with open(GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE, 'a') as fd:
       </div>
     
     ''')
-
-
-
-## This is where we are able to create the backend content here
-BACKEND_CONTENT_SOURCE_DIR = "../templates/_generation_backend_txt_content"
-
-## Remove the backend content txt dir to prevent the conflicts
-os.system("rm -rf ../templates/_generation_backend_txt_content")
-
-
-## This is where we create the directory of the backend content 
-## txt source
-os.mkdir(BACKEND_CONTENT_SOURCE_DIR)
