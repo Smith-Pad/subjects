@@ -88,20 +88,3 @@ os.system("rm -rf ../templates/_generation_backend_txt_content")
 ## This is where we create the directory of the backend content 
 ## txt source
 os.mkdir(BACKEND_CONTENT_SOURCE_DIR)
-
-
-
-
-## This is where we are able to create the txt files for the subject
-## generation backend content txt files
-# BACKEND_CONTENT_SOURCE_FILE_INTRODUCTION = "../templates/_generation_backend_txt_content/introduction.txt"
-# BACKEND_CONTENT_SOURCE_FILE_CHAPTER_1 = "../templates/_generation_backend_txt_content/chapter1.txt"
-# BACKEND_CONTENT_SOURCE_FILE_CHAPTER_2 = "../templates/_generation_backend_txt_content/chapter2.txt"
-# BACKEND_CONTENT_SOURCE_FILE_CHAPTER_3 = "../templates/_generation_backend_txt_content/chapter3.txt"
-
-
-
-
-## This is where we are able to create the files with the with statement
-# with open('GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE_FILE_INTRODUCTION', 'a') as fd:
-#     fd.write(f'hello world ')
