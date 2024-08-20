@@ -75,3 +75,15 @@ with open(GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE, 'a') as fd:
       </div>
     
     ''')
+
+
+
+
+'''
+Now, this is where we need to create a directory inside the 
+[]../templates/] directory so that the backend components, such as 
+the text components can be recognized.
+'''
+
+
+os.system("cd ../templates && mkdir _generation_backend_txt_content_")
