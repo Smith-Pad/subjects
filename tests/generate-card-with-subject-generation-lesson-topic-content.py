@@ -82,7 +82,8 @@ with open(GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE, 'a') as fd:
 '''
 Now, this is where we need to create a directory inside the 
 []../templates/] directory so that the backend components, such as 
-the text components can be recognized.
+the text components can be recognized. Later, on there will be an 
+if statement for which native OS it is using. 
 '''
 
 
