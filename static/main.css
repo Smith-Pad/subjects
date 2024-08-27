@@ -2,8 +2,9 @@
 
 
 .layout1 {
-    background-color: lightskyblue; 
-    color: black; 
+    /* background-color: lightskyblue;  */
+    background-color: black;
+    color: white; 
     padding: 5em 2em; 
     position: relative;
     z-index: 2;
@@ -13,8 +14,9 @@
 
 
 .layout2 {
-    background-color: burlywood; 
-    color: black; 
+    /* background-color: burlywood;  */
+    background-color: black;
+    color: white; 
     padding: 5em 2em; 
     position: relative;
     z-index: 2;
@@ -25,8 +27,9 @@
 
 
 .layout3 {
-    background-color: coral; 
-    color: black; 
+    /* background-color: coral;  */
+    background-color: black;
+    color: white; 
     padding: 10em 2em; 
     position: relative;
     z-index: 2;
@@ -36,7 +39,9 @@
 
 
 .layout4 {
-    background-color: lightseagreen; 
+    /* background-color: lightseagreen;  */
+    /* color: white;  */
+    background-color: black;
     color: white; 
     padding: 10em 2em; 
     position: relative;
@@ -47,8 +52,9 @@
 
 
 .layout5 {
-    background-color: rgb(149, 144, 238); 
-    color: black; 
+    /* background-color: rgb(149, 144, 238);  */
+    background-color: black;
+    color: white; 
     padding: 10em 2em; 
     position: relative;
     z-index: 2;
@@ -58,8 +64,10 @@
 
 
 .layout6 {
-    background-color: darkkhaki; 
-    color: black; 
+    /* background-color: darkkhaki;  */
+    /* color: black;  */
+    background-color: black;
+    color: white; 
     padding: 10em 2em; 
     position: relative;
     z-index: 2;
@@ -69,7 +77,9 @@
 
 
 .layout7 {
-    background-color: dodgerblue; 
+    /* background-color: dodgerblue;  */
+    /* color: white;  */
+    background-color: black;
     color: white; 
     padding: 10em 2em; 
     position: relative;
@@ -82,7 +92,9 @@
 
 
 .small_layout0 {
-    background-color: red; 
+    /* background-color: red;  */
+    /* color: white;  */
+    background-color: black;
     color: white; 
     padding: 2em 1em; 
     position: relative;
@@ -93,7 +105,9 @@
 
 
 .indicator {
-    background-color: darkslategray; 
+    /* background-color: darkslategray;  */
+    /* color: white;  */
+    background-color: black;
     color: white; 
     padding: 2em 1em; 
     position: relative;
