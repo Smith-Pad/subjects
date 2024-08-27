@@ -1,102 +1,103 @@
 /* Layout Styles */
 
-/* Layout 1: Sky Blue Background */
+
 .layout1 {
-    background-color: lightskyblue; /* Soft blue background */
-    color: black; /* Text color */
-    padding: 5em 2em; /* Adjusted padding for better spacing */
+    background-color: lightskyblue; 
+    color: black; 
+    padding: 5em 2em; 
     position: relative;
     z-index: 2;
-    font-weight: 700; /* Slightly lighter font weight */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
+    font-weight: 700; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
 }
 
-/* Layout 2: Burlywood Background */
+
 .layout2 {
-    background-color: burlywood; /* Warm brown background */
-    color: black; /* Text color */
-    padding: 5em 2em; /* Adjusted padding for better spacing */
+    background-color: burlywood; 
+    color: black; 
+    padding: 5em 2em; 
     position: relative;
     z-index: 2;
-    font-weight: 700; /* Slightly lighter font weight */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+
 }
 
-/* Layout 3: Coral Background */
+
 .layout3 {
-    background-color: coral; /* Vibrant coral background */
-    color: black; /* Text color */
-    padding: 10em 2em; /* Adjusted padding for better spacing */
+    background-color: coral; 
+    color: black; 
+    padding: 10em 2em; 
     position: relative;
     z-index: 2;
-    font-weight: 700; /* Slightly lighter font weight */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
+    font-weight: 700; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Layout 4: Light Seagreen Background */
+
 .layout4 {
-    background-color: lightseagreen; /* Fresh seagreen background */
-    color: white; /* Changed text color for better contrast */
-    padding: 10em 2em; /* Adjusted padding for better spacing */
+    background-color: lightseagreen; 
+    color: white; 
+    padding: 10em 2em; 
     position: relative;
     z-index: 2;
-    font-weight: 700; /* Slightly lighter font weight */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
+    font-weight: 700; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
 }
 
-/* Layout 5: Light Lavender Background */
+
 .layout5 {
-    background-color: rgb(149, 144, 238); /* Soft lavender background */
-    color: black; /* Text color */
-    padding: 10em 2em; /* Adjusted padding for better spacing */
+    background-color: rgb(149, 144, 238); 
+    color: black; 
+    padding: 10em 2em; 
     position: relative;
     z-index: 2;
-    font-weight: 700; /* Slightly lighter font weight */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
+    font-weight: 700; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
 }
 
-/* Layout 6: Dark Khaki Background */
+
 .layout6 {
-    background-color: darkkhaki; /* Warm khaki background */
-    color: black; /* Text color */
-    padding: 10em 2em; /* Adjusted padding for better spacing */
+    background-color: darkkhaki; 
+    color: black; 
+    padding: 10em 2em; 
     position: relative;
     z-index: 2;
-    font-weight: 700; /* Slightly lighter font weight */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
+    font-weight: 700; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
 }
 
-/* Layout 7: Dodger Blue Background */
+
 .layout7 {
-    background-color: dodgerblue; /* Bright blue background */
-    color: white; /* Text color */
-    padding: 10em 2em; /* Adjusted padding for better spacing */
+    background-color: dodgerblue; 
+    color: white; 
+    padding: 10em 2em; 
     position: relative;
     z-index: 2;
-    font-weight: 700; /* Slightly lighter font weight */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
+    font-weight: 700; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
 }
 
-/* Small Layouts */
 
-/* Small Layout 0: Red Background */
+
+
 .small_layout0 {
-    background-color: red; /* Bold red background */
-    color: white; /* Text color */
-    padding: 2em 1em; /* Adjusted padding for a smaller layout */
+    background-color: red; 
+    color: white; 
+    padding: 2em 1em; 
     position: relative;
     z-index: 2;
-    font-weight: 700; /* Slightly lighter font weight */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
+    font-weight: 700; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
 }
 
-/* Indicator Layout: Dark Slate Gray Background */
+
 .indicator {
-    background-color: darkslategray; /* Deep gray background */
-    color: white; /* Text color */
-    padding: 2em 1em; /* Adjusted padding for a smaller layout */
+    background-color: darkslategray; 
+    color: white; 
+    padding: 2em 1em; 
     position: relative;
     z-index: 2;
-    font-weight: 700; /* Slightly lighter font weight */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
+    font-weight: 700; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
 }
