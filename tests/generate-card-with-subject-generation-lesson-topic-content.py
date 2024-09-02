@@ -78,6 +78,13 @@ with open(GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE, 'a') as fd:
 
 
 
+'''
+Now, this is where we need to remove the directory, which is used to 
+prevent any conflicts.
+
+'''
+os.system("cd ../templates && rm -rf _generation_backend_txt_content_")
+
 
 '''
 Now, this is where we need to create a directory inside the 
