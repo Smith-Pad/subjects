@@ -98,5 +98,5 @@ based on the lesson title that the teacher/paraprofessional has prompted.
 '''
 
 
-os.system("cd ../templates && mkdir _generation_backend_txt_content_ && cd _generation_backend_txt_content_")
+os.system("cd ../templates && mkdir _generation_backend_txt_content_ && cd _generation_backend_txt_content_ && touch test.txt")
 
