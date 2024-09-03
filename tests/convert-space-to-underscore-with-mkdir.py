@@ -1,3 +1,5 @@
+import os
+
 # Prompt the user to enter something
 user_input = input("Please enter something: ")
 
