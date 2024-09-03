@@ -9,3 +9,6 @@ underscored_input = user_input.replace(' ', '_')
 # Print the result
 print("Original input:", user_input)
 print("Modified input:", underscored_input)
+
+## Create the directory based on the underscored_input variable
+os.system("mkdir ../templates/" + underscored_input + "")
