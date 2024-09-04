@@ -37,6 +37,8 @@ print("Input the Lesson Description\n\n\n")
 lesson_description = input("")
 
 
+## Convert the lesson title spaces to underscores
+lesson_title_underscore_convert = lesson_title.replace(' ', '_')
 
 
 
@@ -98,5 +100,5 @@ based on the lesson title that the teacher/paraprofessional has prompted.
 '''
 
 
-os.system("cd ../templates && mkdir _generation_backend_txt_content_ && cd _generation_backend_txt_content_ && touch test.txt")
+os.system("cd ../templates && mkdir _generation_backend_txt_content_ && cd _generation_backend_txt_content_")
 
