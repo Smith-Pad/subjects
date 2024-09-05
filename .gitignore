@@ -1,1 +1,8 @@
 __pycache__/
+tests/*_generate_introduction.txt
+tests/*_generate_what-is-it.txt
+tests/*_generate_view-1.txt
+tests/*_generate_view-2.txt
+tests/*_generate_view-3.txt
+tests/*_generate_view-4.txt
+tests/*_generate_view-5.txt
