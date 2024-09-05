@@ -77,28 +77,3 @@ with open(GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE, 'a') as fd:
       </div>
     
     ''')
-
-
-
-'''
-Now, this is where we need to remove the directory, which is used to 
-prevent any conflicts.
-
-'''
-os.system("cd ../templates && rm -rf _generation_backend_txt_content_")
-
-
-'''
-Now, this is where we need to create a directory inside the 
-[]../templates/] directory so that the backend components, such as 
-the text components can be recognized. Later, on there will be an 
-if statement for which native OS it is using. 
-
-Now, we need to create a subdirectory inside the  _generation_backend_txt_content_ 
-based on the lesson title that the teacher/paraprofessional has prompted.
-
-'''
-
-
-os.system("cd ../templates && mkdir _generation_backend_txt_content_ && cd _generation_backend_txt_content_ && mkdir " + lesson_title_underscore_convert + "")
-
