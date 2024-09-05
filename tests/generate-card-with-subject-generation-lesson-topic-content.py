@@ -77,3 +77,37 @@ with open(GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE, 'a') as fd:
       </div>
     
     ''')
+
+
+
+## This is where we are able to create the components directly from the lesson_title_underscore_convert variable
+
+## Create introduction.txt
+os.system("touch " + lesson_title_underscore_convert + "_generate_" + "introduction" + ".txt")
+
+
+## Create what-is-it.txt
+os.system("touch " + lesson_title_underscore_convert + "_generate_" + "what-is-it" + ".txt")
+
+
+## Create view-1.txt
+os.system("touch " + lesson_title_underscore_convert + "_generate_" + "view-1" + ".txt")
+
+
+
+## Create view-2.txt
+os.system("touch " + lesson_title_underscore_convert + "_generate_" + "view-2" + ".txt")
+
+
+
+## Create view-3.txt
+os.system("touch " + lesson_title_underscore_convert + "_generate_" + "view-3" + ".txt")
+
+
+## Create view-4.txt
+os.system("touch " + lesson_title_underscore_convert + "_generate_" + "view-4" + ".txt")
+
+
+
+## Create view-5.txt
+os.system("touch " + lesson_title_underscore_convert + "_generate_" + "view-5" + ".txt")
