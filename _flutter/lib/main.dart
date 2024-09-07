@@ -1,84 +1,71 @@
 import 'package:flutter/material.dart';
 
-// Global variables for UI customization
+// Define a class to manage global styles
 class GlobalStyles {
   static Color backgroundColor = Colors.black;
   static Color textColor = Colors.white;
-  static String topHeaderText = "Subjects";
-  static TextAlign topHeaderTextAlign = TextAlign.left;
+  static String textContent = 'Hello World';
+  static double textSize = 40.0;
 
-  // Update the global UI background color
-  static void setBackgroundColor(Color color) {
-    backgroundColor = color;
+  // Function to update UI colors
+  static void updateUiColors() {
+    backgroundColor = Colors.black;
+    textColor = Colors.white;
   }
 
-  // Update the global text color
-  static void setTextColor(Color color) {
-    textColor = color;
+  // Function to update header colors
+  static void updateHeaderColors() {
+    backgroundColor = Colors.black;
+    textColor = Colors.white;
   }
 
-  // Update the top header text
-  static void setTopHeaderText(String text) {
-    topHeaderText = text;
-  }
-
-  // Update the alignment of the top header text
-  static void setTopHeaderTextAlign(TextAlign textAlign) {
-    topHeaderTextAlign = textAlign;
-  }
-}
-
-// Main app widget
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        scaffoldBackgroundColor: GlobalStyles.backgroundColor,
-        textTheme: TextTheme(
-          bodyLarge: TextStyle(color: GlobalStyles.textColor),
-        ),
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            GlobalStyles.topHeaderText,
-            textAlign: GlobalStyles.topHeaderTextAlign,
-          ),
-        ),
-        body: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Align(
-            alignment: Alignment.centerLeft, // Align the content to the left
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start, // Align children to the left
-              children: <Widget>[
-                Text(
-                  'Middle Section',
-                  style: TextStyle(color: GlobalStyles.textColor),
-                ),
-                const SizedBox(height: 20),
-                ElevatedButton(
-                  onPressed: () {
-                    // Button action
-                  },
-                  child: const Text('This is a button'),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
+  // Function to update header content
+  static void updateHeaderContent() {
+    textContent = 'Subjects';
+    textSize = 40.0;
   }
 }
 
 void main() {
-  // You can update global styles before running the app
-  GlobalStyles.setBackgroundColor(Colors.black);
-  GlobalStyles.setTextColor(Colors.white);
-  GlobalStyles.setTopHeaderText("Subjects");
-  GlobalStyles.setTopHeaderTextAlign(TextAlign.left);
+  // Apply the initial setup
+  GlobalStyles.updateUiColors();
+  GlobalStyles.updateHeaderColors();
+  GlobalStyles.updateHeaderContent();
 
-  runApp(MyApp());
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          GlobalStyles.textContent,
+          style: TextStyle(color: GlobalStyles.textColor),
+        ),
+        backgroundColor: GlobalStyles.backgroundColor,
+      ),
+      backgroundColor: GlobalStyles.backgroundColor,
+      body: Center(
+        child: Text(
+          GlobalStyles.textContent,
+          style: TextStyle(color: GlobalStyles.textColor, fontSize: GlobalStyles.textSize),
+        ),
+      ),
+    );
+  }
 }
