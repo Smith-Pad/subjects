@@ -1,0 +1,36 @@
+
+// Make it use a library
+;use library  = "Flutter";
+
+// Make it use a language
+;use language = "Dart";
+
+
+
+// Global functions here
+global_ui_background_color        = 0
+global_ui_text_color              = 0
+global_top_header_text            = 0
+global_top_header_text_align_left = 0
+
+
+global_ui_background_color()
+{
+        // Make the UI color globally change to dark. 
+        global_ui_background_color = "black";
+}
+
+
+global_ui_text_color()
+{
+        // Make the UI color text globally change to white.
+        global_ui_background_color = "white";
+}
+
+
+global_top_header_text()
+{
+        global_top_header_text_align_left = {
+                "Subjects"
+        }
+}
