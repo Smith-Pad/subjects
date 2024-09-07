@@ -7,19 +7,23 @@ class GlobalStyles {
   static String topHeaderText = "Subjects";
   static TextAlign topHeaderTextAlign = TextAlign.left;
 
-  static void updateBackgroundColor(Color color) {
+  // Update the global UI background color
+  static void setBackgroundColor(Color color) {
     backgroundColor = color;
   }
 
-  static void updateTextColor(Color color) {
+  // Update the global text color
+  static void setTextColor(Color color) {
     textColor = color;
   }
 
-  static void updateTopHeaderText(String text) {
+  // Update the top header text
+  static void setTopHeaderText(String text) {
     topHeaderText = text;
   }
 
-  static void updateTopHeaderTextAlign(TextAlign textAlign) {
+  // Update the alignment of the top header text
+  static void setTopHeaderTextAlign(TextAlign textAlign) {
     topHeaderTextAlign = textAlign;
   }
 }
@@ -32,7 +36,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: GlobalStyles.backgroundColor,
         textTheme: TextTheme(
-          bodyMedium: TextStyle(color: GlobalStyles.textColor), // Use bodyText2 for modern Flutter versions
+          bodyLarge: TextStyle(color: GlobalStyles.textColor),
         ),
       ),
       home: Scaffold(
@@ -42,8 +46,27 @@ class MyApp extends StatelessWidget {
             textAlign: GlobalStyles.topHeaderTextAlign,
           ),
         ),
-        body: Center(
-          child: Text('Hello World', style: TextStyle(color: GlobalStyles.textColor)),
+        body: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Align(
+            alignment: Alignment.centerLeft, // Align the content to the left
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start, // Align children to the left
+              children: <Widget>[
+                Text(
+                  'Middle Section',
+                  style: TextStyle(color: GlobalStyles.textColor),
+                ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    // Button action
+                  },
+                  child: const Text('This is a button'),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );
@@ -51,5 +74,11 @@ class MyApp extends StatelessWidget {
 }
 
 void main() {
+  // You can update global styles before running the app
+  GlobalStyles.setBackgroundColor(Colors.black);
+  GlobalStyles.setTextColor(Colors.white);
+  GlobalStyles.setTopHeaderText("Subjects");
+  GlobalStyles.setTopHeaderTextAlign(TextAlign.left);
+
   runApp(MyApp());
 }

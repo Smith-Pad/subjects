@@ -8,11 +8,12 @@
 
 
 // Global functions here
-global_ui_background_color        = 0
-global_ui_text_color              = 0
-global_top_header_text            = 0
-global_top_header_text_align_left = 0
-
+global_ui_background_color                      = 0
+global_ui_text_color                            = 0
+global_top_header_text                          = 0
+global_top_header_text_align_left               = 0
+global_middle_section_scroll_view               = 0
+global_middle_section_scroll_view_align_left    = 0
 
 global_ui_background_color()
 {
@@ -32,5 +33,14 @@ global_top_header_text()
 {
         global_top_header_text_align_left = {
                 "Subjects"
+        }
+}
+
+
+global_middle_section_scroll_view()
+{
+        global_middle_section_scroll_view_align_left()
+        {
+                <button> This is a button </button>
         }
 }
