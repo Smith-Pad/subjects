@@ -5,3 +5,25 @@
 ;use language = ".c"
 
 
+senal.create.gtk.sidebar()
+{
+        senal.create.gtk.sidebar.button(
+                Name = "hello"
+        )
+
+
+        senal.create.gtk.sidebar.button(
+                Name = "hello"
+        )
+
+
+
+        senal.create.gtk.sidebar.button(
+                Name = "hello"
+        )
+
+
+        senal.create.gtk.sidebar.button(
+                Name = "hello"
+        )
+}
