@@ -1,0 +1,7 @@
+// main.senal
+
+
+;use library  = "gtk"
+;use language = ".c"
+
+
