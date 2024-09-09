@@ -3,31 +3,3 @@
 
 // Make it use a language
 ;use language = "Dart";
-
-
-
-
-global_ui_colors                        = 0
-global_top_header_colors                = 0
-global_top_header_content               = 0   
-
-
-function global_ui_colors()
-{
-        background_color        = "black";
-        text_color              = "white";
-}
-
-
-function global_top_header_colors()
-{
-        background_color        = "black";
-        text_color              = "white";
-}
-
-
-function global_top_header_content()
-{
-        Text                   = "Subjects";
-        Text_Size              = "40";
-}
