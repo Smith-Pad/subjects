@@ -1,37 +1,6 @@
 import 'package:flutter/material.dart';
 
-// Define a class to manage global styles
-class GlobalStyles {
-  static Color backgroundColor = Colors.black;
-  static Color textColor = Colors.white;
-  static String textContent = 'Hello World';
-  static double textSize = 40.0;
-
-  // Function to update UI colors
-  static void updateUiColors() {
-    backgroundColor = Colors.black;
-    textColor = Colors.white;
-  }
-
-  // Function to update header colors
-  static void updateHeaderColors() {
-    backgroundColor = Colors.black;
-    textColor = Colors.white;
-  }
-
-  // Function to update header content
-  static void updateHeaderContent() {
-    textContent = 'Subjects';
-    textSize = 40.0;
-  }
-}
-
 void main() {
-  // Apply the initial setup
-  GlobalStyles.updateUiColors();
-  GlobalStyles.updateHeaderColors();
-  GlobalStyles.updateHeaderContent();
-
   runApp(const MyApp());
 }
 
@@ -41,30 +10,49 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomeScreen(),
+      home: MyHomePage(),
     );
   }
 }
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          GlobalStyles.textContent,
-          style: TextStyle(color: GlobalStyles.textColor),
-        ),
-        backgroundColor: GlobalStyles.backgroundColor,
+        title: const Text('Flutter Sidebar Example'),
       ),
-      backgroundColor: GlobalStyles.backgroundColor,
-      body: Center(
-        child: Text(
-          GlobalStyles.textContent,
-          style: TextStyle(color: GlobalStyles.textColor, fontSize: GlobalStyles.textSize),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text(
+                'Sidebar Header',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListTile(
+              title: const Text('Hello button'),
+              onTap: () {
+                // Define the action on button tap here
+                print('Button tapped');
+                Navigator.pop(context); // Close the drawer after tapping
+              },
+            ),
+          ],
         ),
+      ),
+      body: const Center(
+        child: Text('Main Content Area'),
       ),
     );
   }
