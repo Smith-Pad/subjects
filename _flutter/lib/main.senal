@@ -4,7 +4,7 @@
 ;use language = ".dart"
 
 
-senal.create.gtk.sidebar()
+senal.create.flutter.sidebar()
 {
         senal.create.flutter.button (
                 Text = "Hello button";
