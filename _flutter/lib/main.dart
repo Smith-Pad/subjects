@@ -22,7 +22,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flutter Sidebar Example'),
+        title: const Text('Subjects'),
       ),
       drawer: Drawer(
         child: ListView(
