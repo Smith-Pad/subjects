@@ -36,10 +36,5 @@ def main_menu():
 def settings_menu():
         return render_template('settings.html')
 
-
-@app.route('/game_ui_test')
-def game_ui_test():
-        return render_template('template-new-refreshed/index.html')
-
 if __name__ == "__main__":
     app.run(debug=True)
