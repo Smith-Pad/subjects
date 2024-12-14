@@ -21,6 +21,8 @@ app.register_blueprint(main_routes)
 
 
 
+## Get the current username from the OS
+username = getpass.getuser()
 
 
 @app.route("/")
@@ -30,7 +32,8 @@ def index():
 
 @app.route("/main_menu")
 def main_menu():
-        return render_template('main_menu.html')
+        username = getpass.getuser()
+        return render_template('main_menu.html', username=username)
 
 
 @app.route("/settings_menu")
