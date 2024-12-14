@@ -6,3 +6,4 @@ tests/*_generate_view-2.txt
 tests/*_generate_view-3.txt
 tests/*_generate_view-4.txt
 tests/*_generate_view-5.txt
+templates/_latest.assignments.cards.html
