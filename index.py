@@ -9,7 +9,7 @@ import json                                                                     
 import getpass                                                                  ## Import the getpass library
 
 app = Flask(__name__)
-
+app.config['DEBUG'] = True
 
 
 '''
@@ -33,7 +33,7 @@ def index():
 @app.route("/main_menu")
 def main_menu():
         username = getpass.getuser()
-        return render_template('main_menu.html', username=username)
+        return render_template('main_menu.html' , username=username)
 
 
 @app.route("/settings_menu")
