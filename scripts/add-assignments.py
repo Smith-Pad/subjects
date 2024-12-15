@@ -1,6 +1,6 @@
 import os
 
-
+## Variables for adding the Assignment Cards that are considered as latest assignments on the home screen.
 GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE = "../templates/_latest.assignments.cards.html"
 GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_CARD_TITLE = "Hello world"
 GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_CARD_DESCRIPTION = "Another description"
