@@ -39,5 +39,5 @@ DESCRIPTION_OF_LESSON = input("Create the description of the lesson:        ")
 
 
 '''
-In this section, this is where we are able to 
+In this section, this is where we are able to create the lessons using Ollama.
 '''
