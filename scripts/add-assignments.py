@@ -1,5 +1,6 @@
 '''
 CLI VERSION
+
 '''
 
 
@@ -14,6 +15,9 @@ GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE = "../templates/_latest.assi
 TITLE_OF_LESSON = input("Create the title of the lesson:        ")
 DESCRIPTION_OF_LESSON = input("Create the description of the lesson:        ")
 
+'''
+Right now, this is commented for now until this is activated again...
+'''
 
 # with open(GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE, 'a') as fd:
 #     fd.write(f'\n\n\n\n\n')
@@ -40,4 +44,6 @@ DESCRIPTION_OF_LESSON = input("Create the description of the lesson:        ")
 
 '''
 In this section, this is where we are able to create the lessons using Ollama.
+
+Make sure you have Ollama already. 
 '''
