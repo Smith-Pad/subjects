@@ -15,3 +15,8 @@ branch is made.
 
 - Native Apple Swift Support for Apple Devices 
 - More innovative features using Apple Swift and Apple Devices in General
+
+
+## NOTICES: 
+
+This branch will be moved to a new branch called subjects-apple or subjects-swift
