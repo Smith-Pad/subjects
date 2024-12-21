@@ -7,13 +7,36 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
+
+
+struct ContentView: View
+{
+    var body: some View
+    {
         VStack
         {
-            // text should be hello world
+            // Text should be "Hello World!"
             Text("Hello World!")
         }
         .padding()
+        
+        
+        
+        .toolbar
+        {
+            ToolbarItem(placement: .navigation)
+            { // Places the button on the left
+                Button {
+                    print("do something")
+                } label: {
+                    Text("Press Here")
+                }
+            }
+        }
+        
+        
+        
+        
+        
     }
 }
