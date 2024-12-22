@@ -41,4 +41,4 @@ def settings_menu():
         return render_template('settings.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, use_reloader=True)
