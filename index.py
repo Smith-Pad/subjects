@@ -10,7 +10,7 @@ import getpass                                                                  
 import time                                                                     ## Import the time library
 
 app = Flask(__name__)
-app.config['DEBUG'] = True
+
 
 
 '''
