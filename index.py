@@ -8,10 +8,8 @@ import os                                                                       
 import json                                                                     ## Import the json library
 import getpass                                                                  ## Import the getpass library
 import time                                                                     ## Import the time library
-from flask_socketio import SocketIO, send
 
 app = Flask(__name__)
-socketio = SocketIO(app)
 
 
 '''
