@@ -1,4 +1,7 @@
 _fastapi
 ----------------------------------------------------------------
 
-A merger experiment for Subjects VA-1 that uses HMR's and Hot Reload
+A merger experiment for Subjects VA-1 that uses HMR's and Hot Reload. 
+
+
+Of Course, python-flask will in the existance of Subjects VA-1... don't worry about it
