@@ -48,4 +48,5 @@ In this section, this is where we are able to create the lessons using Ollama.
 Make sure you have Ollama already. 
 '''
 
-
+## The first thing to do is to create a directory for the lesson
+os.system(f'cd ../templates/ && mkdir "{TITLE_OF_LESSON}"')
