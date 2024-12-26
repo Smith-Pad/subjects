@@ -48,5 +48,26 @@ In this section, this is where we are able to create the lessons using Ollama.
 Make sure you have Ollama already. 
 '''
 
-## The first thing to do is to create a directory for the lesson
+## The first thing to do is to create a generation for the lesson
 os.system(f'cd ../templates/ && mkdir "{TITLE_OF_LESSON}"')
+
+
+
+## The second thing is to create the routing schemes on the lesson
+os.system(f'cd ../templates/ && mkdir "{TITLE_OF_LESSON}"')
+
+
+## Then create some files in that generation
+os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch index.html')
+os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch main_menu.html')
+os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 01.html')
+os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 02.html')
+os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 03.html')
+os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 04.html')
+os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 05.html')
+os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 06.html')
+os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 07.html')
+os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 08.html')
+os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 09.html')
+os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 10.html')
+os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch pop11.html')
