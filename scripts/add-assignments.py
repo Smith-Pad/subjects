@@ -55,7 +55,7 @@ os.system(f'cd ../templates/ && mkdir "{TITLE_OF_LESSON}"')
 
 ## The second thing is to create the routing schemes on the lesson
 os.system(f'cd ../templates/ && mkdir "{TITLE_OF_LESSON}"')
-
+ 
 
 ## Then create some files in that generation
 os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch index.html')
