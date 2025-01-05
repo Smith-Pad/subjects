@@ -13,6 +13,9 @@ GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE = "../templates/_latest.assi
 
 
 TITLE_OF_LESSON = input("Create the title of the lesson:        ")
+
+TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES = TITLE_OF_LESSON.replace(" ", "_")
+
 DESCRIPTION_OF_LESSON = input("Create the description of the lesson:        ")
 
 '''
@@ -26,7 +29,7 @@ Right now, this is commented for now until this is activated again...
 # with open(GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE, 'a') as fd:
 #     fd.write(f'''
 #       <div class="col s12 m3">
-#         <div class="card blue-grey darken-1">
+#         <div class="card blue-grey darken-1">-
 #           <div class="card-content white-text">
 #             <span class="card-title">{TITLE_OF_LESSON}</span>
 #             <p>{DESCRIPTION_OF_LESSON}</p>
@@ -58,16 +61,20 @@ os.system(f'cd ../templates/ && mkdir "{TITLE_OF_LESSON}"')
  
 
 ## Then create some files in that generation
-os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch index.html')
-os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch main_menu.html')
-os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 01.html')
-os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 02.html')
-os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 03.html')
-os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 04.html')
-os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 05.html')
-os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 06.html')
-os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 07.html')
-os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 08.html')
-os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 09.html')
-os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch 10.html')
-os.system(f'cd ../templates/ && cd "{TITLE_OF_LESSON}" && touch pop11.html')
+os.system(f'cd ../templates/ && cd "{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}" && touch index.html')
+os.system(f'cd ../templates/ && cd "{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}" && touch main_menu.html')
+os.system(f'cd ../templates/ && cd "{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}" && touch 01.html')
+os.system(f'cd ../templates/ && cd "{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}" && touch 02.html')
+os.system(f'cd ../templates/ && cd "{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}" && touch 03.html')
+os.system(f'cd ../templates/ && cd "{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}" && touch 04.html')
+os.system(f'cd ../templates/ && cd "{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}" && touch 05.html')
+os.system(f'cd ../templates/ && cd "{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}" && touch 06.html')
+os.system(f'cd ../templates/ && cd "{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}" && touch 07.html')
+os.system(f'cd ../templates/ && cd "{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}" && touch 08.html')
+os.system(f'cd ../templates/ && cd "{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}" && touch 09.html')
+os.system(f'cd ../templates/ && cd "{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}" && touch 10.html')
+os.system(f'cd ../templates/ && cd "{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}" && touch pop11.html')
+
+
+with open("./templates/hello world/index.html}", 'a') as fd:
+    fd.write(f'hello world again')
