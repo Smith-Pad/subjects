@@ -13,6 +13,8 @@ hands = mp_hands.Hands(
     min_tracking_confidence=0.5   # Confidence threshold for tracking
 )
 
+
+
 cap = cv2.VideoCapture(0)  # Open the camera
 
 if not cap.isOpened():
