@@ -1,5 +1,6 @@
 import cv2
 import mediapipe
+import mediapipe.tasks import python
 
 cap = cv2.VideoCapture(0)  # Open the camera
 
