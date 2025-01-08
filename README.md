@@ -21,19 +21,19 @@
 
 
 ### Android
-
+> Status: Pending
 
 ### iOS
-
+> Status: Pending
 
 ### macOS
-
+> Status: Pending
 
 ### visionOS
-
+> Status: Pending
 
 ### Windows
-
+> Status: Pending
 
 <!--
 <img src="./readme-photo-1.png"<>
