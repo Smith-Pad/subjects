@@ -55,3 +55,8 @@
 ## Installation Instructions
 
 In this section, we are going to be be talking about the installation instructions.
+
+
+## Sources
+
+[https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker/python#image_1]
