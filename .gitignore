@@ -7,3 +7,4 @@ tests/*_generate_view-3.txt
 tests/*_generate_view-4.txt
 tests/*_generate_view-5.txt
 templates/_latest.assignments.cards.html
+tests-v2/hands-detect-part-1/hand_landmarker.task
