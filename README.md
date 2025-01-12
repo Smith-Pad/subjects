@@ -35,21 +35,6 @@
 ### Windows
 > Status: Pending
 
-<!--
-<img src="./readme-photo-1.png"<>
-<ul></ul>
-<img src="./readme-photo-2.png">
-<ul></ul>
-<img src="./readme-photo-3.png">
-<ul></ul>
-<img src="./readme-photo-4.png">
-<ul></ul>
-<img src="./readme-photo-5.png">
-<ul></ul>
-<img src="./readme-photo-6.png">
--->
-
-
 
 
 ## Installation Instructions
