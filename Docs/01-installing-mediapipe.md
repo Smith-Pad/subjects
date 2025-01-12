@@ -8,3 +8,10 @@ In this section, we will discuss the installation of MediaPipe, specifically for
 ## Tools to use preferably
 
 - VScode
+
+
+## MAKE SURE
+
+Make sure you select the .venv in order to make mediapipe work.
+
+<img src="Screenshot 2025-01-12 at 1.56.37 PM.png">
