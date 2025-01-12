@@ -1,0 +1,16 @@
+.center {
+  text-align: center;
+  border: 3px solid /* ONLY ON DEBUG */transparent;
+}
+
+/* Position */
+.left {
+  text-align: left;
+  border: 3px solid /* ONLY ON DEBUG */transparent ;
+}
+
+/* Position */
+.space {
+  text-align: left;
+  border: 3px solid /* ONLY ON DEBUG */transparent;
+}

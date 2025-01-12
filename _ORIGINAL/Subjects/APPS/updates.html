@@ -1,0 +1,146 @@
+<link rel="stylesheet" href="../src/UI.css" type="text/css">
+<link rel="stylesheet" href="../src/position-text.css" type="text/css">
+<link rel="stylesheet" href="../src/layouts.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+
+
+
+    header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        color: #c8c8c8;
+    }
+
+    header p {
+        font-size: 1.1em;
+        color: #777;
+    }
+
+    .version-update {
+        margin-bottom: 20px;
+        padding: 15px;
+        border-left: 4px solid #4CAF50;
+        background-color: #f9f9f9;
+    }
+
+    .version-update h2 {
+        font-size: 1.8em;
+        color: #333;
+    }
+
+    .release-date {
+        font-size: 1.1em;
+        color: #000000;
+        margin-top: 5px;
+    }
+
+    ul {
+        margin-top: 10px;
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+        color: black;
+    }
+
+    ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+        .changelog-container {
+            width: 95%;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        header p {
+            font-size: 1em;
+        }
+
+        .version-update h2 {
+            font-size: 1.5em;
+        }
+    }
+</style>
+
+
+
+<div class="get-no-layout-indicator-side-round">
+    <a href="../index.html" class="button-no-animate-small">Back</a> Updates
+</div>
+
+<div class="space"></div>
+<div class="space"></div>
+<div class="space"></div>
+<div class="space"></div>
+<div class="space"></div>
+<div class="space"></div>
+<div class="space"></div>
+<div class="space"></div>
+<div class="space"></div>
+<div class="space"></div>
+<div class="space"></div>
+<div class="space"></div>
+
+<center>
+    <fontsize200> Updates </fontsize200>
+</center>
+
+<div class="changelog-container">
+    <header>
+        <h1>Changelog</h1>
+        <p>Stay updated with the latest changes in each version release.</p>
+    </header>
+
+    <section class="version-update">
+        <h2>v.1.0.1BL.701 - Jan 10 2025</h2>
+        <p class="release-date">Released on: <strong>Jan 10 2024</strong></p>
+
+        <b> Major Updates </b>
+        <ul>
+             <li>Second View UI Navi on Top is slightly bigger</li>
+             <li> Files that are changed: 
+                <ul>
+                    <li>src/UI.css</li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <ul>
+            <li>
+                <b>Security Updates for Sys-Admins</b>
+                <ul>
+                    <li>Fixed vulerability in memory leak for ARM devices CVE-2024-4610</li>
+                    <li>
+                        <code>
+                            Use After Free vulnerability in Arm Ltd Bifrost GPU Kernel Driver, Arm Ltd Valhall GPU Kernel Driver allows a local non-privileged user to make 
+                            <ul></ul>
+                            improper GPU memory processing operations to gain access to already freed memory.This issue affects Bifrost GPU Kernel Driver: from r34p0 through 
+                            <ul></ul>
+                            r40p0; Valhall GPU Kernel Driver: from r34p0 through r40p0.
+                        </code>
+                    </li>
+
+                    <li> Solution: Fallback Graphics mode is explicity turned on until merge -> </li>
+                    <li> Hold off ARM devices and switch to AMD temporary </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</div>
