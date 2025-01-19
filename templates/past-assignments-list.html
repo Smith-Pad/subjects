@@ -1,0 +1,157 @@
+<!-- Global Components-->
+<!-- <link rel="stylesheet" href="static/position-text.css" media="screen and (min-width: 1080px) and (max-height: 1920px)">  -->
+<link rel="stylesheet" href="static/position-text.css">
+
+
+
+<!-- Subjects Elements-->
+<link rel="stylesheet" href="static/css/subjects-buttons.css" type="text/css">
+<link rel="stylesheet" href="static/subjects-top-bar.css" type="text/css">
+<link rel="stylesheet" href="static/UI.css" type="text/css">
+<link rel="stylesheet" href="static/layouts.css" type="text/css">
+
+
+<!-- Temporary route for scss components may/will be changed soon -->
+
+<link rel="stylesheet" href="static/index-new.css" type="text/css">
+
+
+<link rel="stylesheet" href="static/FOIL-UI.css" type="text/css">
+
+<link rel="stylesheet" href="static/main.css" type="text/css">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+</head>
+
+<body>
+    <div class="indicator">
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+
+        <fontsize90>Subjects</fontsize90>
+        <a href="/main_menu" class="button small button is-red button-no-animate-mode">Back</a>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+    </div>
+
+
+
+    <div class="layout side-round">
+        <div>
+            <LIST>
+                <h1> Past Assignments List </h1>
+            </LIST>
+            
+            <!-- PUT SOURCE HERE -->
+            {% include 'past-assignments-cards.html' %}
+
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <BACKUP>
+    <div class="layout5">
+        <h1>Latest Assignments</h1>
+        <div class="row">
+
+        </div>
+    </div>
+
+    <div class="layout5">
+        <h1>Past Assignments</h1>
+        <div class="row">
+
+        </div>
+    </div>
+
+
+    <div class="layout5">
+        <h1>Settings Option</h1>
+        <md-filled-button onclick="location.href='http://127.0.0.1:5000/settings_menu'">Settings</md-filled-button>
+    </div>
+
+</BACKUP> -->
