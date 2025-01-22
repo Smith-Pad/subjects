@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="static/subjects-top-bar.css" type="text/css">
 <link rel="stylesheet" href="static/UI.css" type="text/css">
 <link rel="stylesheet" href="static/layouts.css" type="text/css">
-
+ 
 
 <!-- Temporary route for scss components may/will be changed soon -->
 
@@ -36,6 +36,15 @@
         document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
     </script>
 </head>
+
+
+<style>
+    .flex {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+</style>
 
 <body>
     <div class="indicator">
@@ -71,10 +80,10 @@
                 <h1> Latest Assignments List </h1>
             </LIST>
             
-            <!-- PUT SOURCE HERE -->
-            {% include 'latest-assignments-cards.html' %}
-            
-
+            <div class="flex">
+                <!-- PUT SOURCE HERE -->
+                {% include 'latest-assignments-cards.html' %}
+            </div>
         </div>
     </div>
 </body>

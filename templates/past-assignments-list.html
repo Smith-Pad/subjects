@@ -37,6 +37,16 @@
     </script>
 </head>
 
+
+<style>
+    .flex {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+</style>
+
+
 <body>
     <div class="indicator">
         <div class="space"></div>
@@ -71,9 +81,10 @@
                 <h1> Past Assignments List </h1>
             </LIST>
             
-            <!-- PUT SOURCE HERE -->
-            {% include 'past-assignments-cards.html' %}
-
+            <div class="flex">
+                <!-- PUT SOURCE HERE -->
+                {% include 'past-assignments-cards.html' %} 
+            </div>
         </div>
     </div>
 </body>
