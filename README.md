@@ -42,6 +42,11 @@
 In this section, we are going to be be talking about the installation instructions.
 
 
+## Screenshots
+
+<img src="./Screenshot 2025-01-23 at 5.07.09 PM.png">
+<img src="./Screenshot 2025-01-23 at 5.06.12 PM.png">
+
 ## Sources
 
 [https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker/python#image_1]
