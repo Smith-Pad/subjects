@@ -17,6 +17,9 @@ GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE = "templates/latest-assignme
 TITLE_OF_LESSON = input("Create the title of the lesson:        ")
 
 
+TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES = TITLE_OF_LESSON.replace(" ", "_")
+
+
 ## This is the where the para is prompted to enter the description of the lesson
 DESCRIPTION_OF_LESSON = input("Create the description of the lesson:         ")
 
