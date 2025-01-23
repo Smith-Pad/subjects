@@ -43,7 +43,7 @@ with open(GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE, 'a') as fd:
             <p>{DESCRIPTION_OF_LESSON}</p>
           </div>
           <div class="card-action">
-              <md-filled-button>Ready Fredy</md-filled-button>
+              <md-filled-button onclick="location.href='/'">Ready Fredy</md-filled-button>
           </div>
         </div>
       </div>
