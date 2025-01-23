@@ -6,11 +6,15 @@ import sys
 import json
 
 
+## Initial creation
+os.system("touch routes.py")
 
 
 ## This is where you are able to target the source to create the assignments to
 GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE = "templates/latest-assignments-cards.html"
 
+
+GENERATION_ROUTES_ROUTING = "routes.py"
 
 
 ## This is where the para is prompted to enter the title of the lesson 
@@ -46,9 +50,34 @@ with open(GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE, 'a') as fd:
             <p>{DESCRIPTION_OF_LESSON}</p>
           </div>
           <div class="card-action">
-              <md-filled-button onclick="location.href='/'">Ready Fredy</md-filled-button>
+              <md-filled-button onclick="location.href='/{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}'">Ready Fredy</md-filled-button>
           </div>
         </div>
       </div>
+    
+    ''')
+
+
+
+with open(GENERATION_ROUTES_ROUTING, 'a') as fd:
+    fd.write(f'''
+# routes.py
+
+from flask import Blueprint, render_template
+
+
+main_routes = Blueprint('main', __name__)
+
+@main_routes.route("/uiui")
+def uiui():
+    return render_template('uiui.html')
+
+    ''')
+
+
+with open(GENERATION_ROUTES_ROUTING, 'a') as fd:
+    fd.write(f'''
+
+        \n\n\n\n\n\n\n\n\n\n\n
     
     ''')
