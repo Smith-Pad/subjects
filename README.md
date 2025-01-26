@@ -36,6 +36,9 @@
 > Status: Pending
 
 
+## Issues that are discovered
+In this section, here are issues that we discovered
+
 
 ## Installation Instructions
 
