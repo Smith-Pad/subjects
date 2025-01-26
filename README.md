@@ -40,7 +40,7 @@
 ## Installation Instructions
 
 In this section, we are going to be be talking about the installation instructions.
-this section will cover about it later on. 
+this section will cover about it later on.
 
 
 ## Screenshots
