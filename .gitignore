@@ -11,11 +11,4 @@ tests-v2/hands-detect-part-1/hand_landmarker.task
 templates/latest-assignments-cards.html
 templates/past-assignments-cards.html
 routes.py
-splashscreen-lesson-module-ux-dev.html
-introduction-lesson-module-ux-dev.html
-introduction-lesson-module-ux-dev-with-bottom-bar.html
-introduction-lesson-module-ux-dev-v1.css
-styles.css
-splashscreen.css
-styles-keyframe.css
-styles-animation-duration.css
+PHP-Lesson-Thingy
