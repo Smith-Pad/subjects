@@ -1,4 +1,4 @@
-# subjects
+[]# subjects
 
 ## What is it?
 
@@ -46,6 +46,12 @@ In this section, here are issues that we discovered
 In this section, we are going to be be talking about the installation instructions.
 this section will cover about it later on.
 
+
+## TODO:
+
+- Just to let you know when running the Subjects VA-1, the file: `routes.py` file
+  is required in order to make Subjects VA-1 fully working. So make an automated
+  script for that.
 
 ## Screenshots
 
