@@ -18,6 +18,7 @@
 > that are designed for each native operating system. Rather than having
 > a cross platform based on electron, we want to respect by creating apps
 > based on each of the Operating System's native App UI style guidelines.
+> But that feature will arrive in the near future.... 
 
 
 ### Android

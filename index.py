@@ -8,7 +8,7 @@ import os                                                                       
 import json                                                                     ## Import the json library
 import getpass                                                                  ## Import the getpass library
 import time                                                                     ## Import the time library
-import pytest                                                                   ## Import the pytest library                                    
+import pytest                                                                   ## Import the pytest library
 
 app = Flask(__name__)
 
@@ -29,7 +29,7 @@ username = getpass.getuser()
 
 '''
 @docs
-This is where the client will able to see the splashscreen of Smith-Pad. 
+This is where the client will able to see the splashscreen of Smith-Pad.
 '''
 
 @app.route("/")
@@ -40,7 +40,7 @@ def index():
 '''
 @docs
 In the main menu, this is where the client will able to select the two buttons
-which is latest-assignments and past assignments. 
+which is latest-assignments and past assignments.
 '''
 
 @app.route("/main_menu")
@@ -51,7 +51,7 @@ def main_menu():
 
 '''
 @docs
-In the latest-assignments view, this is where all the assignments will be 
+In the latest-assignments view, this is where all the assignments will be
 assigned
 '''
 @app.route("/latest_assignments_list")
@@ -61,7 +61,7 @@ def latest_assignments_list():
 '''
 @docs
 In the past assignments view, this is where all the assignments will be moved
-once the assignments has been completed. 
+once the assignments has been completed.
 '''
 
 @app.route("/past_assignments_list")
