@@ -1,0 +1,51 @@
+#+TITLE: Issues
+
+* Issues with the blobs
+In this section, we are going to be talking about issues in general
+
+** Problem
+- Webkit Crashes [Safari Like engines] when using animation delay
+  with blobs.
+
+** Solution
+- Disable Blobs that are filled with animations.
+
+#+BEGIN_SRC css
+.background-blobs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+.blob {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    filter: blur(100px);
+}
+
+.blob-red {
+    background: linear-gradient(135deg, #8b4661, #7a324a);
+    top: 15%;
+    left: 20%;
+}
+
+.blob-blue {
+    background: linear-gradient(135deg, #4a648b, #3a4b7a);
+    top: 50%;
+    left: 80%;
+}
+
+.blob-yellow {
+    background: linear-gradient(135deg, #8b7446, #7a6432);
+    top: 70%;
+    left: 30%;
+}
+
+#+END_SRC

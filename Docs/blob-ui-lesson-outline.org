@@ -1,0 +1,28 @@
+#+TITLE: Blob UI Lesson Outline
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+* Introduction
+
+In this section, we are going to be talking about the lesson outline for Subjects VA-1.02
+
+
+
+
+
+
+
+* Views Description
+
+** Step 1
+User will be notified to tap the button to reveal the "what is it"
+thing with the beautful animation after the user clicks on the button
+
+** Step 2
+Then, with the power of the 03-1A1-zoom-1 abstraction, the text will
+go away for the first animation.
+
+
+** Step 3
+Then, with the power of the 03-1A1-zoom-2 abstraction, the blobs will
+be mixed together or can be changed to black background or spotlight
