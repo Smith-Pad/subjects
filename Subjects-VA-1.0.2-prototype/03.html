@@ -6,41 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Lesson - Smith-Pad</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./position-text.css">
 </head>
 
 <body>
-    <main>
-        <h1 class="glowing-text"> What is it? </h1>
-
-        <p class="description">
-            Description Here. This is an interactive lesson with smooth animations
-            and accessibility-friendly navigation.
-        </p>
-
-        <button id="read-aloud">🔊 Read Aloud</button>
-        <button>🔊 Proceed</button>
-
-        <div class="background-blobs">
-            <div class="blob blob-red"></div>
-            <div class="blob blob-blue"></div>
-            <div class="blob blob-yellow"></div>
-        </div>
-
-        <nav class="nav-bar">
-            <button class="nav-button" onclick="location.href='./02.html'">Back</button>
-            <button class="nav-button" onclick="location.href='./index.html'">Home</button>
-            <button class="nav-button" onclick="location.href='./04.html'">Next</button>
-        </nav>
-    </main>
-
-    <script>
-        document.getElementById("read-aloud").addEventListener("click", function () {
-            const text = document.querySelector(".description").textContent;
-            const speech = new SpeechSynthesisUtterance(text);
-            speech.lang = "en-US";
-            window.speechSynthesis.speak(speech);
-        });
-    </script>
+    hello world
 </body>
+
+<div class="nav-bar-manual-center">
+    <button class="nav-button-manual-center" onclick="location.href='./01.html'">Back</button>
+    <button class="nav-button-manual-center">Home</button>
+    <button class="nav-button-manual-center" onclick="location.href='./03.html'">Next</button>
+</div>
+
 
 </html>

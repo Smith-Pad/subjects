@@ -6,32 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Lesson - Smith-Pad</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./position-text.css">
 </head>
 
-<body>
-    <main>
-        <h1> What is it? </h1>
+<body class="body-flex">
+    <div class="glowing-text" onclick="location.href='./03.html'">⚠️Are you ready?</div>
 
-        <p class="description">
-            Description Here. This is an interactive lesson with smooth animations
-            and accessibility-friendly navigation.
-        </p>
 
-        <button id="read-aloud">🔊 Read Aloud</button>
-        <button>🔊 Proceed</button>
 
-        <!-- <div class="background-blobs">
-            <div class="blob blob-red"></div>
-            <div class="blob blob-blue"></div>
-            <div class="blob blob-yellow"></div>
-        </div> -->
+    <div class="glowing-text">
+        <button class="are-you-ready-button adj-zoom-1" onclick="location.href='./03.html'">Ready</button>
+    </div>
 
-        <nav class="nav-bar">
-            <button class="nav-button" onclick="location.href='./03.html'">Back</button>
-            <button class="nav-button" onclick="location.href='./index.html'">Home</button>
-            <button class="nav-button" onclick="location.href='./05.html'">Next</button>
-        </nav>
-    </main>
+    <div class="background-blobs">
+        <div class="blob blob-red"></div>
+        <div class="blob blob-blue"></div>
+        <div class="blob blob-yellow"></div>
+    </div>
+
+
+    <div class="nav-bar">
+        <button class="nav-button" onclick="location.href='./03.html'">Back</button>
+        <button class="nav-button">Home</button>
+        <button class="nav-button" onclick="location.href='./05.html'">Next</button>
+    </div>
 
     <script>
         document.getElementById("read-aloud").addEventListener("click", function () {
