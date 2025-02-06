@@ -9,36 +9,42 @@
     <link rel="stylesheet" href="./position-text.css">
 </head>
 
-<body class="body-flex">
-    <div class="glowing-text" onclick="location.href='./03.html'">⚠️Are you ready?</div>
+<style>
+    .header-1 {
+        font-size: 32px;
+        font-weight: bold;
+        padding: 56px 52px;
+    }
 
+    .vertical-scroll {
+        overflow-y: scroll;
+        height: 500px;
+    }
 
+    .regular-1 {
+        font-size: 22px;
+        font-weight: bold;
+        padding: 56px 500px;
+    }
+</style>
 
-    <div class="glowing-text">
-        <button class="are-you-ready-button adj-zoom-1" onclick="location.href='./03.html'">Ready</button>
+<body>
+    <div class="header-1">
+        Introduction to {Title}
     </div>
 
-    <div class="background-blobs">
-        <div class="blob blob-red"></div>
-        <div class="blob blob-blue"></div>
-        <div class="blob blob-yellow"></div>
+    <div class="vertical-scroll">
+        <div class="regular-1">
+            <!-- Content here-->
+        </div>
     </div>
-
-
-    <div class="nav-bar">
-        <button class="nav-button" onclick="location.href='./03.html'">Back</button>
-        <button class="nav-button">Home</button>
-        <button class="nav-button" onclick="location.href='./05.html'">Next</button>
-    </div>
-
-    <script>
-        document.getElementById("read-aloud").addEventListener("click", function () {
-            const text = document.querySelector(".description").textContent;
-            const speech = new SpeechSynthesisUtterance(text);
-            speech.lang = "en-US";
-            window.speechSynthesis.speak(speech);
-        });
-    </script>
 </body>
+
+<div class="nav-bar-manual-center">
+    <button class="nav-button-manual-center" onclick="location.href='./03.html'">Back</button>
+    <button class="nav-button-manual-center">Home</button>
+    <button class="nav-button-manual-center" onclick="location.href='./05.html'">Next</button>
+</div>
+
 
 </html>
