@@ -26,28 +26,6 @@
 
 
 
-
-
-
-
-### Android
-> Status: Pending
-
-### iOS
-> Status: Pending
-
-### macOS
-> Status: Pending
-
-### visionOS
-> Status: Pending
-
-### Windows
-> Status: Pending
-
-
-
-
 ## Color Schemes
 TBT
 
