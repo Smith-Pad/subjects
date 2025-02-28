@@ -7,6 +7,10 @@
 > visual learning, and auditory learning.
 
 
+> Using sound effects in subjects, allows individuals to experience sounds while
+> interacting with Smith-Pad's Subjects feature.
+
+
 ## How does it work?
 > Using AI technologies, teachers and paraprofessionals will able to simply
 > prompt AI to create a lesson plan.
