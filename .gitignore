@@ -11,3 +11,4 @@ tests-v2/hands-detect-part-1/hand_landmarker.task
 templates/latest-assignments-cards.html
 templates/past-assignments-cards.html
 routes.py
+.generation-test/templates/latest-assignments-cards.html
