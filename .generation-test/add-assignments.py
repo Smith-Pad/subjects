@@ -15,6 +15,11 @@ os.system("touch routes.py")
 os.system("mkdir templates/ && cd templates/ && touch latest-assignments-cards.html")
 
 
+TITLE_OF_LESSON                                 = 0                                                                                                     ## variable for title of lesson variable
+TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES        = 0                                                                                                     ## translate to underscores to get flask to be recognized
+DESCRIPTION_OF_LESSON                           = 0                                                                                                     ## allow the ability to add description of lesson 
+
+
 TITLE_OF_LESSON = input("Create the title of the lesson: ")
 TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES = TITLE_OF_LESSON.replace(" ", "_")
 DESCRIPTION_OF_LESSON = input("Create the description of the lesson: ")
