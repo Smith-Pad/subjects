@@ -20,9 +20,9 @@ TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES        = 0                             
 DESCRIPTION_OF_LESSON                           = 0                                                                                                     ## allow the ability to add description of lesson 
 
 
-TITLE_OF_LESSON = input("Create the title of the lesson: ")
-TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES = TITLE_OF_LESSON.replace(" ", "_")
-DESCRIPTION_OF_LESSON = input("Create the description of the lesson: ")
+TITLE_OF_LESSON = input("Create the title of the lesson: ")                                                                                             ## get the user to enter the title of the lesson
+TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES = TITLE_OF_LESSON.replace(" ", "_")                                                                            ## translate spaces into underscores
+DESCRIPTION_OF_LESSON = input("Create the description of the lesson: ")                                                                                 ## get the user to enter the description of the lesson
 
 
 LESSON_TITLE_VIEW_READY_FOR_INTERACTIVE_GAME_CONFIRM =  TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES + "_READY_FOR_INTERACTIVE_GAME_CONFIRM"
