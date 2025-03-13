@@ -40,20 +40,7 @@ with open("routes.py", 'a') as fd:
     fd.write(f'''
 @main_routes.route("/firstpage_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
 def firstpage_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
-    return '<h1> Game Menu </h1> <ul> </ul> <a href="/secondpage_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}">Enter</a>  <a href="#">Exit</a>'
-    ''')
-
-####################################################################################################################################
-
-
-
-####################################################################################################################################
-
-with open("routes.py", 'a') as fd:
-    fd.write(f'''
-@main_routes.route("/secondpage_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
-def secondpage_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
-    return 'secondpage'
+    return '<h1> Game Menu </h1>'
     ''')
 
 ####################################################################################################################################
