@@ -65,67 +65,6 @@ def {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
     ''')
 
 
-os.system("sleep 5")
-
-################################################################################################
-## @DOCS
-## This is for the introduction part.
-################################################################################################
-
-
-
-with open("routes.py", 'a') as fd:
-    fd.write(f'''
-# Introduction
-
-
-@main_routes.route("/{LESSON_TITLE_VIEW_INTRO}")
-def {LESSON_TITLE_VIEW_INTRO}():
-    return 'Introduction'
-        
-    ''')
-
-
-################################################################################################
-## @DOCS
-## This is for the for routing View 2
-################################################################################################
-
-
-with open("routes.py", 'a') as fd:
-    fd.write(f'''
-# Introduction
-
-
-@main_routes.route("/{LESSON_TITLE_VIEW_2}")
-def {LESSON_TITLE_VIEW_2}():
-    return ''
-
-    ''')
-
-
-
-
-
-################################################################################################
-## @DOCS
-## This is for the introduction
-################################################################################################
-
-
-with open("routes.py", 'a') as fd:
-    fd.write(f'''
-# Introduction
-
-
-@main_routes.route("/{LESSON_TITLE_VIEW_2}")
-def {LESSON_TITLE_VIEW_2}():
-    return ''
-
-    ''')
-
-
-
 
 '''
 This is where ollama talks in general
