@@ -69,17 +69,5 @@ def past_assignments_list():
         return render_template('past-assignments-list.html')
 
 
-
-'''
-@docs
-In the settings menu view, this is where you are able to set the settings
-for the subjects feature of Smith-Pad
-'''
-
-
-@app.route("/settings_menu")
-def settings_menu():
-        return render_template('settings.html')
-
 if __name__ == "__main__":
     app.run(debug=True, use_reloader=True)
