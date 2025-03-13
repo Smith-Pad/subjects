@@ -47,13 +47,12 @@ this section will cover about it later on.
 
 
 
+## Activating Scripts
 
-## TODO:
+Activating Scripts are required to activate some of the features in Subjects such as:
 
-- Just to let you know when running the Subjects VA-1, the file: `routes.py` file
-  is required in order to make Subjects VA-1 fully working. So make an automated
-  script for that.
-
+- Dynamic Routes in the backend
+- Latest Assignments Cards on the frontend
 
 
 
