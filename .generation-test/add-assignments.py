@@ -30,30 +30,16 @@ LESSON_TITLE_VIEW_5 =  TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES + "_5"
 LESSON_TITLE_VIEW_6 =  TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES + "_6"
 LESSON_TITLE_VIEW_7 =  TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES + "_7"
 
-## Used for Game Confirmation before going to a interactive game.
+
 LESSON_TITLE_VIEW_READY_FOR_INTERACTIVE_GAME_CONFIRM =  TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES + "_READY_FOR_INTERACTIVE_GAME_CONFIRM"
 
-################################################################################################
-## @DOCS
-## Allows the ability to show the latest lessons and notifies the latest assignments via D-Bus 
-## daemon or other daemon in other OSs.
-##
-## @EG:
-##      [Manual Command]
-##      notify-send("⚠️Latest Assignment: {TITLE_OF_LESSON} is ready")
-##
-##
-##
-################################################################################################
+
 
 with open("templates/latest-assignments-cards.html", 'a') as fd:
     fd.write(f'<div style="background-color: red;">{TITLE_OF_LESSON}</div>\n\n\n')
     fd.write(f'<div style="background-color: yellow;">{DESCRIPTION_OF_LESSON}</div>\n\n\n')
 
-################################################################################################
-## @DOCS
-## This is for the splashscreen. Later on, you are able to use the sound version of the Splashscreen
-################################################################################################
+
 
 with open("routes.py", 'a') as fd:
     fd.write(f'''
