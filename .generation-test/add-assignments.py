@@ -40,7 +40,7 @@ with open("routes.py", 'a') as fd:
     fd.write(f'''
 @main_routes.route("/firstpage_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
 def firstpage_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
-    return '<h1> Game Menu </h1> <ul> </ul> <a href="/secondpage_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}">Enter</a>'
+    return '<h1> Game Menu </h1> <ul> </ul> <a href="/secondpage_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}">Enter</a>  <a href="#">Exit</a>'
     ''')
 
 ####################################################################################################################################
