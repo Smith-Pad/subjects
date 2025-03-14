@@ -41,14 +41,12 @@ LESSON_TITLE_VIEW_READY_FOR_INTERACTIVE_GAME_CONFIRM =  TRANSLATE_TITLE_OF_LESSO
 
 
 
-####################################################################################################################################
+
 
 with open("templates/latest-assignments-cards.html", 'a') as fd:
     fd.write(f'<div style="background-color: red;">{TITLE_OF_LESSON}</div>\n\n\n')
     fd.write(f'<div style="background-color: yellow;">{DESCRIPTION_OF_LESSON}</div>\n\n\n')
 
-
-####################################################################################################################################
 
 with open("routes.py", 'a') as fd:
     fd.write(f'''
@@ -56,35 +54,3 @@ with open("routes.py", 'a') as fd:
 def gamemenu_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
     return '<h1> Game Menu </h1><ul></ul><a href="introduction_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}">introduction</a>'
     ''')
-
-
-
-
-with open("routes.py", 'a') as fd:
-    fd.write(f'''
-@main_routes.route("/introduction_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
-def introduction_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
-    return '<h1> Introduction </h1><ul></ul><a href="_1_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}">1</a>'
-    ''')
-
-
-
-with open("routes.py", 'a') as fd:
-    fd.write(f'''
-@main_routes.route("/_1_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
-def _1_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
-    return '<h1> Introduction </h1><ul></ul><a href="1_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}">1</a>'
-    ''')
-
-
-
-with open("routes.py", 'a') as fd:
-    fd.write(f'''
-@main_routes.route("/_2_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
-def _1_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
-    return '<h1> 1 </h1><ul></ul><a href="2_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}">Next</a>'
-    ''')
-
-
-
-####################################################################################################################################
