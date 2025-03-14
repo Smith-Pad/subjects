@@ -27,16 +27,6 @@ DESCRIPTION_OF_LESSON = input("Create the description of the lesson: ")         
 
 LESSON_TITLE_VIEW_READY_FOR_INTERACTIVE_GAME_CONFIRM =  TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES + "_READY_FOR_INTERACTIVE_GAME_CONFIRM"
 
-## HTML PART PREVIEW PART PREVIEW 
-# <h1> Game Menu </h1><ul></ul><a href="introduction_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES} ">introduction</a>
-# <h1> Introduction </h1><ul></ul><a href="1_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES} ">1</a>
-# <h1> 1 </h1><ul></ul><a href="2_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES} ">Next</a>
-# <h1> 2 </h1><ul></ul><a href="3_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES} ">Next</a>
-# <h1> 3 </h1><ul></ul><a href="4_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES} ">Next</a>
-# <h1> 4 </h1><ul></ul><a href="5_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES} ">Next</a>
-# <h1> 5 </h1><ul></ul><a href="6_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES} ">Next</a>
-# <h1>options</h1><button> Enable</button><button> Disable</button>
-
 
 
 
@@ -48,9 +38,41 @@ with open("templates/latest-assignments-cards.html", 'a') as fd:
     fd.write(f'<div style="background-color: yellow;">{DESCRIPTION_OF_LESSON}</div>\n\n\n')
 
 
+## 1. Route     = ("/a_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
+## 2. Define    = def a_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
+## 3. Button    = <a href="a_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}">introduction</a>
+
+
+routingthings = TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES
+print(routingthings)
+
 with open("routes.py", 'a') as fd:
     fd.write(f'''
-@main_routes.route("/gamemenu_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
-def gamemenu_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
-    return '<h1> Game Menu </h1><ul></ul><a href="introduction_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}">introduction</a>'
-    ''')
+
+
+
+
+@main_routes.route("/a_{routingthings}")
+def a_{routingthings}():
+    return '<h1> A </h1><ul></ul><a href="a_{routingthings}"> -> B</a>'
+
+
+
+
+
+@main_routes.route("/b_{routingthings}")
+def b_{routingthings}():
+    return '<h1> B </h1><ul></ul><a href="c_{routingthings}"> -> C</a>'
+
+
+
+
+@main_routes.route("/c_{routingthings}")
+def c_{routingthings}():
+    return '<h1> B </h1><ul></ul><a href="d_{routingthings}"> -> D</a>'
+
+
+
+
+
+''')
