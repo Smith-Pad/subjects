@@ -41,8 +41,8 @@ In this section, here are issues that we discovered
 
 ## Installation Instructions
 
-In this section, we are going to be be talking about the installation instructions.
-this section will cover about it later on.
+Smith-Pad Subjects comes with the Smith-Pad ecosystem, however, if you want to install manually, 
+instructions will be provided here later soon.
 
 
 
