@@ -37,31 +37,3 @@ Tell the user to enter the description of the lesson title
 #+BEGIN_SRC python
 DESCRIPTION_OF_LESSON = input("Create the description of the lesson:         ")
 #+END_SRC
-
-
-
-
-* Step 
-
-Create the add latest assignments gui and prepare for it. Just to check it
-and make sure it is working or not. Or do something with the inclusion or
-something like that.
-
-#+BEGIN_SRC python
-with open(GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE, 'a') as fd:
-    fd.write(f'')
-#+END_SRC
-
-
-
-
-* Step 
-
-
-Create the assignments cards in the html part of it.
-
-#+BEGIN_SRC  python
-with open("templates/latest-assignments-cards.html", 'a') as fd:
-    fd.write(f'<div style="background-color: red;">{TITLE_OF_LESSON}</div>\n')
-    fd.write(f'<div style="background-color: yellow;">{DESCRIPTION_OF_LESSON}</div>\n')
-#+END_SRC
