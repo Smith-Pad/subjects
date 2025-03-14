@@ -52,7 +52,9 @@ instructions will be provided here later soon.
 Activating Scripts are required to activate some of the features in Subjects such as:
 
 - Dynamic Routes in the backend
+        - `sh activate-routes.sh`
 - Latest Assignments Cards on the frontend
+        - `sh activate-latest-assignments-cards.sh`
 
 
 
