@@ -27,6 +27,15 @@ DESCRIPTION_OF_LESSON = input("Create the description of the lesson: ")         
 
 LESSON_TITLE_VIEW_READY_FOR_INTERACTIVE_GAME_CONFIRM =  TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES + "_READY_FOR_INTERACTIVE_GAME_CONFIRM"
 
+## HTML PART PREVIEW PART PREVIEW 
+# <h1> Game Menu </h1><ul></ul><a href="introduction_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORE} ">introduction</a>
+# <h1> Introduction </h1><ul></ul><a href="1_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORE} ">1</a>
+# <h1> 1 </h1><ul></ul><a href="2_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORE} ">Next</a>
+# <h1> 2 </h1><ul></ul><a href="3_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORE} ">Next</a>
+# <h1> 3 </h1><ul></ul><a href="4_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORE} ">Next</a>
+# <h1> 4 </h1><ul></ul><a href="5_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORE} ">Next</a>
+# <h1> 5 </h1><ul></ul><a href="6_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORE} ">Next</a>
+# <h1>options</h1><button> Enable</button><button> Disable</button>
 
 
 
@@ -43,9 +52,11 @@ with open("templates/latest-assignments-cards.html", 'a') as fd:
 
 with open("routes.py", 'a') as fd:
     fd.write(f'''
-@main_routes.route("/firstpage_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
-def firstpage_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
-    return '<h1> Game Menu </h1>'
+@main_routes.route("/gamemenu_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
+def gamemenu_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
+    return ''
     ''')
+
+
 
 ####################################################################################################################################
