@@ -17,6 +17,10 @@
 > Using AI technologies, teachers and paraprofessionals will able to simply
 > prompt AI to create a lesson plan.
 
+> Then it will utilize the template lesson interfaces, and create the entire
+> interactive lesson based on the input of the Lesson Title and the Description
+> of the lesson.
+
 
 
 
