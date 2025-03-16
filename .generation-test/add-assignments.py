@@ -8,7 +8,8 @@ import os
 import json
 import random
 import math
-import ollama
+from ollama import chat
+from ollama import ChatResponse
 
 
 os.system("touch routes.py")
