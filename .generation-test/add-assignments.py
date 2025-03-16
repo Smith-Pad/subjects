@@ -46,7 +46,7 @@ with open("templates/latest-assignments-cards.html", 'a') as fd:
 routingthings = TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES
 print(routingthings)
 
-# ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
 
 
 with open("routes.py", 'a') as fd:
@@ -57,7 +57,7 @@ with open("routes.py", 'a') as fd:
 
 @main_routes.route("/a_{routingthings}")
 def a_{routingthings}():
-    return '<h1> A </h1><ul></ul><a href="/a_{routingthings}"> -> B</a>'
+    return '<h1> A </h1><ul></ul><a href="/b_{routingthings}"> -> B</a>'
 
 
 
@@ -80,4 +80,3 @@ def c_{routingthings}():
 
 ''')
 
-# ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
