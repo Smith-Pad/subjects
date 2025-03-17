@@ -10,6 +10,8 @@ import random
 import math
 import ollama
 import html
+from ollama import chat
+
 
 os.system("touch routes.py")
 os.system("mkdir templates/ && cd templates/ && touch latest-assignments-cards.html")
@@ -55,7 +57,7 @@ print(routingthings)
 #         fd.write(f'''
 # @main_routes.route("/a_{routingthings}")
 # def a_{routingthings}():
-#         return f'<h1> A </h1><ul></ul> <h1> hello world </h1> <a href="/b_{routingthings}"> -> B</a>'
+#         return f'<h1> A </h1><ul></ul> <h1>  </h1> <a href="/b_{routingthings}"> -> B</a>'
 
 # @main_routes.route("/b_{routingthings}")
 # def b_{routingthings}():
