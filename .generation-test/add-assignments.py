@@ -8,9 +8,8 @@ import os
 import json
 import random
 import math
-from ollama import chat
-from ollama import ChatResponse
-
+import ollama
+import html
 
 os.system("touch routes.py")
 os.system("mkdir templates/ && cd templates/ && touch latest-assignments-cards.html")
@@ -35,8 +34,8 @@ LESSON_TITLE_VIEW_READY_FOR_INTERACTIVE_GAME_CONFIRM =  TRANSLATE_TITLE_OF_LESSO
 
 
 with open("templates/latest-assignments-cards.html", 'a') as fd:
-    fd.write(f'<div style="background-color: red;">{TITLE_OF_LESSON}</div>\n\n\n')
-    fd.write(f'<div style="background-color: yellow;">{DESCRIPTION_OF_LESSON}</div>\n\n\n')
+        fd.write(f'<div style="background-color: red;">{TITLE_OF_LESSON}</div>\n\n\n')
+        fd.write(f'<div style="background-color: yellow;">{DESCRIPTION_OF_LESSON}</div>\n\n\n')
 
 
 ## 1. Route     = ("/a_{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
@@ -50,34 +49,19 @@ print(routingthings)
 
 
 
-with open("routes.py", 'a') as fd:
-    fd.write(f'''
+# routingthings = TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES
 
+# with open("routes.py", 'a') as fd:
+#         fd.write(f'''
+# @main_routes.route("/a_{routingthings}")
+# def a_{routingthings}():
+#         return f'<h1> A </h1><ul></ul> <h1> hello world </h1> <a href="/b_{routingthings}"> -> B</a>'
 
+# @main_routes.route("/b_{routingthings}")
+# def b_{routingthings}():
+#         return f'<h1> B </h1><ul></ul><a href="/c_{routingthings}"> -> C</a>'
 
-
-@main_routes.route("/a_{routingthings}")
-def a_{routingthings}():
-    return '<h1> A </h1><ul></ul><a href="/b_{routingthings}"> -> B</a>'
-
-
-
-
-
-@main_routes.route("/b_{routingthings}")
-def b_{routingthings}():
-    return '<h1> B </h1><ul></ul><a href="/c_{routingthings}"> -> C</a>'
-
-
-
-
-@main_routes.route("/c_{routingthings}")
-def c_{routingthings}():
-    return '<h1> B </h1><ul></ul><a href="/d_{routingthings}"> -> D</a>'
-
-
-
-
-
-''')
-
+# @main_routes.route("/c_{routingthings}")
+# def c_{routingthings}():
+#         return f'<h1> C </h1><ul></ul><a href="/d_{routingthings}"> -> D</a>'
+# ''')
