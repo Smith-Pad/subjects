@@ -1,10 +1,17 @@
 php -S localhost:3000
+-------------------------------------------------------------------
+total 104
+-rw-r--r--  1 senal  staff   1.1K Mar 17 22:56 02.html
+-rw-r--r--  1 senal  staff   1.2K Mar 18 00:27 03.html
+-rw-r--r--  1 senal  staff   1.3K Mar 17 16:31 04.html
+-rw-r--r--  1 senal  staff   3.3K Mar 17 22:57 05.html
+-rw-r--r--  1 senal  staff   3.8K Mar 17 16:29 06.html
+-rw-r--r--  1 senal  staff   4.5K Mar 17 16:31 07.html
+-rw-r--r--  1 senal  staff   1.2K Mar 18 11:25 menu.html
+-rw-r--r--  1 senal  staff   1.3K Mar 12 13:51 position-text.css
+-rw-r--r--  1 senal  staff   164B Mar 12 13:51 readme
+-rw-r--r--  1 senal  staff   1.8K Mar 17 19:12 splashscreen.html
+-rw-r--r--  1 senal  staff   5.0K Mar 17 19:15 styles.css
 
-List of files
-----------------------------------------------------------------
 
-
-- 01.html
-- 02.html
-- 03.html
-- 04.html [animation duration]
+-------------------------------------------------------------------
