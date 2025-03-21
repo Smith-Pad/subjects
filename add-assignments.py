@@ -105,14 +105,5 @@ widely tested for Pliot.
 
 
 os.system("cd templates/")                                                                                              ## cd to the templates folder
-os.system("cp -R Subjects-VA-1.0.2-prototype " + {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES} + "  ")                     ## create folder based on lesson title translation
+os.system("cp -R Subjects-VA-1.0.2-prototype " + TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES)                              ## create folder based on lesson title translation
 os.system("cd ../")
-
-
-
-
-## This will make a new line for the routes.py file
-with open(GENERATION_GITIGNORE_SOURCE, 'a') as fd:
-    fd.write(f'''
-         {GENERATION_GITIGNORE_SOURCE}
-    ''')
