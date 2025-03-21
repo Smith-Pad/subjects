@@ -27,6 +27,7 @@ TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES = TITLE_OF_LESSON.replace(" ", "_")
 ## This is the where the para is prompted to enter the description of the lesson
 DESCRIPTION_OF_LESSON = input("Create the description of the lesson:         ")
 
+GENERATION_GITIGNORE_SOURCE = "templates/.gitignore"
 
 with open(GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE, 'a') as fd:
     fd.write(f'')
@@ -86,6 +87,14 @@ with open(GENERATION_ROUTES_ROUTING, 'a') as fd:
 
     ''')
 
+'''
+This is where we are able to create a .gitignore file
+'''
+
+os.system("cd templates/")
+os.system("touch .gitignore")
+
+
 
 
 
@@ -97,3 +106,13 @@ widely tested for Pliot.
 
 os.system("cd templates/")                                                                                              ## cd to the templates folder
 os.system("cp -R Subjects-VA-1.0.2-prototype " + {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES} + "  ")                     ## create folder based on lesson title translation
+os.system("cd ../")
+
+
+
+
+## This will make a new line for the routes.py file
+with open(GENERATION_GITIGNORE_SOURCE, 'a') as fd:
+    fd.write(f'''
+         {GENERATION_GITIGNORE_SOURCE}
+    ''')
