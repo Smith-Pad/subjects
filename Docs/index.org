@@ -1,0 +1,7 @@
+#+TITLE: Subjects
+
+Welcome to the full documentation of Subjects. Subjects is a full core feature of
+Smith-Pad, allowing tactical learning to be placed, designed for individuals with
+intellectual and developmental disabilities. This documentation is designed for
+paraprofessionals, and developers who are contributing to the sub-project for
+Smith-Pad
