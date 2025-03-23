@@ -14,4 +14,5 @@ The Goal of Subjects:
 2. Providing individuals with fun activities while learning in the classroom
    environment
 
-
+3. Using AI technologies, AI will enhance individuals learning performance and
+   understand students individually
