@@ -7,12 +7,6 @@
 > visual learning, and auditory learning.
 
 
-> Using sound effects in subjects, allows individuals to experience sounds while
-> interacting with Smith-Pad's Subjects feature. The sound effects features is 
-> still work in progress, but soon the sound effects features will be available 
-> soon.
-
-
 
 
 ## How does it work?
