@@ -15,4 +15,7 @@ The Goal of Subjects:
    environment
 
 3. Using AI technologies, AI will enhance individuals learning performance and
-   understand students individually
+   understand students individually.
+
+4. Using AI technologies, AI will allow teachers and paraprofessionals reduce
+   stress when making lesson plans. (less stress at least...)
