@@ -72,5 +72,4 @@ def {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
 
 
 os.system("cp -R Subjects-VA-1.0.2-prototype " + TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES)
-
-
+os.system("mv " + TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES + " templates/")
