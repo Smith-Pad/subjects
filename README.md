@@ -13,6 +13,8 @@
 > soon.
 
 
+
+
 ## How does it work?
 > Using AI technologies, teachers and paraprofessionals will able to simply
 > prompt AI to create a lesson plan.
@@ -36,8 +38,6 @@
 
 
 
-## Color Schemes
-TBT
 
 
 
