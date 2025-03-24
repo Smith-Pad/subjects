@@ -22,31 +22,6 @@
 
 
 
-## Is it cross platform? Compatibility?
-
-> In Subjects, we are planning to create native apps with native components
-> that are designed for each native operating system. Rather than having
-> a cross platform based on electron, we want to respect by creating apps
-> based on each of the Operating System's native App UI style guidelines.
-> But that feature will arrive in the near future....
-
-
-
-
-
-
-## Issues that are discovered
-In this section, here are issues that we discovered
-
-
-## Installation Instructions
-
-Smith-Pad Subjects comes with the Smith-Pad ecosystem, however, if you want to install manually, 
-instructions will be provided here later soon.
-
-
-
-
 ## Activating Scripts
 
 Activating Scripts are required to activate some of the features in Subjects such as:
@@ -57,13 +32,6 @@ Activating Scripts are required to activate some of the features in Subjects suc
         - `sh activate-latest-assignments-cards.sh`
 
 > If these two scripts are not used first, full functionality will not work for Subjects.
-
-
-## Screenshots
-
-<img src="./Screenshot 2025-01-23 at 5.07.09 PM.png">
-<img src="./Screenshot 2025-01-23 at 5.06.12 PM.png">
-
 
 
 
