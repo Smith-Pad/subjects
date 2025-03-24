@@ -1,5 +1,9 @@
 ## activate-routes.sh
 
+## This is a required script allowing the ability to activate the routing
+## system for subjects.
+
+
 
 touch routes.py
 
