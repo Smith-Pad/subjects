@@ -128,14 +128,6 @@ body {
         box-shadow: none;
 }
 
-/* Centered Manual Button */
-.nav-bar-manual-center {
-        position: absolute;
-        bottom: 40px;
-        left: 50%;
-        transform: translateX(-50%);
-}
-
 /* Special Button Design */
 .tap-here-button {
         font-size: 22px;
