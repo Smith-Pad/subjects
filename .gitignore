@@ -12,3 +12,4 @@ templates/latest-assignments-cards.html
 templates/past-assignments-cards.html
 routes.py
 .generation-test/templates/latest-assignments-cards.html
+templates/GENERATIONS
