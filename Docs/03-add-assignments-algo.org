@@ -22,8 +22,7 @@ main_routes = Blueprint('main', __name__)
 
 @main_routes.route("/sdf")
 def sdf():
-        title = "hello world"
-        return render_template("GENERATIONS/sdf/splashscreen.html", title=title)
+        return render_template("GENERATIONS/sdf/splashscreen.html")
 
 #+END_SRC
 
