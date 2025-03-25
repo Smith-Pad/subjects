@@ -22,3 +22,8 @@ sudo pacman -Syyu
 
 Installing Graphical packages
 
+#+BEGIN_SRC shell
+sudo pacman -S xorg-xinit --noconfirm
+sudo pacman -S lxde --noconfirm
+sudo pacman -S openbox --noconfirm
+#+END_SRC
