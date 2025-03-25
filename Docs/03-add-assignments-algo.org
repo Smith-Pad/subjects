@@ -52,3 +52,34 @@ def sdf_menu():
 
 
 #+END_SRC
+
+
+
+
+
+
+** 1
+
+#+BEGIN_SRC python
+
+'''
+---------------
+1
+---------------
+'''
+
+
+from flask import Blueprint
+
+
+main_routes = Blueprint('main', __name__)
+
+
+@main_routes.route("/sdf_1_")
+def sdf_1_():
+        introduction = "Welcome to this introduction"
+        readyindication = "Are you ready to do this?"
+        return render_template("GENERATIONS/sdf/02.html", introduction=introduction, readyindication=readyindication)
+
+
+#+END_SRC
