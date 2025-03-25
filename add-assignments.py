@@ -68,10 +68,27 @@ def {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
 
 
 
-
+## Create the generations directory
+os.system("mkdir -pv templates/GENERATIONS")
 
 ## copies templates to lesson title underscore
 os.system("cp -R Subjects-VA-1.0.2-prototype " + TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES)
 
 ## move lesson title underscroe to templates/ folder. (Make another folder for .gitignore to be recognized.)
-os.system("mv " + TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES + " templates/")
+os.system("mv " + TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES + " templates/GENERATIONS")
+
+
+with open(GENERATION_ROUTES_ROUTING, 'a') as fd:
+    fd.write(f'''
+# routes.py
+
+from flask import Blueprint
+
+
+main_routes = Blueprint('main', __name__)
+
+
+@main_routes.route("/{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
+def {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
+    return render_template("sdf.html", message=message)
+    ''')
