@@ -2,3 +2,17 @@
 
 Welcome to this documentation. This documentation talks about how to 
 install subjects to embeeded devices for testing purposes
+
+
+Requirements: 
+
+- Arch Linux/Arch Kernel variant
+
+
+
+
+Make sure you updated the pacman packages
+
+#+BEGIN_SRC shell
+sudo pacman -Syyu
+#+END_SRC
