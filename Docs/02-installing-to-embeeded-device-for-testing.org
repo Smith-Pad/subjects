@@ -16,3 +16,9 @@ Make sure you updated the pacman packages
 #+BEGIN_SRC shell
 sudo pacman -Syyu
 #+END_SRC
+
+
+
+
+Installing Graphical packages
+
