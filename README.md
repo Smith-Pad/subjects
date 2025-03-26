@@ -22,7 +22,7 @@
 
 
 
-## Activating Scripts
+<!-- ## Activating Scripts
 
 Activating Scripts are required to activate some of the features in Subjects such as:
 
@@ -31,7 +31,7 @@ Activating Scripts are required to activate some of the features in Subjects suc
 - Latest Assignments Cards on the frontend
         - `sh activate-latest-assignments-cards.sh`
 
-> If these two scripts are not used first, full functionality will not work for Subjects.
+> If these two scripts are not used first, full functionality will not work for Subjects. -->
 
 
 
