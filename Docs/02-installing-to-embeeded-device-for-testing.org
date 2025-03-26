@@ -1,7 +1,11 @@
 #+TITLE: Installing Subjects to embeeded devices for testing
 
 Welcome to this documentation. This documentation talks about how to 
-install subjects to embeeded devices for testing purposes
+install subjects to embeeded devices for testing purposes. 
+
+
+For testing purposes, for experimental purposes, this guide may or may not work
+for ARM devices, just to let you know.
 
 
 Requirements: 
