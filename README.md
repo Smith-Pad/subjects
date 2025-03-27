@@ -3,7 +3,7 @@
 
 # subjects
 
-# Status: Maintainance Mode
+# Status: Maintainance Mode ⚠️
 
 ## What is it?
 
