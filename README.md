@@ -3,6 +3,8 @@
 
 # subjects
 
+# Status: Maintainance Mode
+
 ## What is it?
 
 > Subjects is a platform in Smith-Pad, allowing students with special needs
