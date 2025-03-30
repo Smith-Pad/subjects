@@ -4,6 +4,8 @@
 # subjects
 
 # Status: Maintainance Mode ⚠️
+> Right now, Subjects is currently in maintainance mode
+> with some upgrades and some updates to it
 
 ## What is it?
 
