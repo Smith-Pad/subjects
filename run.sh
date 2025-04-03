@@ -1,1 +1,1 @@
-gcc -o run main.c $(python3-config --cflags) -L$(python3-config --prefix)/lib -lpython3.13
+gcc -o run index.c $(python3-config --cflags) -L$(python3-config --prefix)/lib -lpython3.13
