@@ -13,3 +13,7 @@ templates/past-assignments-cards.html
 routes.py
 .generation-test/templates/latest-assignments-cards.html
 templates/GENERATIONS
+run.dSYM/Contents/Resources/Relocations/aarch64/run.yml
+run.dSYM/Contents/Resources/DWARF/run
+run.dSYM/Contents/Info.plist
+run
