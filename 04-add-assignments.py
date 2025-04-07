@@ -6,7 +6,6 @@ import sys
 import json
 import ollama
 
-
 os.system("touch routes.py")
 
 
