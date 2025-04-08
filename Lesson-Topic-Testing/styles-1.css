@@ -100,8 +100,6 @@ body {
         gap: 30px;
         justify-content: center;
         width: 100%;
-        /* make the bar red */
-        background: linear-gradient(145deg, #ff4e50, #f9d423);
 }
 
 /* Navigation Button */
