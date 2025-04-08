@@ -79,3 +79,18 @@ def {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
 
 
 with open('routes.py', 'a') as fd:fd.write(f'\n\n')                                        ## Make new line
+
+
+
+
+
+#############################################################################
+# -----
+# Docs:
+# ------
+## This is where we are able to copy the template generation as a title template 
+#############################################################################
+
+
+
+os.system(f"cp -R Lesson-Topic-Testing  {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
