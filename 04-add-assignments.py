@@ -1,4 +1,6 @@
-## add-assignments.py
+####################################################################################
+##                          Add-Assignments
+####################################################################################
 
 ## This is where you are able to import the required libraries
 import os                                                                                       ## Import os
@@ -15,6 +17,9 @@ GENERATION_ROUTES_ROUTING = "routes.py"
 
 
 #############################################################################
+# -----
+# Docs:
+# ------
 ## Make the user create the title of the lesson
 #############################################################################
 
@@ -27,10 +32,21 @@ TITLE_OF_LESSON = input('''
 >> ''')
 
 
+#############################################################################
+# -----
+# Docs:
+# ------
+## Using the TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES, this allows the ability
+## to translate from spaces to underscores for flask to understand in general
+#############################################################################
+
 
 TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES = TITLE_OF_LESSON.replace(" ", "_")
 
 #############################################################################
+# -----
+# Docs:
+# ------
 ## Make the user create the description of the lesson
 #############################################################################
 
@@ -44,7 +60,11 @@ DESCRIPTION_OF_LESSON = input('''
 
 
 #############################################################################
-## This is where we are able to create routes in general
+# -----
+# Docs:
+# ------
+## This is where we are able to create routes in general which is located in
+## routes.py file
 #############################################################################
 
 
