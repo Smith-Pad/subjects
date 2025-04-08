@@ -94,3 +94,4 @@ with open('routes.py', 'a') as fd:fd.write(f'\n\n')                             
 
 
 os.system(f"cp -R Lesson-Topic-Testing  {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
+os.system(f"mv {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES} templates/GENERATIONS")
