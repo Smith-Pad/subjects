@@ -42,6 +42,16 @@ Activating Scripts are required to activate some of the features in Subjects suc
 
 
 
+# How does it work?
+
+In this section, we are going to be talking about how it works.
+
+
+## `routes.py`
+
+
+
+
 ## Sources
 
 [https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker/python#image_1]
