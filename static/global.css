@@ -6,10 +6,14 @@
 
 body 
 {
-        background: conic-gradient(from 0deg, black, #448322, #4404c3, #222, black);
+        background: conic-gradient(from 0deg, black, #222, #444, #222, black);
         color: rgb(255, 255, 255); 
         font-family: "Helvetica Neue", sans-serif;
 }
+
+
+
+
 
 
 header {
