@@ -16,12 +16,7 @@ GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE = "templates/latest-assignme
 GENERATION_ROUTES_ROUTING = "routes.py"
 
 
-#############################################################################
-# -----
-# Docs:
-# ------
-## Make the user create the title of the lesson
-#############################################################################
+
 
 os.system("clear")
 TITLE_OF_LESSON = input('''
@@ -32,23 +27,12 @@ TITLE_OF_LESSON = input('''
 >> ''')
 
 
-#############################################################################
-# -----
-# Docs:
-# ------
-## Using the TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES, this allows the ability
-## to translate from spaces to underscores for flask to understand in general
-#############################################################################
+
 
 
 TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES = TITLE_OF_LESSON.replace(" ", "_")
 
-#############################################################################
-# -----
-# Docs:
-# ------
-## Make the user create the description of the lesson
-#############################################################################
+
 
 os.system("clear")
 DESCRIPTION_OF_LESSON = input('''
@@ -59,37 +43,25 @@ DESCRIPTION_OF_LESSON = input('''
 >> ''')
 
 
-#############################################################################
-# -----
-# Docs:
-# ------
-## This is where we are able to create routes in general which is located in
-## routes.py file
-#############################################################################
+
+# !docs
+# This is where we are able to use ollama to ask the question to get the content
+# automatically
+
+
 
 
 with open('routes.py', 'a') as fd:
         fd.write(f''' 
 @main_routes.route("/{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
 def {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
-    return render_template('index.html')
+    return "It works"
         ''')
 
 
 
 
-with open('routes.py', 'a') as fd:fd.write(f'\n\n')                                        ## Make new line
-
-
-
-
-
-#############################################################################
-# -----
-# Docs:
-# ------
-## This is where we are able to copy the template generation as a title template 
-#############################################################################
+with open('routes.py', 'a') as fd:fd.write(f'\n\n')
 
 
 
