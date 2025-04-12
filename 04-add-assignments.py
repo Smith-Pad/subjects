@@ -42,11 +42,15 @@ DESCRIPTION_OF_LESSON = input('''
 
 >> ''')
 
+# !docs
+# This is where are we are able to copy the template generation based on the 
+# Prompt. Do that later.
+
 
 
 # !docs
 # This is where we are able to use ollama to ask the question to get the content
-# automatically
+# automatically Do that later.
 
 
 
@@ -55,7 +59,7 @@ with open('routes.py', 'a') as fd:
         fd.write(f''' 
 @main_routes.route("/{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
 def {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
-    return "It works"
+    return render_template ('{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}/index.html')
         ''')
 
 
