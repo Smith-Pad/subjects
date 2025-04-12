@@ -49,7 +49,10 @@ In this section, we are going to be talking about how it works.
 
 ## `routes.py`
 
+routes.py is a file that is used for dynamic reasons: 
 
+- generating new subject generations
+- generating new subject generations in lessons
 
 
 ## Sources
