@@ -1,5 +1,6 @@
 <img src="./Screenshot 2025-01-23 at 5.07.09 PM.png">
 
+<a href="https://github.com/smith-pad/subjects/blob/main/Docs/dependencies-install.md">Dependencies-Install</a>
 
 # subjects
 
