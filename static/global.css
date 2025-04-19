@@ -94,3 +94,7 @@ header {
 
 
 
+.subjects-not-available-screen {
+        background-color: red;
+        color: white;
+}
