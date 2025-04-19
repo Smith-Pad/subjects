@@ -26,13 +26,6 @@
 > of the lesson.
 
 
-
-
-
-
-
-
-
 # How does it work?
 
 In this section, we are going to be talking about how it works.
