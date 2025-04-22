@@ -45,6 +45,10 @@
 </style>
 
 <body>
+
+        <!-- Header Top-->
+
+
         <header>
                 <FOIL-font-size-40>Subjects</FOIL-font-size-40>
 
@@ -52,8 +56,11 @@
         </header>
 
 
+        <!-- Main Content is displayed here -->
+
 
         <div class="mainmenu">
+                <h1> Latest Assignments </h1>
                 <div class="widgets">
 
                         <!-- ------------------------------------------------------------------------------ -->
@@ -61,19 +68,28 @@
                         <!-- ------------------------------------------------------------------------------ -->
 
 
-                        <!-- <div class="widget"> -->
-                        <!--         <h1> Assignment one </h1> -->
-                        <!--         <ul></ul> -->
-                        <!--         Description Here -->
-                        <!-- </div> -->
-                        <!---->
-                        <!-- <div class="widget"> -->
-                        <!--         <h1> Assignment one </h1> -->
-                        <!--         <ul></ul> -->
-                        <!--         Description Here -->
-                        <!-- </div> -->
-                        
-                        
+
+                        {% include 'latest-assignments-cards.html' %}
+
+
+                </div>
+        </div>
+
+
+        <div class="mainmenu">
+                <h1> Past Assignments </h1>
+
+                <div class="widgets">
+
+                        <!-- ------------------------------------------------------------------------------ -->
+                        <!-- This is commented on purpose which is used for the dynamic generations -->
+                        <!-- ------------------------------------------------------------------------------ -->
+
+                        {% include 'past-assignments-cards.html' %}
+
+
+
+
                 </div>
         </div>
 </body>
