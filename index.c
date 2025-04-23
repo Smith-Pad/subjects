@@ -32,6 +32,9 @@
 int main()
 {
         Py_Initialize();
-        PyRun_SimpleString("import flask\nimport os\nimport json\n");
+
+        // This is where we have the abiliy to import python components to it
+        PyRun_SimpleString("import flask\nimport os\nimport json\nimport getpass\nimport time\nimport pytest\n\n\n\n");
+
         Py_Finalize();
 }
