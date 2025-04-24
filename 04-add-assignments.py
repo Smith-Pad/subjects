@@ -42,32 +42,65 @@ DESCRIPTION_OF_LESSON = input('''
 
 >> ''')
 
-# !docs
-# This is where are we are able to copy the template generation based on the 
-# Prompt. Do that later.
-
-
-
-# !docs
-# This is where we are able to use ollama to ask the question to get the content
-# automatically Do that later.
-
-
-
-
-with open('routes.py', 'a') as fd:
-        fd.write(f''' 
-@main_routes.route("/{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
-def {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
-    return render_template ('{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}/index.html')
-        ''')
+# with open('./templates/latest-assignments-cards.html', 'a') as fd:
+# fd.write(f'''\n\n\n\n\n
+# <div class="widget">
+#         <h1> {TITLE_OF_LESSON} </h1>
+#         <ul></ul>
+#         {TITLE_OF_LESSON}
+# </div>
+#         ''')
 
 
 
 
-with open('routes.py', 'a') as fd:fd.write(f'\n\n')
+with open('./templates/latest-assignments-cards.html', 'a') as fd:fd.write(f'''\n\n\n\n\n<div class="widget"><h1> {TITLE_OF_LESSON} </h1><ul></ul>{TITLE_OF_LESSON}</div>''')
 
 
 
-os.system(f"cp -R Lesson-Topic-Testing  {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
-os.system(f"mv {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES} templates/")
+
+
+
+
+
+# with open('routes.py', 'a') as fd:
+#         fd.write(f''' 
+# @main_routes.route("/{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
+# def {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
+#     return render_template ('{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}/index.html')
+#         ''')
+
+
+
+## Generate SplashScreen Route
+
+# with open('routes.py', 'a') as fd:
+#         fd.write(f''' 
+# @main_routes.route("/{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
+# def {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
+#     return render_template ('{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}/index.html')
+#         ''')
+
+
+
+
+# with open('routes.py', 'a') as fd:fd.write(f'\n\n')
+
+
+# ## Generate Game Menu Route
+
+# with open('routes.py', 'a') as fd:
+#         fd.write(f''' 
+# @main_routes.route("/{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
+# def {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}():
+#     return render_template ('{TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}/game-menu.html')
+#         ''')
+
+
+
+
+# with open('routes.py', 'a') as fd:fd.write(f'\n\n')
+
+
+# os.system(f"cp -R Lesson-Topic-Testing  {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES}")
+# os.system(f"mv {TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES} templates/")
