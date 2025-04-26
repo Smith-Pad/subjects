@@ -72,7 +72,7 @@ listed here.
 routes.py is a file that is used for dynamic reasons: 
 
 - generating new subject generations
-- generating new subject generations in lessons
+- generating new subject generations in lessons topics
 
 
 ## Terminalogy Q&A
