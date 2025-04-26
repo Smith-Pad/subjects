@@ -41,7 +41,7 @@ to assign individuals assignments/tasks to devices.
 
 
 With the power of AI, and ML, Paraprofessionals are able AI prompt a lesson plan
-with manu functions: 
+with menu functions: 
 
 - Lesson Title of the Lesson
 - Lesson Description of the Lesson
