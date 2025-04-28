@@ -30,7 +30,7 @@ TITLE_OF_LESSON = input('''
 
 
 
-TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES = TITLE_OF_LESSON.replace(" ", "_")
+TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES = TITLE_OF_LESSON.replace(" ", "_")    
 
 
 
@@ -41,6 +41,15 @@ DESCRIPTION_OF_LESSON = input('''
 --------------------------------------------------------------
 
 >> ''')
+
+
+
+#
+# @access
+# This allows the ability to make use of TITLE_OF_LESSON variable
+# and add it as a Card that is categorized to the Latest Assignments
+# section.
+#
 
 with open('./templates/latest-assignments-cards.html', 'a') as fd:
 fd.write(f'''\n\n\n\n\n
