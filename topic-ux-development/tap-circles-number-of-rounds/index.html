@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/global.css" type="text/css">
+    <link rel="stylesheet" href="../../static/FOIL-UI.css" type="text/css">
+    <title>Interactive Lesson - Smith-Pad</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: radial-gradient(circle, #121212, #1a1a1a);
+            font-family: 'Inter', Arial, sans-serif;
+            color: #fff;
+            overflow: hidden;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .circle-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            gap: 40px;
+            z-index: 10;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .circle {
+            width: 150px;
+            height: 150px;
+            background: #1e1e1e;
+            border: 4px dashed rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #ccc;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .circle:hover {
+            background: #333;
+            transform: scale(1.1);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+
+        #popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        #popup-box {
+            background: #1f1f1f;
+            border-radius: 20px;
+            padding: 100px 200px;
+            box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2);
+            text-align: center;
+            font-size: 28px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        #next-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            background: #4e54c8;
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="circle-container" id="circle-container">
+        <!-- Circles will be inserted here -->
+    </div>
+
+    <div id="popup-overlay">
+        <div id="popup-box">
+            <!-- Message will be inserted here -->
+        </div>
+    </div>
+
+    <h1 id="footer-text"
+        style="position:absolute; bottom: 20px; width: 100%; text-align: center; font-size: 1rem; color: #666;">
+        Select a Circle to reveal an action
+    </h1>
+
+    <script>
+
+
+        /**
+         * @access
+         * This is where we are able to create 3 const variables 
+         * 
+         */
+
+        const circle_1_data = "Circle 1 tapped";
+        const circle_2_data = "Circle 1 tapped!";
+        const circle_3_data = "Circle 3 tapped!";
+
+        const circlesData = [
+
+            // First object in the array with the following properties:
+            {
+                text: "Circle 2",
+                message: circle_1_data  // Here, it references another variable (circle_3_data) for the message data of this circle.
+            },
+
+            // Second object in the array with the following properties:
+            {
+                text: "Circle 1",
+                message: circle_2_data  // Here, it references another variable (circle_2_data) for the message data of this circle.
+            },
+
+            // Third object in the array with the following properties:
+            {
+                text: "Circle 3",
+                message: circle_3_data   // Here, it references another variable (circle_3_data) for the message data of this circle.
+            }
+        ];
+
+        // This is where we are able to initialize two variables (variables declared with 'let') and one constant.
+
+        // The first variable named tappedCircles is an empty Set to keep track of circles that have been tapped during the game.
+        let tappedCircles = new Set();
+
+        // The second variable named roundsCompleted counts the number of rounds completed in the game, initialized to 0.
+        let roundsCompleted = 0;
+
+        // A constant called maxRounds sets a limit for the maximum number of rounds that can be played in the game.
+        // In this case, this is set to 6 times.
+        const maxRounds = 6;
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        /**
+         * @access
+         * This is used to generate the circle container for the circles which allows the ability
+         * for individuals to tap on the circles and do that tasks that they are supposed to do...
+         * 
+         * 
+         * The circle container allows the ability to create a flex to the container itself.
+         */
+
+        function renderCircles() {
+            const container = document.getElementById('circle-container');
+            container.innerHTML = ''; // Clear old circles
+            shuffleArray(circlesData);
+
+            circlesData.forEach(circle => {
+                const div = document.createElement('div');
+                div.className = 'circle';
+                div.textContent = circle.text;
+                div.onclick = () => handleCircleTap(circle.text, circle.message);
+                container.appendChild(div);
+            });
+        }
+
+        function handleCircleTap(circleText, message) {
+            tappedCircles.add(circleText);
+            showPopup(message);
+
+            if (tappedCircles.size === circlesData.length) {
+                roundsCompleted++;
+                tappedCircles.clear();
+
+                if (roundsCompleted >= maxRounds) {
+                    showReadyScreen();
+                } else {
+                    renderCircles(); // Shuffle and render new order
+                }
+            }
+        }
+
+
+        /**
+         * @access
+         * This is where we are able to show the popup or the second layer after the individual
+         * taps on the circles.
+         */ 
+
+
+        function showPopup(message) {
+            const popupBox = document.getElementById('popup-box');
+            popupBox.innerHTML = `<p>${message}</p><button style="margin-top:20px; padding:10px 20px; font-size:1rem; border:none; background:#4e54c8; color:#fff; border-radius:10px; cursor:pointer;" onclick="hidePopup()">OK</button>`;
+            document.getElementById('popup-overlay').style.display = 'flex';
+        }
+
+        /**
+         * @access
+         * This is where we are able to hide the second layer after the indiividual taps ok 
+         * to go to the next circle.
+         */ 
+
+        function hidePopup() {
+            document.getElementById('popup-overlay').style.display = 'none';
+        }
+
+
+        /**
+         * @access
+         * This is where we are able to show the ready screen after the individual completes 
+         * how many rounds that are set from the const maxRounds = 6; (variable). After the 
+         * individual completes the certain amount of rounds, then the showReadyScreen is called
+         * to ask individual to go to next view
+         */ 
+
+        function showReadyScreen() {
+            const container = document.getElementById('circle-container');
+            container.innerHTML = `
+            <div style="text-align:center;">
+                    <h2 style="color:white">Ready to go to the next thing!</h2>
+                    <button id="next-button" onclick="goToNext()">Next</button>
+            </div>
+            `;
+
+
+            document.getElementById('next-button').style.display = 'inline-block';
+            document.getElementById('footer-text').style.display = 'none';
+        }
+
+
+        /**
+         * @access
+         * This is where the individual has the ability to go to the next view 
+         * 
+         */
+
+        function goToNext() {
+            // Example: redirect to next page
+            window.location.href = "next-lesson.html"; // Change this URL as needed
+        }
+
+        // Start when page loads
+        window.onload = renderCircles;
+    </script>
+
+</body>
+
+</html>
