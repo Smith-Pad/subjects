@@ -1,0 +1,77 @@
+<style>
+    /**
+    Game Menu.css
+    
+    **/
+    
+    
+            body {
+                    margin: 0;
+                    height: 100vh;
+                    background: radial-gradient(ellipse at center, #403e3e 0%, #000000 100%);
+                    font-family: sans-serif;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #ffffff;
+            }
+    
+            .game-title {
+                    font-size: 48px;
+                    margin-bottom: 30px;
+                    color: #ffaa00;
+                    letter-spacing: 4px;    
+            }
+    
+            .menu-button {
+                    width: 240px;
+                    height: 60px;
+                    border-radius: 10px;
+                    border-style: none;
+                    background: linear-gradient(145deg, #1b1b1b, #2c2c2c);
+                    color: #ffaa00;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    cursor: pointer;
+                    transition: 0.3s ease all;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+            }
+    </style>
+    
+    
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Interactive Lesson - Smith-Pad</title>
+            <link rel="stylesheet" href="./position-text.css">
+    </head>
+    
+    <body>
+            <!-- <div class="background-blobs"> -->
+            <!--         <div class="blob blob-red"></div> -->
+            <!--         <div class="blob blob-blue"></div> -->
+            <!--         <div class="blob blob-yellow"></div> -->
+            <!-- </div> -->
+    
+    
+            <div class="game-menu">
+                    <h1 class="game-title">{{ title }}</h1>
+                    <h3> Are you ready?</h3>
+                    <button class="menu-button" onclick="location.href='/hello_01'">Start</button>
+                    <button class="menu-button">Exit</button>
+            </div>
+    
+    </body>
+    
+    
+    
+    
+    </html>
