@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Look For / Do Activity</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: radial-gradient(circle, #121212, #1a1a1a);
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+            color: #fff;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 900px;
+            font-size: 20px;
+        }
+
+        th,
+        td {
+            border: 3px solid black;
+            padding: 15px;
+            text-align: left;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        th {
+            font-weight: bold;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        td[draggable="true"] {
+            cursor: grab;
+            user-select: none;
+            background-color: #2e2e2e;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        td[draggable="true"]:hover {
+            background-color: #444;
+            transform: scale(1.05);
+        }
+
+        td.drop-target {
+            background-color: #1a1a1a;
+        }
+
+        td.drop-target.dragover {
+            box-shadow: 0 0 10px #6cf597;
+        }
+
+        .drop-success {
+            background-color: mediumorchid;
+            animation: successPulse 0.6s ease;
+        }
+
+        @keyframes successPulse {
+            0% {
+                background-color: midnightblue;
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>LOOK FOR</th>
+            <th>DO</th>
+        </tr>
+        <tr>
+            <td draggable="true" ondragstart="drag(event)" id="word1">Word 1</td>
+            <td class="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="highlight(event)"
+                ondragleave="unhighlight(event)">Definition 1</td>
+        </tr>
+        <tr>
+            <td draggable="true" ondragstart="drag(event)" id="word2">Word 2</td>
+            <td class="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="highlight(event)"
+                ondragleave="unhighlight(event)">Definition 2</td>
+        </tr>
+        <tr>
+            <td draggable="true" ondragstart="drag(event)" id="word3">Word 3</td>
+            <td class="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="highlight(event)"
+                ondragleave="unhighlight(event)">Definition 3</td>
+        </tr>
+        <tr>
+            <td draggable="true" ondragstart="drag(event)" id="word4">Word 4</td>
+            <td class="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="highlight(event)"
+                ondragleave="unhighlight(event)">Definition 4</td>
+        </tr>
+        <tr>
+            <td draggable="true" ondragstart="drag(event)" id="word5">Word 5</td>
+            <td class="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="highlight(event)"
+                ondragleave="unhighlight(event)">Definition 5</td>
+        </tr>
+    </table>
+
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text/plain", ev.target.innerText);
+
+            // Reset styles
+            document.querySelectorAll(".drop-target").forEach(cell => {
+                cell.classList.remove("drop-success");
+            });
+        }
+
+        function highlight(ev) {
+            ev.target.classList.add("dragover");
+        }
+
+        function unhighlight(ev) {
+            ev.target.classList.remove("dragover");
+        }
+
+        function downloadLog(content) {
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `activity-log-${new Date().toISOString().split('T')[0]}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+
+        let activityLog = '';
+
+        function drop(ev) {
+            ev.preventDefault();
+            ev.target.classList.remove("dragover");
+
+            const word = ev.dataTransfer.getData("text/plain");
+            const definition = ev.target.textContent;
+
+            // Replace only the text content
+            ev.target.textContent = word;
+
+            // Animate success
+            ev.target.classList.add("drop-success");
+
+            // Create log entry
+            function generateLog() {
+                const logEntry = `Student dropped "${word}" onto definition: "${definition}" at ${new Date().toISOString()}\n`;
+                activityLog += logEntry;
+                console.log(logEntry.trim());
+            }
+            generateLog();
+
+            // Download log file after 5 matches (assuming 5 words total)
+            const matchedWords = document.querySelectorAll('.drop-success').length;
+            if (matchedWords === 5) {
+                setTimeout(() => {
+                    downloadLog(activityLog);
+                }, 1000);
+            }
+        }
+    </script>
+</body>
+
+</html>
