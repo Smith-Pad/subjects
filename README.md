@@ -75,7 +75,7 @@ routes.py is a file that is used for dynamic reasons:
 - generating new subject generations in lessons topics
 
 
-## Terminalogy Q&A
+## Terminlogies Q&A
 In this section, we are going to be talking about terminlogies with Q&A.
 
 > Q: What is Simple Talking Response Learning? 
