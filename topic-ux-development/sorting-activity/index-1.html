@@ -128,20 +128,6 @@
             ev.target.classList.remove("dragover");
         }
 
-        function downloadLog(content) {
-            const blob = new Blob([content], { type: 'text/plain' });
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `activity-log-${new Date().toISOString().split('T')[0]}.txt`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            window.URL.revokeObjectURL(url);
-        }
-
-        let activityLog = '';
-
         function drop(ev) {
             ev.preventDefault();
             ev.target.classList.remove("dragover");
@@ -155,21 +141,8 @@
             // Animate success
             ev.target.classList.add("drop-success");
 
-            // Create log entry
-            function generateLog() {
-                const logEntry = `Student dropped "${word}" onto definition: "${definition}" at ${new Date().toISOString()}\n`;
-                activityLog += logEntry;
-                console.log(logEntry.trim());
-            }
-            generateLog();
-
-            // Download log file after 5 matches (assuming 5 words total)
-            const matchedWords = document.querySelectorAll('.drop-success').length;
-            if (matchedWords === 5) {
-                setTimeout(() => {
-                    downloadLog(activityLog);
-                }, 1000);
-            }
+            // Log to console
+            console.log(`Student dropped "${word}" onto definition: "${definition}" at ${new Date().toISOString()}`);
         }
     </script>
 </body>
