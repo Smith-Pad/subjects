@@ -56,13 +56,13 @@
         }
 
         .drop-success {
-            background-color: #c8f7c5 !important;
+            background-color: mediumorchid;
             animation: successPulse 0.6s ease;
         }
 
         @keyframes successPulse {
             0% {
-                background-color: #c8f7c5;
+                background-color: midnightblue;
                 transform: scale(1.05);
             }
 
@@ -128,18 +128,21 @@
             ev.target.classList.remove("dragover");
         }
 
-
         function drop(ev) {
             ev.preventDefault();
             ev.target.classList.remove("dragover");
 
             const word = ev.dataTransfer.getData("text/plain");
+            const definition = ev.target.textContent;
 
             // Replace only the text content
             ev.target.textContent = word;
 
             // Animate success
             ev.target.classList.add("drop-success");
+
+            // Log to console
+            console.log(`Student dropped "${word}" onto definition: "${definition}" at ${new Date().toISOString()}`);
         }
     </script>
 </body>
