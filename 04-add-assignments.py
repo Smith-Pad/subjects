@@ -56,6 +56,6 @@ fd.write(f'''\n\n\n\n\n
 <div class="widget">
         <h1> {TITLE_OF_LESSON} </h1>
         <ul></ul>
-        {TITLE_OF_LESSON}
+        {DESCRIPTION_OF_LESSON}
 </div>
         ''')
