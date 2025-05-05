@@ -1,6 +1,7 @@
 <img src="./Screenshot 2025-01-23 at 5.07.09 PM.png">
 
 <a href="https://github.com/smith-pad/subjects/blob/main/Docs/dependencies-install.md">Dependencies-Install</a>
+<a href="https://github.com/smith-pad/subjects/blob/main/Docs/02-terminalogies-qa.md">Terminalogies Q&A</a>
 
 # subjects
 
@@ -73,17 +74,6 @@ routes.py is a file that is used for dynamic reasons:
 
 - generating new subject generations
 - generating new subject generations in lessons topics
-
-
-## Terminologies Q&A
-In this section, we are going to be talking about Terminologies with Q&A.
-
-> Q: What is Simple Talking Response Learning? 
-
-
-> A: It is called Simple Talking Response Learning. As known as (STRL), Smith-Pad's 
-> STRL learning allows specific individuals that are able to talk to specific single
-> words like YAY, or NAY, or Yes or No. 
 
 
 ## Sources
