@@ -14,4 +14,4 @@ the second layer of the interactive game.
 
 1. The Game Boots
 2. First Splashscreen is activated showing the Smith-Pad Logo
-3. The game menu stats
+3. The game menu starts
