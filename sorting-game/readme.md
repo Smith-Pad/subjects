@@ -15,3 +15,15 @@ the second layer of the interactive game.
 1. The Game Boots
 2. First Splashscreen is activated showing the Smith-Pad Logo
 3. The game menu starts
+
+
+
+
+# SDL references 
+
+
+## Creating Window Pointer
+
+``` c
+SDL_Window *window = SDL_CreateWindow("Sorting Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, SDL_WINDOW_SHOWN);
+```
