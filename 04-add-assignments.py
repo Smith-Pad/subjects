@@ -16,7 +16,9 @@ GENERATION_TEST_ADD_LATEST_ASSIGNMENTS_CARDS_SOURCE = "templates/latest-assignme
 GENERATION_ROUTES_ROUTING = "routes.py"
 
 
-
+# This allows the ability to make use of TITLE_OF_LESSON variable
+# and add it as a Card that is categorized to the Latest Assignments
+# section.
 
 os.system("clear")
 TITLE_OF_LESSON = input('''
@@ -28,11 +30,16 @@ TITLE_OF_LESSON = input('''
 
 
 
-
-
+# This allows the ability to translate the TITLE_OF_LESSON input from spaces to underscores
 TRANSLATE_TITLE_OF_LESSON_TO_UNDERSCORES = TITLE_OF_LESSON.replace(" ", "_")    
 
 
+
+#
+# @access
+# This allows the ability to make use of TITLE_OF_LESSON variable
+# and add it as a Card that is categorized to the Latest Assignments
+# section.
 
 os.system("clear")
 DESCRIPTION_OF_LESSON = input('''
@@ -52,10 +59,10 @@ DESCRIPTION_OF_LESSON = input('''
 #
 
 with open('./templates/latest-assignments-cards.html', 'a') as fd:
-fd.write(f'''\n\n\n\n\n
-<div class="widget">
-        <h1> {TITLE_OF_LESSON} </h1>
-        <ul></ul>
-        {DESCRIPTION_OF_LESSON}
-</div>
-        ''')
+        fd.write(f'''\n\n\n\n\n
+        <div class="widget">
+                <h1> {TITLE_OF_LESSON} </h1>
+                <ul></ul>
+                {DESCRIPTION_OF_LESSON}
+        </div>
+                ''')
