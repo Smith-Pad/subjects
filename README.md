@@ -17,7 +17,7 @@
 > visual learning, and auditory learning.
 
 
-## How does it work?
+## Table of Contents
 <a href="https://github.com/smith-pad/subjects/blob/main/Docs/04-paras-adding-assignments-to-devices.md">How it works: Paras adding assignments to devices</a>
 
 
