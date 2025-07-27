@@ -1,1 +1,4 @@
 shell-scripts
+
+- install--smith-pad-os-packages.sh
+- uninstall--smith-pad-os-packages.sh
