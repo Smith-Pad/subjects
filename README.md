@@ -23,7 +23,16 @@ docker build -t subjects-beta .
 
 ### CAT Academy
 
+CAT Academy in Smith-Pad Subjects, inspired and based on Winter Park High School's (ESE program),
+allows the ability to provide hands-on learning for real world skills for individuals with IDD.
+with real-time specialized support. This feature will be applied to Subjects 2.0+
 
+
+#### Features
+
+- Job Skills 
+- Academic Skills
+- Hands on Skills
 
 ## TODO:
 
