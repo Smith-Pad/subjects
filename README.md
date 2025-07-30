@@ -16,3 +16,13 @@ maintaining Subjects-Beta on a another development environment like Windows or m
 ```shell
 docker build -t subjects-beta .
 ```
+
+
+
+
+## TODO:
+
+
+### Making docker containers
+
+- Create a Windows Docker Container for testing subjects-beta
