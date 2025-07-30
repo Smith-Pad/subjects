@@ -28,6 +28,11 @@ allows the ability to provide hands-on learning for real world skills for indivi
 with real-time specialized support. This feature will be applied to Subjects 2.0+
 
 
+## Subjects Generalization Activity Features
+
+
+
+
 #### Features
 
 - Job Skills 
