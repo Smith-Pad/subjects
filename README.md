@@ -37,9 +37,9 @@ be matched to Smith-Pad's TLVL standard.
 Boardmaker based activities is visually tactile based activities that follows the following
 usages in certain parts of Smith-Pad's tactile learning visual learning (TLVL) protocol standard. 
 
-- Interactive Matching
-- Sorting Activities
-- Sequencing Pattern Activities
+#### Interactive Matching
+#### Sorting Activities
+#### Sequencing Pattern Activities
 
 
 
