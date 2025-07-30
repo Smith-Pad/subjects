@@ -25,13 +25,25 @@ docker build -t subjects-beta .
 
 CAT Academy in Smith-Pad Subjects, inspired and based on Winter Park High School's (ESE program),
 allows the ability to provide hands-on learning for real world skills for individuals with IDD.
-with real-time specialized support. This feature will be applied to Subjects 2.0+
+with real-time specialized support. This feature will be applied to Subjects 2.0+ and will 
+be matched to Smith-Pad's TLVL standard.
 
 
 ## Subjects Generalization Activity Features
 
 
+### Boardmaker-based activities
 
+Boardmaker based activities is visually tactile based activities that follows the following
+usages in certain parts of Smith-Pad's tactile learning visual learning (TLVL) protocol standard. 
+
+- Interactive Matching
+- Sorting Activities
+- Sequencing Pattern Activities
+
+
+
+### 
 
 #### Features
 
