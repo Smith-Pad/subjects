@@ -17,6 +17,16 @@ function App() {
                                                 <button class="subjects-button-1 color-is-red">Ask Para</button>
                                         </div>
                                 </div>
+
+                                <div class="latest-assignments-container">
+                                        <div class="latest-assignments-title">Latest Assignments</div>
+                                        <div class="latest-assignments-list">
+                                                <div class="latest-assignment-item">
+                                                        <div class="latest-assignment-title">Assignment 1</div>
+                                                </div>
+                                        </div>
+                                </div>
+
                         </body>
                 </>
         )
